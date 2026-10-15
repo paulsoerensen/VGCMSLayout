@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_h>
+    <image>
+      <originalFileName>hedensted.png</originalFileName>
+      <size>507054</size>
+      <dateLastModified>Fri, 14 Aug 2020 16:42:45 GMT</dateLastModified>
+      <width>540</width>
+      <height>416</height>
+      <cachedImage>
+        <fileName>HED_3d50baf1c1183fbe7e5f40bba4f5d47d04a3628e68637fe47a7fc1a945964c41.png</fileName>
+        <dateCreated>Fri, 14 Aug 2020 16:52:14 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>400</width>
+        <height>308</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_h>
+</imageIndex>

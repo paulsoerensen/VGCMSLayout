@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>vgcmslogo.jpg</originalFileName>
+    <size>2678</size>
+    <dateLastModified>Sun, 31 Mar 2013 19:19:00 GMT</dateLastModified>
+    <width>94</width>
+    <height>90</height>
+    <cachedImage>
+      <fileName>3fm1mdpo.jpeg</fileName>
+      <dateCreated>Fri, 19 Dec 2014 23:05:52 GMT</dateCreated>
+      <dateLastAccessed>Fri, 19 Dec 2014 23:12:39 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>160</width>
+      <height>153</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+  <_v>
+    <image>
+      <originalFileName>vgcmslogo.jpg</originalFileName>
+      <size>2678</size>
+      <dateLastModified>Sun, 31 Mar 2013 19:19:00 GMT</dateLastModified>
+      <width>94</width>
+      <height>90</height>
+      <cachedImage>
+        <fileName>VGC_8c94a0f943eab30ee967043b2bcc5f2171ce849f8e7f6c0442d1ecaa80eac917.jpeg</fileName>
+        <dateCreated>Fri, 19 Dec 2014 23:37:14 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>160</width>
+        <height>153</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>VGC_6a24866a633402ee72aeaa3c50c89a1623f9922868d4351a8413c74f52426dd4.jpeg</fileName>
+        <dateCreated>Sun, 08 Mar 2015 20:29:28 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>200</width>
+        <height>191</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>VGC_11ccf7defd50029977a3c9c1da5d65c77836f83dea2afa7cbb665c7c7cc4b316.jpeg</fileName>
+        <dateCreated>Wed, 08 Apr 2015 20:48:50 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <rotate>0</rotate>
+        <flip />
+        <colorMode />
+        <crop />
+        <width>200</width>
+        <height>191</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>VGC_d89aac2b3d55d5b23f1da7417987cbf5b112ff507094f5ad1fb66a489114f601.jpeg</fileName>
+        <dateCreated>Fri, 12 Jun 2015 11:25:38 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>180</width>
+        <height>172</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_v>
+</imageIndex>

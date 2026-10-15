@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_l>
+    <image>
+      <originalFileName>lars-pihl-2022.jpg</originalFileName>
+      <size>2675248</size>
+      <dateLastModified>Wed, 05 Jan 2022 18:22:12 GMT</dateLastModified>
+      <width>3024</width>
+      <height>4032</height>
+      <cachedImage>
+        <fileName>LAR_7f3706a9984ca515db22144d60e2248a9a50e7b7b272856f4026157a200aedce.jpeg</fileName>
+        <dateCreated>Sun, 09 Jan 2022 10:23:10 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_l>
+  <_p>
+    <image>
+      <originalFileName>pihl-farver-22.jpg</originalFileName>
+      <size>2554973</size>
+      <dateLastModified>Fri, 04 Feb 2022 09:04:30 GMT</dateLastModified>
+      <width>3024</width>
+      <height>4032</height>
+      <cachedImage>
+        <fileName>PIH_113e1b30dd157dbaeb159aac174d027199d830219d452d90baae92935745bb6e.jpeg</fileName>
+        <dateCreated>Fri, 04 Feb 2022 09:05:43 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_p>
+</imageIndex>

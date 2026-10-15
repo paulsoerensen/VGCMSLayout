@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_l>
+    <image>
+      <originalFileName>larspigehansen.jpg</originalFileName>
+      <size>4107579</size>
+      <dateLastModified>Fri, 10 Jun 2016 07:16:28 GMT</dateLastModified>
+      <width>3264</width>
+      <height>2448</height>
+      <cachedImage>
+        <fileName>LAR_59364e1cacdb2e6d401500a39a96daf98e0eaf6a60d450ee95a27c18a4ea4413.jpeg</fileName>
+        <dateCreated>Fri, 10 Jun 2016 07:16:36 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>400</width>
+        <height>300</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_l>
+</imageIndex>

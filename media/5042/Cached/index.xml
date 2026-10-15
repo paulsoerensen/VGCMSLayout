@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_m>
+    <image>
+      <originalFileName>msafsl.png</originalFileName>
+      <size>682960</size>
+      <dateLastModified>Mon, 12 Oct 2020 18:26:17 GMT</dateLastModified>
+      <width>810</width>
+      <height>624</height>
+      <cachedImage>
+        <fileName>MSA_970dad2f1f064fa960042a2fcf4c514a3abe56e6690ba1c067662dbd5df35960.png</fileName>
+        <dateCreated>Fri, 16 Oct 2020 19:55:36 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>400</width>
+        <height>308</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_m>
+</imageIndex>

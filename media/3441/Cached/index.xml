@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>20130622_150746.jpg</originalFileName>
+    <size>1109528</size>
+    <dateLastModified>Mon, 24 Jun 2013 19:06:00 GMT</dateLastModified>
+    <width>2048</width>
+    <height>1232</height>
+    <cachedImage>
+      <fileName>cpblt3to.jpeg</fileName>
+      <dateCreated>Mon, 24 Jun 2013 19:06:23 GMT</dateCreated>
+      <dateLastAccessed>Sat, 06 Dec 2014 17:05:24 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>550</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+      <align>center</align>
+      <valign>middle</valign>
+    </cachedImage>
+  </image>
+</imageIndex>

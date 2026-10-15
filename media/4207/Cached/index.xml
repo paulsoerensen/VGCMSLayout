@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_b>
+    <image>
+      <originalFileName>blad_forside_2012.jpg</originalFileName>
+      <size>48188</size>
+      <dateLastModified>Thu, 10 Mar 2016 21:29:00 GMT</dateLastModified>
+      <width>393</width>
+      <height>548</height>
+      <cachedImage>
+        <fileName>BLA_96984b4303d069cb32107b09716011ba4cb2d45bf98ed3764aff2deb947ae643.jpeg</fileName>
+        <dateCreated>Tue, 22 Mar 2016 17:26:07 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>143</width>
+        <height>200</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_b>
+</imageIndex>

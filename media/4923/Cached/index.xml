@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_l>
+    <image>
+      <originalFileName>larsvegassmall.png</originalFileName>
+      <size>14977</size>
+      <dateLastModified>Sun, 27 Oct 2019 09:24:20 GMT</dateLastModified>
+      <width>169</width>
+      <height>88</height>
+      <cachedImage>
+        <fileName>LAR_9e010e0b5b584639bd54180decd0f76c21b2e12bad8b66f977fbc2711dc91d51.png</fileName>
+        <dateCreated>Thu, 15 Sep 2022 09:36:28 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_l>
+</imageIndex>

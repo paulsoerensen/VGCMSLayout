@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_s>
+    <image>
+      <originalFileName>sidani.png</originalFileName>
+      <size>100877</size>
+      <dateLastModified>Sun, 07 Feb 2016 09:36:44 GMT</dateLastModified>
+      <width>750</width>
+      <height>750</height>
+      <cachedImage>
+        <fileName>SID_d6e26c60e74544cf051e16c2237b165b95b36ba42e7328223d7f1ccc4b2f583e.png</fileName>
+        <dateCreated>Sun, 07 Feb 2016 09:36:45 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>200</width>
+        <height>200</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_s>
+</imageIndex>

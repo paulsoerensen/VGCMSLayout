@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_b>
+    <image>
+      <originalFileName>blad-2017-final-web-forside.png</originalFileName>
+      <size>136822</size>
+      <dateLastModified>Thu, 09 Mar 2017 08:46:27 GMT</dateLastModified>
+      <width>420</width>
+      <height>596</height>
+      <cachedImage>
+        <fileName>BLA_0ba9504999c22692a683d5bf6ebbd31af6ae011e5552526a4702fa8a6713d75d.png</fileName>
+        <dateCreated>Thu, 29 Mar 2018 09:02:48 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>141</width>
+        <height>200</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_b>
+</imageIndex>

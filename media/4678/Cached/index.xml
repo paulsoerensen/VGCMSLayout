@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_m>
+    <image>
+      <originalFileName>madsen.png</originalFileName>
+      <size>313734</size>
+      <dateLastModified>Mon, 25 Feb 2019 13:28:20 GMT</dateLastModified>
+      <width>482</width>
+      <height>642</height>
+      <cachedImage>
+        <fileName>MAD_66d77632ae94764add16d5086966f4c90790aae8f34f1c03f9f29ff98edf3dbe.png</fileName>
+        <dateCreated>Mon, 25 Feb 2019 13:30:10 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_m>
+</imageIndex>

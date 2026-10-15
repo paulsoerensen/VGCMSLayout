@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>foto-sidani-shoot.jpg</originalFileName>
+    <size>1760417</size>
+    <dateLastModified>Tue, 15 Oct 2013 14:09:29 GMT</dateLastModified>
+    <width>3264</width>
+    <height>2448</height>
+    <cachedImage>
+      <fileName>wr5lmj2k.jpeg</fileName>
+      <dateCreated>Tue, 15 Oct 2013 14:09:38 GMT</dateCreated>
+      <dateLastAccessed>Fri, 04 Apr 2014 01:36:03 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>540</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+    <cachedImage>
+      <fileName>yw04l3en.jpeg</fileName>
+      <dateCreated>Sun, 27 Oct 2013 14:00:11 GMT</dateCreated>
+      <dateLastAccessed>Wed, 11 Dec 2013 07:47:27 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>488</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+  <image>
+    <originalFileName>ms-prã¦-jul13-tshirts.jpg</originalFileName>
+    <size>3947316</size>
+    <dateLastModified>Mon, 23 Dec 2013 19:30:26 GMT</dateLastModified>
+    <width>3264</width>
+    <height>2448</height>
+    <cachedImage>
+      <fileName>vzkw5mpn.jpeg</fileName>
+      <dateCreated>Mon, 23 Dec 2013 19:30:36 GMT</dateCreated>
+      <dateLastAccessed>Mon, 23 Dec 2013 19:34:58 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>540</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+</imageIndex>

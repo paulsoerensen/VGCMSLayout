@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>IMG_0556.JPG</originalFileName>
+    <size>1584796</size>
+    <dateLastModified>Fri, 31 May 2013 07:26:51 GMT</dateLastModified>
+    <width>3264</width>
+    <height>2448</height>
+    <cachedImage>
+      <fileName>lpkudnw4.jpeg</fileName>
+      <dateCreated>Fri, 31 May 2013 07:30:05 GMT</dateCreated>
+      <dateLastAccessed>Wed, 17 Dec 2014 21:30:56 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>550</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+      <align>center</align>
+      <valign>middle</valign>
+    </cachedImage>
+  </image>
+  <_I>
+    <image>
+      <originalFileName>IMG_0556.JPG</originalFileName>
+      <size>1584796</size>
+      <dateLastModified>Fri, 31 May 2013 07:26:00 GMT</dateLastModified>
+      <width>3264</width>
+      <height>2448</height>
+      <cachedImage>
+        <fileName>IMG_486d51396c5f77c3ee53eaef69a85e6d194605cbfaa77da55f4e139dc4f8db8b.jpeg</fileName>
+        <dateCreated>Sat, 20 Dec 2014 15:12:27 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>550</width>
+        <height>366</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_I>
+</imageIndex>

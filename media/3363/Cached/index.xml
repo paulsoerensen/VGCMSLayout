@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>IMG_0562.JPG</originalFileName>
+    <size>1942524</size>
+    <dateLastModified>Fri, 31 May 2013 07:27:32 GMT</dateLastModified>
+    <width>3264</width>
+    <height>2448</height>
+    <cachedImage>
+      <fileName>jtffpcis.jpeg</fileName>
+      <dateCreated>Fri, 31 May 2013 07:30:06 GMT</dateCreated>
+      <dateLastAccessed>Wed, 17 Dec 2014 21:30:56 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>550</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+      <align>center</align>
+      <valign>middle</valign>
+    </cachedImage>
+  </image>
+  <_I>
+    <image>
+      <originalFileName>IMG_0562.JPG</originalFileName>
+      <size>1942524</size>
+      <dateLastModified>Fri, 31 May 2013 07:27:00 GMT</dateLastModified>
+      <width>3264</width>
+      <height>2448</height>
+      <cachedImage>
+        <fileName>IMG_2803ebef70a36647891e76a77c6c164581247bd2783579204f7eb35b88569b73.jpeg</fileName>
+        <dateCreated>Sat, 20 Dec 2014 15:12:29 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>550</width>
+        <height>366</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_I>
+</imageIndex>

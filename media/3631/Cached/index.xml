@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>logo-1-.png</originalFileName>
+    <size>4048</size>
+    <dateLastModified>Wed, 29 Jan 2014 11:42:54 GMT</dateLastModified>
+    <width>202</width>
+    <height>58</height>
+    <cachedImage>
+      <fileName>w3x0mhim.png</fileName>
+      <dateCreated>Wed, 29 Jan 2014 11:44:02 GMT</dateCreated>
+      <dateLastAccessed>Wed, 17 Dec 2014 16:03:06 GMT</dateLastAccessed>
+      <imageFormat>png</imageFormat>
+      <width>160</width>
+      <height>46</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+  <_l>
+    <image>
+      <originalFileName>logo-1-.png</originalFileName>
+      <size>4048</size>
+      <dateLastModified>Wed, 29 Jan 2014 11:42:00 GMT</dateLastModified>
+      <width>202</width>
+      <height>58</height>
+      <cachedImage>
+        <fileName>LOG_79d68a81ab8148f255d142f8aaf9b9240be27fe49c0685c17de3952f88602dcb.png</fileName>
+        <dateCreated>Sat, 20 Dec 2014 15:12:07 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>160</width>
+        <height>46</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>LOG_e7c80a659e87edc5fdfa019e26dbdbd5e4e8c7ac899240434fd395dd87895bd5.png</fileName>
+        <dateCreated>Thu, 28 May 2015 20:26:16 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>180</width>
+        <height>52</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>LOG_649b37473ed41c3e61f390f0646142557d22b6cef11746f5fd2c7b03e72f3be2.png</fileName>
+        <dateCreated>Thu, 04 Jun 2015 20:34:02 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>200</width>
+        <height>57</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>LOG_5c3548eda27457e83d605a21f3819d999b3e2a4a574d6ff9e26702c70e7c0d5c.png</fileName>
+        <dateCreated>Mon, 30 Sep 2019 14:37:27 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>9553</width>
+        <height>2743</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>LOG_7177547d284594b7ce74fb57e69bf29d100515831266a03594b7fedeb1a516fb.png</fileName>
+        <dateCreated>Mon, 30 Sep 2019 14:38:04 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>3240</width>
+        <height>930</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_l>
+</imageIndex>

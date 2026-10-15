@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_b>
+    <image>
+      <originalFileName>blad-2019-forside.jpg</originalFileName>
+      <size>186379</size>
+      <dateLastModified>Thu, 14 Mar 2019 20:38:28 GMT</dateLastModified>
+      <width>874</width>
+      <height>1240</height>
+      <cachedImage>
+        <fileName>BLA_e7551e0093e91904ee92485c4decfef16ccbca7234b834acc621c935f109cbe3.jpeg</fileName>
+        <dateCreated>Thu, 14 Mar 2019 20:45:17 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>141</width>
+        <height>200</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>BLA_6f03240c646eaf069bc3c78eebe3b2d8c7314662db45d61311fe40948ea6726d.jpeg</fileName>
+        <dateCreated>Sat, 16 Nov 2019 02:32:22 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>6754</width>
+        <height>9582</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>BLA_cc4e316afdbb12fad204d814bbcfeddb4afeb893a40468ce412918fe043131a2.jpeg</fileName>
+        <dateCreated>Sat, 16 Nov 2019 02:32:38 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>1353</width>
+        <height>1920</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>BLA_67072b1da5cb64770e189e683262bbda6d4fc52f98433017b4e40fa674ee90c7.jpeg</fileName>
+        <dateCreated>Tue, 24 Mar 2020 08:16:07 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>1576</width>
+        <height>2236</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_b>
+</imageIndex>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_m>
+    <image>
+      <originalFileName>msblad2020.png</originalFileName>
+      <size>676209</size>
+      <dateLastModified>Fri, 03 Apr 2020 09:46:14 GMT</dateLastModified>
+      <width>594</width>
+      <height>831</height>
+      <cachedImage>
+        <fileName>MSB_4c355d1dab411b3c2653fe2d5a6f3ecdc6e3189af5811757f71a3e15b9147b03.png</fileName>
+        <dateCreated>Fri, 03 Apr 2020 09:46:35 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>143</width>
+        <height>200</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_m>
+</imageIndex>

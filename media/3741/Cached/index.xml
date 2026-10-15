@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>hp-masking-aps.jpg</originalFileName>
+    <size>875207</size>
+    <dateLastModified>Fri, 25 Apr 2014 07:20:44 GMT</dateLastModified>
+    <width>2448</width>
+    <height>3264</height>
+    <cachedImage>
+      <fileName>iu2hbzt0.jpeg</fileName>
+      <dateCreated>Fri, 25 Apr 2014 07:20:53 GMT</dateCreated>
+      <dateLastAccessed>Fri, 25 Apr 2014 07:20:57 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>540</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+</imageIndex>

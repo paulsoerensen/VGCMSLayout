@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_c>
+    <image>
+      <originalFileName>christian.jpg</originalFileName>
+      <size>2838376</size>
+      <dateLastModified>Fri, 17 Jan 2025 06:12:21 GMT</dateLastModified>
+      <width>3024</width>
+      <height>4032</height>
+      <cachedImage>
+        <fileName>CHR_535762edc957507b2e98f7c59192f3bd423b7e367a000f89e19965fd8b94811b.jpeg</fileName>
+        <dateCreated>Fri, 17 Jan 2025 06:12:25 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_c>
+</imageIndex>

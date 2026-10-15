@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>IMG_0599.JPG</originalFileName>
+    <size>1544564</size>
+    <dateLastModified>Fri, 07 Jun 2013 19:46:45 GMT</dateLastModified>
+    <width>3264</width>
+    <height>2448</height>
+    <cachedImage>
+      <fileName>epkmvlkj.jpeg</fileName>
+      <dateCreated>Fri, 07 Jun 2013 19:58:33 GMT</dateCreated>
+      <dateLastAccessed>Tue, 14 Oct 2014 14:57:52 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>550</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+      <align>center</align>
+      <valign>middle</valign>
+    </cachedImage>
+  </image>
+</imageIndex>

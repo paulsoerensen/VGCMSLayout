@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_f>
+    <image>
+      <originalFileName>frede.png</originalFileName>
+      <size>455642</size>
+      <dateLastModified>Mon, 25 Feb 2019 13:29:21 GMT</dateLastModified>
+      <width>607</width>
+      <height>809</height>
+      <cachedImage>
+        <fileName>FRE_0070a4661202f685fb1c5f7b904665376edae7e98af2c1dd84d2fd5469da2234.png</fileName>
+        <dateCreated>Mon, 25 Feb 2019 13:30:10 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_f>
+</imageIndex>

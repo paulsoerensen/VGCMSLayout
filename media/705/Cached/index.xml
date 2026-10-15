@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_i>
+    <image>
+      <originalFileName>isabella_160.gif</originalFileName>
+      <size>2757</size>
+      <dateLastModified>Thu, 11 Feb 2016 17:34:00 GMT</dateLastModified>
+      <width>235</width>
+      <height>235</height>
+      <cachedImage>
+        <fileName>ISA_5d550dec05f8ba84c96488492b96dd1085ddde08a4c38dcd514aa186c4757572.gif</fileName>
+        <dateCreated>Mon, 25 Apr 2016 12:32:50 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>160</width>
+        <height>160</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_i>
+</imageIndex>

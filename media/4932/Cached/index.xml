@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_f>
+    <image>
+      <originalFileName>frede.jpg</originalFileName>
+      <size>44226</size>
+      <dateLastModified>Mon, 30 Dec 2019 21:33:02 GMT</dateLastModified>
+      <width>174</width>
+      <height>174</height>
+      <cachedImage>
+        <fileName>FRE_f84e74a8e233a7bef6c073c076d5f63d96747fc178ec83a27da944aef7ad97ef.jpeg</fileName>
+        <dateCreated>Mon, 30 Dec 2019 21:48:17 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+    <image>
+      <originalFileName>frede.png</originalFileName>
+      <size>3513999</size>
+      <dateLastModified>Sun, 09 Feb 2020 13:00:13 GMT</dateLastModified>
+      <width>1200</width>
+      <height>1575</height>
+      <cachedImage>
+        <fileName>FRE_0070a4661202f685fb1c5f7b904665376edae7e98af2c1dd84d2fd5469da2234.png</fileName>
+        <dateCreated>Sun, 09 Feb 2020 13:04:30 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_f>
+</imageIndex>

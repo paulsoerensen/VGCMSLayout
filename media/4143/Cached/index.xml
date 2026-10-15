@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>poker.png</originalFileName>
+    <size>115399</size>
+    <dateLastModified>Fri, 14 Nov 2014 09:22:22 GMT</dateLastModified>
+    <width>222</width>
+    <height>227</height>
+    <cachedImage>
+      <fileName>u4qurwqw.png</fileName>
+      <dateCreated>Fri, 14 Nov 2014 09:22:34 GMT</dateCreated>
+      <dateLastAccessed>Fri, 14 Nov 2014 09:22:34 GMT</dateLastAccessed>
+      <imageFormat>png</imageFormat>
+      <width>540</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+</imageIndex>

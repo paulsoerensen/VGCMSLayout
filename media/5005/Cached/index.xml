@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_d>
+    <image>
+      <originalFileName>danskebank.jpg</originalFileName>
+      <size>2051844</size>
+      <dateLastModified>Fri, 19 Jun 2020 15:47:01 GMT</dateLastModified>
+      <width>3024</width>
+      <height>4032</height>
+      <cachedImage>
+        <fileName>DAN_07c1c67acc7ddb026f6ba374256ba9e50c5cdb6d5a52ded36cbec2964d8e61cb.jpeg</fileName>
+        <dateCreated>Fri, 19 Jun 2020 16:12:07 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>400</width>
+        <height>533</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_d>
+</imageIndex>

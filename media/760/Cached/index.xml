@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>tojeksperten.gif</originalFileName>
+    <size>2812</size>
+    <dateLastModified>Thu, 28 Mar 2013 16:13:33 GMT</dateLastModified>
+    <width>113</width>
+    <height>79</height>
+    <cachedImage>
+      <fileName>x2awl52z.gif</fileName>
+      <dateCreated>Sat, 08 Jun 2013 21:42:52 GMT</dateCreated>
+      <dateLastAccessed>Wed, 17 Dec 2014 16:03:06 GMT</dateLastAccessed>
+      <imageFormat>gif</imageFormat>
+      <width>160</width>
+      <height>112</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+  <_t>
+    <image>
+      <originalFileName>tojeksperten.gif</originalFileName>
+      <size>2812</size>
+      <dateLastModified>Thu, 28 Mar 2013 16:13:00 GMT</dateLastModified>
+      <width>113</width>
+      <height>79</height>
+      <cachedImage>
+        <fileName>TOJ_348cfdb01f69cefc7d312de1e963672c86ced48f46245b9d83aba00cdc830e3d.gif</fileName>
+        <dateCreated>Sat, 20 Dec 2014 15:12:08 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>160</width>
+        <height>112</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>TOJ_77739f82ab9babf167ba36e836b9e524720a3a630053faf12f9f184aef4fb150.gif</fileName>
+        <dateCreated>Mon, 08 Jun 2015 08:54:39 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>180</width>
+        <height>126</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+      <cachedImage>
+        <fileName>TOJ_2403086d9839101e22e81a5abe5fa2b7081bd2cf4ee41f00fae88ec564b26724.gif</fileName>
+        <dateCreated>Fri, 12 Jun 2015 11:25:38 GMT</dateCreated>
+        <imageFormat>gif</imageFormat>
+        <width>200</width>
+        <height>140</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_t>
+</imageIndex>

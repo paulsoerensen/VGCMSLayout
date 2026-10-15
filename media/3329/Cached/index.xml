@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>royal_unibrew_rgb_128x128.gif</originalFileName>
+    <size>1548</size>
+    <dateLastModified>Fri, 03 May 2013 11:07:38 GMT</dateLastModified>
+    <width>128</width>
+    <height>128</height>
+    <cachedImage>
+      <fileName>atbywyg0.gif</fileName>
+      <dateCreated>Sat, 08 Jun 2013 21:42:52 GMT</dateCreated>
+      <dateLastAccessed>Sat, 14 Dec 2013 11:36:26 GMT</dateLastAccessed>
+      <imageFormat>gif</imageFormat>
+      <width>160</width>
+      <height>160</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+</imageIndex>

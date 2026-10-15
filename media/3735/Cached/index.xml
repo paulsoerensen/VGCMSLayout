@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <image>
+    <originalFileName>bent.jpg</originalFileName>
+    <size>1894818</size>
+    <dateLastModified>Sat, 29 Mar 2014 08:18:54 GMT</dateLastModified>
+    <width>2448</width>
+    <height>3264</height>
+    <cachedImage>
+      <fileName>l01ylbbo.jpeg</fileName>
+      <dateCreated>Sat, 29 Mar 2014 08:19:02 GMT</dateCreated>
+      <dateLastAccessed>Sat, 29 Mar 2014 08:19:02 GMT</dateLastAccessed>
+      <imageFormat>jpeg</imageFormat>
+      <compression>90</compression>
+      <width>540</width>
+      <height>366</height>
+      <bgColor>#FFFFFF</bgColor>
+      <transparent>True</transparent>
+      <border>0</border>
+      <borderColor>#000000</borderColor>
+      <constrain>False</constrain>
+      <pad>False</pad>
+    </cachedImage>
+  </image>
+</imageIndex>

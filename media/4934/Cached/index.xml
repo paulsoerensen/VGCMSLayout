@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<imageIndex>
+  <_k>
+    <image>
+      <originalFileName>kaltoft.jpg</originalFileName>
+      <size>55001</size>
+      <dateLastModified>Mon, 30 Dec 2019 21:33:03 GMT</dateLastModified>
+      <width>223</width>
+      <height>222</height>
+      <cachedImage>
+        <fileName>KAL_06985dab8cb86dd21ff593781ea45c149f00d29189f51993edfbba4771be146b.jpeg</fileName>
+        <dateCreated>Mon, 30 Dec 2019 21:37:28 GMT</dateCreated>
+        <imageFormat>jpeg</imageFormat>
+        <compression>90</compression>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+    <image>
+      <originalFileName>kaltoft.png</originalFileName>
+      <size>3710694</size>
+      <dateLastModified>Sun, 09 Feb 2020 13:02:52 GMT</dateLastModified>
+      <width>1200</width>
+      <height>1575</height>
+      <cachedImage>
+        <fileName>KAL_5a029ac2a06714da3108c29599e6b80ec96895826512597dcc54b7eb0a5ee2f6.png</fileName>
+        <dateCreated>Sun, 09 Feb 2020 13:04:30 GMT</dateCreated>
+        <imageFormat>png</imageFormat>
+        <width>160</width>
+        <height>210</height>
+        <bgColor>#FFFFFF</bgColor>
+        <transparent>True</transparent>
+        <border>0</border>
+        <borderColor>#000000</borderColor>
+        <constrain>False</constrain>
+        <pad>False</pad>
+      </cachedImage>
+    </image>
+  </_k>
+</imageIndex>
