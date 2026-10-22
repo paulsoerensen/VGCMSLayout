@@ -3,6 +3,7 @@
     --fairway: #4e8b4a;
     --menu-green: #556B2F;
     --sunshine: #f4c542;
+    --vgc-orange: #f49c21;
     --blue: #355584;
     --blue-light: #4d73a6;
     --ink: #142019;
@@ -92,10 +93,11 @@ body {
 
 .site-header__kicker {
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    opacity: 0.84;
+    color: var(--vgc-orange);
 }
 
 .site-header__title {
@@ -167,7 +169,6 @@ body {
 
 .hero-news {
     padding: var(--space-2) 0;
-    border-top: 1px solid var(--line);
 }
 
 .hero-news--image {
@@ -203,8 +204,9 @@ body {
 }
 
 .hero-news__more {
-    display: inline-block;
-    margin-top: var(--space-1);
+    display: block;
+    width: fit-content;
+    margin: var(--space-1) 0 0 auto;
 }
 
 .hero__stats {
@@ -300,12 +302,9 @@ a.sponsors__link:focus-visible {
     padding: clamp(18px, 2.5vw, 28px);
     background: var(--paper);
     border: 1px solid var(--line);
+    border-bottom: 4px solid var(--vgc-orange);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
-}
-
-.section-block--feature {
-    border-top: 4px solid var(--sunshine);
 }
 
 .section-block__header {
@@ -318,14 +317,49 @@ a.sponsors__link:focus-visible {
 
 .section-block__title {
     margin: 0;
-    color: var(--forest);
+    color: var(--vgc-orange);
     font-size: clamp(24px, 3vw, 34px);
 }
 
-.content-grid {
+.hof__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-4);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: var(--space-2);
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hof__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.hof__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+}
+
+.hof__title {
+    font-size: clamp(13px, 1.6vw, 18px);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.hof__name {
+    font-size: clamp(12px, 1.3vw, 15px);
+    font-weight: 700;
+    color: var(--forest);
 }
 
 .stat-card__link {
@@ -438,14 +472,20 @@ a.sponsors__link:focus-visible {
 
     .hero {
         grid-template-columns: 1fr;
+        padding: 0 0 20px;
+    }
+
+    .hero__stats {
+        width: 200px;
+    }
+
+    .hero__content {
+        align-self: stretch;
+        border-radius: 0;
     }
 
     .tour-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .content-grid {
-        grid-template-columns: 1fr;
     }
 }
 
@@ -455,6 +495,10 @@ a.sponsors__link:focus-visible {
     }
 
     .sponsors__list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hof__list {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
