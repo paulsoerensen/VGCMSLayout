@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mens Section | Vejle Golf Club</title>
     <meta name="description" content="Officiel forside for Mens Section i Vejle Golf Club med nyheder, resultater, kalender og ture." />
+    <link rel="icon" type="image/png" href="media/system/VGCMSlogogul.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="site.css?v=3" />
 </head>
 <body>
     <div class="page-shell">
         <header class="site-header">
-            <div class="site-header__brand">
+            <a class="site-header__brand" href="Index.html">
                 <span class="site-header__logo"><img class="site-header__logo-image" src="media/system/VGCMSlogogul.png" alt="Vejle Golf Club Men's Section" /></span>
                 <div>
                     <p class="site-header__kicker">Vejle Golf Club</p>
                     <h1 class="site-header__title">Mens Section</h1>
                 </div>
-            </div>
+            </a>
 
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-                Menu
+            <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
             </button>
 
             <nav id="primary-nav" class="site-nav" aria-label="Hovedmenu">
-                <a class="site-nav__link" href="https://vgcms.dk/Information" target="_blank" rel="noopener">Information</a>
+                <a class="site-nav__link" href="Information.html">Information</a>
                 <a class="site-nav__link" href="https://vgcms.dk/Kalender" target="_blank" rel="noopener">Kalender</a>
-                <a class="site-nav__link" href="https://vgcms.dk/Resultater" target="_blank" rel="noopener">Resultater</a>
+                <a class="site-nav__link" href="Resultater.html">Resultater</a>
                 <a class="site-nav__link" href="https://vgcms.dk/Hulspil" target="_blank" rel="noopener">Hulspil</a>
                 <a class="site-nav__link" href="#hall-of-fame">Hall of Fame</a>
                 <a class="site-nav__link" href="#stamdata">Stamdata</a>
@@ -36,13 +42,13 @@
             <section class="hero" aria-label="Nyheder og nøgletal">
                 <div class="hero__content">
                     <article class="hero-news hero-news--image">
-                       <img class="hero-news__image" src="media/images/gruppebillede-afslutning-1015.jpeg" alt="Gruppebillede fra afslutningen" />
+                        <img class="hero-news__image" src="media/images/vindere-24-3.jpg" alt="Vindere med præmier i klubhuset" />
                         <div>
-                            <h3 class="hero-news__title">Billeder fra MS 2026</h3>
-                            <p class="hero-news__text">På linket finder i billeder fra MS matcher i 2026. <a class="hero-news__link" href="https://photos.app.goo.gl/9RCTqC1zGprn8WRP8" target="_blank" rel="noopener">Link til billeder</a></p>
+                            <h3 class="hero-news__title">Datoer for de sidste runder i hulspil for par</h3>
+                            <p class="hero-news__text">Da hulspil for par ikke giver vinderne kvalifikation til Østjysk Masters, har vi besluttet at ændre på tidsfristerne for afvikling af de sidste 3 runder.</p>
                         </div>
                     </article>
-                    <a class="hero-news__more" href="https://vgcms.dk/" target="_blank" rel="noopener">flere nyheder</a>
+                    <a class="hero-news__more" href="https://vgcms.dk/" target="_blank" rel="noopener">... nyheder</a>
                 </div>
                 <aside class="hero__stats" aria-label="Nøgletal">
                     <article class="stat-card">
@@ -59,11 +65,22 @@
                     </article>
                     <article class="stat-card">
                         <p class="stat-card__label">Hulspil, resultat</p>
-                        <p class="stat-card__line">Michael Kaltoft, Keld Hindhede</p>
+                        <p class="stat-card__value">Michael Kaltoft, Keld Hindhede</p>
                         <p class="stat-card__line">vinder (6/2) over</p>
                         <p class="stat-card__line">Jens Elkjær Jørgensen, Per Møller</p>
                     </article>
                 </aside>
+            </section>
+
+            <section id="nyheder" class="section-block news-block" aria-labelledby="nyheder-title">
+                <header class="section-block__header">
+                    <h2 id="nyheder-title" class="section-block__title">Datoer for de sidste runder i hulspil for par</h2>
+                </header>
+                <article class="hero-news hero-news--image">
+                    <img class="hero-news__image" src="media/images/vindere-24-3.jpg" alt="Vindere med præmier i klubhuset" />
+                    <p class="hero-news__text">Da hulspil for par ikke giver vinderne kvalifikation til Østjysk Masters, har vi besluttet at ændre på tidsfristerne for afvikling af de sidste 3 runder.</p>
+                </article>
+                <a class="hero-news__more" href="https://vgcms.dk/" target="_blank" rel="noopener">... nyheder</a>
             </section>
 
             <section class="sponsors" aria-label="Sponsorer">
@@ -79,7 +96,7 @@
 
             <section id="ture" class="section-block section-block--feature" aria-labelledby="ture-title">
                 <div class="section-block__header">
-                    <h2 id="ture-title" class="section-block__title">Ture 2026</h2>
+                    <h2 id="ture-title" class="section-block__title">Tours 2026</h2>
                 </div>
 
                 <div class="tour-grid">
@@ -91,10 +108,10 @@
                     </article>
 
                     <article class="tour-card">
-                        <img class="tour-card__image" src="media/images/weekendturen.png" alt="Golfbold fra Timmendorfer Strand foran klubhuset" />
+                        <img class="tour-card__image" src="media/images/ms-tyskland-2010-46-_500x375.jpg" alt="Fire golfspillere på banen under tur til Tyskland" />
                         <h3 class="tour-card__title">Weekendtur - 27. og 28. juni 2026</h3>
                         <p class="tour-card__text">Strandgrun Timmendorfer Strand med to runder på Nordbanen.</p>
-                        <p class="tour-card__meta">Pris: 2.500 kr. (dobbeltvaerelse)</p>
+                        <p class="tour-card__meta">Pris: 2.500 kr.</p>
                     </article>
 
                     <article class="tour-card">
@@ -111,27 +128,26 @@
                     <h2 id="hof-title" class="section-block__title">Nobiliteter med vindere fra sidste sæson</h2>
                 </header>
                 <ul class="hof__list">
-                    <li class="hof__item"><span class="hof__title">Captain</span><img class="hof__image" src="media/images/4932_frede.png" alt="Frede" /><span class="hof__name">Frede</span></li>
-                    <li class="hof__item"><span class="hof__title">Æresmedlem</span><img class="hof__image" src="media/images/4933_jens.png" alt="Jens" /><span class="hof__name">Jens</span></li>
-                    <li class="hof__item"><span class="hof__title">Brutto</span><img class="hof__image" src="media/images/4936_tommy.png" alt="Tommy" /><span class="hof__name">Tommy</span></li>
-                    <li class="hof__item"><span class="hof__title">Puts</span><img class="hof__image" src="media/images/4939_paul.png" alt="Paul" /><span class="hof__name">Paul</span></li>
-                    <li class="hof__item"><span class="hof__title">Stableford</span><img class="hof__image" src="media/images/4976_brian.png" alt="Brian" /><span class="hof__name">Brian</span></li>
-                    <li class="hof__item"><span class="hof__title">Birdies</span><img class="hof__image" src="media/images/5583_lars-k.png" alt="Lars K." /><span class="hof__name">Lars K.</span></li>
+                    <li class="hof__item"><span class="hof__title">Captain</span><img class="hof__image" src="media/persons/4932_frede.png" alt="Frede" /><span class="hof__name">Frede</span></li>
+                    <li class="hof__item"><span class="hof__title">Æresmedlem</span><img class="hof__image" src="media/persons/4933_jens.png" alt="Jens" /><span class="hof__name">Jens</span></li>
+                    <li class="hof__item"><span class="hof__title">Brutto</span><img class="hof__image" src="media/persons/4936_tommy.png" alt="Tommy" /><span class="hof__name">Tommy</span></li>
+                    <li class="hof__item"><span class="hof__title">Puts</span><img class="hof__image" src="media/persons/4939_paul.png" alt="Paul" /><span class="hof__name">Paul</span></li>
+                    <li class="hof__item"><span class="hof__title">Stableford</span><img class="hof__image" src="media/persons/4976_brian.png" alt="Brian" /><span class="hof__name">Brian</span></li>
+                    <li class="hof__item"><span class="hof__title">Birdies</span><img class="hof__image" src="media/persons/5583_lars-k.png" alt="Lars K." /><span class="hof__name">Lars K.</span></li>
                 </ul>
             </section>
         </main>
 
         <footer class="site-footer">
             <div class="site-footer__info">
-                <p class="site-footer__line">Mens Section, Vejle Golf Club</p>
-                <p class="site-footer__line">Kontakt: kontakt@vgcms.dk</p>
+                <p class="site-footer__line">Mens Section,<br class="site-footer__break" /> Vejle Golf Club</p>
+                <p class="site-footer__line"><a class="site-footer__mail" href="mailto:kontakt@vgcms.dk">kontakt@vgcms.dk</a></p>
             </div>
             <a class="site-footer__facebook" href="https://www.facebook.com/vgcms" target="_blank" rel="noopener" aria-label="Facebook">
                 <svg class="site-footer__facebook-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <rect width="24" height="24" rx="5" fill="#1877f2" />
                     <path fill="#ffffff" d="M16.5 24v-9.2h3.1l.5-3.6h-3.6V9c0-1 .3-1.7 1.8-1.7h1.9V4.1c-.3 0-1.5-.1-2.8-.1-2.8 0-4.6 1.7-4.6 4.7v2.6H9.7v3.6h3.1V24z" />
                 </svg>
-                <span>Følg os på Facebook</span>
             </a>
         </footer>
     </div>
