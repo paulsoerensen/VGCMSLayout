@@ -23,4 +23,4 @@ jobs:
           server: ${{ vars.COMPUTER_NAME }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /new
+          server-dir: /new/
