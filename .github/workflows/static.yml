@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          server: ${{ vars.COMPUTER_NAME }}
+          server: ${{ vars.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /new/
