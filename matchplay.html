@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hulspil | Mens Section | Vejle Golf Club</title>
+    <meta name="description" content="Hulspil matcher for Mens Section i Vejle Golf Club." />
+    <link rel="icon" type="image/png" href="media/system/VGCMSlogogul.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css?v=3" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="site-header__brand" href="Index.html">
+                <span class="site-header__logo"><img class="site-header__logo-image" src="media/system/VGCMSlogogul.png" alt="Vejle Golf Club Men's Section" /></span>
+                <div>
+                    <p class="site-header__kicker">Vejle Golf Club</p>
+                    <h1 class="site-header__title">Mens Section</h1>
+                </div>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+
+            <nav id="primary-nav" class="site-nav" aria-label="Hovedmenu">
+                <a class="site-nav__link" href="Information.html">Information</a>
+                <a class="site-nav__link" href="https://vgcms.dk/Kalender" target="_blank" rel="noopener">Kalender</a>
+                <a class="site-nav__link" href="Resultater.html">Resultater</a>
+                <a class="site-nav__link" href="matchplay.html" aria-current="page">Hulspil</a>
+                <a class="site-nav__link" href="Index.html#hall-of-fame">Hall of Fame</a>
+                <a class="site-nav__link" href="Index.html#stamdata">Stamdata</a>
+            </nav>
+        </header>
+
+        <main>
+            <nav class="info-nav" aria-label="Hulspil">
+                <a class="info-nav__link info-nav__link--active" href="matchplay.html" aria-current="page">Matcher</a>
+                <a class="info-nav__link" href="matchplayplayers.html">Deltagere</a>
+            </nav>
+
+            <section id="hulspil-matcher" class="section-block" aria-labelledby="hulspil-title">
+                <header class="section-block__header">
+                    <h2 id="hulspil-title" class="section-block__title">4. runde i Par rækken skal være afviklet senest 24. september 2026</h2>
+                    <a class="result-all" href="https://vgcms.dk/hulspil/matcher/" target="_blank" rel="noopener">Kilde: vgcms.dk</a>
+                </header>
+
+                <div class="result-tabs" role="tablist" aria-label="Hulspil række">
+                    <button class="result-tabs__tab result-tabs__tab--active" type="button" role="tab" id="tab-single-a" aria-selected="true" aria-controls="panel-single-a">Single A</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-single-b" aria-selected="false" aria-controls="panel-single-b" tabindex="-1">Single B</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-par" aria-selected="false" aria-controls="panel-par" tabindex="-1">Par</button>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-single-a" aria-labelledby="tab-single-a">
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead>
+                                <tr><th>Runde</th><th>Navn 1</th><th>Navn 2</th><th>Resultat</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>5</td><td>Jesper Hansen</td><td>Peter Worsøe</td><td>3/2</td></tr>
+                                <tr><td>4</td><td>Peter Worsøe</td><td>Thomas Mikkelsen</td><td>3/2</td></tr>
+                                <tr><td></td><td>Jesper Hansen</td><td>Ole Mathiasen</td><td>1/0</td></tr>
+                                <tr><td>3</td><td>Peter Worsøe</td><td>Claus Frandsen</td><td>Hul 20</td></tr>
+                                <tr><td></td><td>Thomas Mikkelsen</td><td>Palle Jensen</td><td>4/3</td></tr>
+                                <tr><td></td><td>Ole Mathiasen</td><td>Lars Christiansen</td><td>4/2</td></tr>
+                                <tr><td></td><td>Jesper Hansen</td><td>Kim Vinther</td><td>4/2</td></tr>
+                                <tr><td>2</td><td>Kim Vinther</td><td>Michael Kaltoft</td><td>UK</td></tr>
+                                <tr><td></td><td>Claus Frandsen</td><td>Peter Aarestrup</td><td>Hul 21</td></tr>
+                                <tr><td></td><td>Ole Mathiasen</td><td>Niels Lysgaard-Madsen</td><td>3/2</td></tr>
+                                <tr><td></td><td>Jesper Hansen</td><td>Jakob Just Bentsen</td><td>3/2</td></tr>
+                                <tr><td></td><td>Lars Christiansen</td><td>Troels Clemmensen</td><td>1/0</td></tr>
+                                <tr><td></td><td>Palle Jensen</td><td>Søren Priess Gade</td><td></td></tr>
+                                <tr><td>1</td><td>Søren Priess Gade</td><td>Mikkel Mikkelsen</td><td>UK</td></tr>
+                                <tr><td></td><td>Niels Lysgaard-Madsen</td><td>Jan Fredsted</td><td>U/K</td></tr>
+                                <tr><td></td><td>Ole Mathiasen</td><td>Mikael Hansen</td><td>5/4</td></tr>
+                                <tr><td></td><td>Jakob Just Bentsen</td><td>Brian Danebod</td><td>5/3</td></tr>
+                                <tr><td></td><td>Peter Aarestrup</td><td>Frede Søgaard</td><td>5/3</td></tr>
+                                <tr><td></td><td>Peter Worsøe</td><td>Brian Jensen</td><td>4/3</td></tr>
+                                <tr><td></td><td>Troels Clemmensen</td><td>Paul Sørensen</td><td>4/2</td></tr>
+                                <tr><td></td><td>Thomas Mikkelsen</td><td>Christian Hvarre</td><td>3/2</td></tr>
+                                <tr><td></td><td>Jesper Hansen</td><td>Lars M. Hansen</td><td>3/1</td></tr>
+                                <tr><td></td><td>Claus Frandsen</td><td>Brian Baun Madsen</td><td>2/1</td></tr>
+                                <tr><td></td><td>Palle Jensen</td><td>Michael Suhr</td><td>2/1</td></tr>
+                                <tr><td></td><td>Kim Vinther</td><td>Henrik Fink Stidsen</td><td>1/0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-single-b" aria-labelledby="tab-single-b" hidden>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead>
+                                <tr><th>Runde</th><th>Navn 1</th><th>Navn 2</th><th>Resultat</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>5</td><td>Erik Jørgensen</td><td>Alfred Korsgaard</td><td>1/0</td></tr>
+                                <tr><td>4</td><td>Erik Jørgensen</td><td>Lars Kjeldsen</td><td>8/6</td></tr>
+                                <tr><td></td><td>Alfred Korsgaard</td><td>Keld Hindhede</td><td>5/4</td></tr>
+                                <tr><td>3</td><td>Keld Hindhede</td><td>Max Jensen</td><td>7/6</td></tr>
+                                <tr><td></td><td>Erik Jørgensen</td><td>Danny Golan</td><td>5/4</td></tr>
+                                <tr><td></td><td>Alfred Korsgaard</td><td>Jørgen Hansen</td><td>3/2</td></tr>
+                                <tr><td></td><td>Lars Kjeldsen</td><td>Stig Brogård Andersen</td><td>1/0</td></tr>
+                                <tr><td>2</td><td>Alfred Korsgaard</td><td>Ejnar Smidt Hansen</td><td>UK</td></tr>
+                                <tr><td></td><td>Danny Golan</td><td>Jørn Linde Andersen</td><td>4/2</td></tr>
+                                <tr><td></td><td>Lars Kjeldsen</td><td>Torben Hviid</td><td>3/2</td></tr>
+                                <tr><td></td><td>Keld Hindhede</td><td>Claus Vilstrup</td><td>3/2</td></tr>
+                                <tr><td></td><td>Jørgen Hansen</td><td>Jens Elkjær Jørgensen</td><td>2/0</td></tr>
+                                <tr><td></td><td>Erik Jørgensen</td><td>Kent Neupart Jacobsen</td><td>1/0</td></tr>
+                                <tr><td></td><td>Stig Brogård Andersen</td><td>Anker Jakobsen</td><td></td></tr>
+                                <tr><td>1</td><td>Lars Kjeldsen</td><td>John Christiansen</td><td>UK</td></tr>
+                                <tr><td></td><td>Alfred Korsgaard</td><td>Flemming Mørk</td><td>UK</td></tr>
+                                <tr><td></td><td>Jørgen Hansen</td><td>Lars Therkelsen</td><td>UK</td></tr>
+                                <tr><td></td><td>Max Jensen</td><td>Jesper Just</td><td>6/4</td></tr>
+                                <tr><td></td><td>Jørn Linde Andersen</td><td>Henning Mathiasen</td><td>4/3</td></tr>
+                                <tr><td></td><td>Keld Hindhede</td><td>Ole Skousen</td><td>3/2</td></tr>
+                                <tr><td></td><td>Erik Jørgensen</td><td>Jakob Preuss</td><td>3/2</td></tr>
+                                <tr><td></td><td>Torben Hviid</td><td>Klaus Rahbek Jespersen</td><td>3/1</td></tr>
+                                <tr><td></td><td>Kent Neupart Jacobsen</td><td>Per Møller</td><td>2/1</td></tr>
+                                <tr><td></td><td>Ejnar Smidt Hansen</td><td>Peter Palmelund-Jahn</td><td>2/1</td></tr>
+                                <tr><td></td><td>Claus Vilstrup</td><td>Poul Erik Cæsius</td><td>2/1</td></tr>
+                                <tr><td></td><td>Jens Elkjær Jørgensen</td><td>Steen Petersen</td><td>2/0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-par" aria-labelledby="tab-par" hidden>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead>
+                                <tr><th>Runde</th><th>Navn 1</th><th>Navn 2</th><th>Resultat</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>5</td><td>Morten Bonde Nielsen, Ole Mathiasen</td><td>Peter Worsøe, Brian Pedersen</td><td>3/1</td></tr>
+                                <tr><td>4</td><td>Peter Worsøe, Brian Pedersen</td><td>Michael Kaltoft, Keld Hindhede</td><td>6/2</td></tr>
+                                <tr><td></td><td>Morten Bonde Nielsen, Ole Mathiasen</td><td>Claus Frandsen, Brian Baun Madsen</td><td>5/2</td></tr>
+                                <tr><td>3</td><td>Claus Frandsen, Brian Baun Madsen</td><td>Henrik Fink Stidsen, Thomas Mikkelsen</td><td>Hul 19</td></tr>
+                                <tr><td></td><td>Peter Worsøe, Brian Pedersen</td><td>Torben Hviid, Stig Caspersen</td><td>7/3</td></tr>
+                                <tr><td></td><td>Michael Kaltoft, Keld Hindhede</td><td>Jens Elkjær Jørgensen, Per Møller</td><td>6/2</td></tr>
+                                <tr><td></td><td>Morten Bonde Nielsen, Ole Mathiasen</td><td>Henning Mathiasen, Hans Henrik Mathiasen</td><td>5/2</td></tr>
+                                <tr><td>2</td><td>Torben Hviid, Stig Caspersen</td><td>Lars M. Hansen, Lars Madsen</td><td>UK</td></tr>
+                                <tr><td></td><td>Michael Kaltoft, Keld Hindhede</td><td>Peter Palmelund-Jahn, Hans Peter Munk-Andersen</td><td>9/4</td></tr>
+                                <tr><td></td><td>Jens Elkjær Jørgensen, Per Møller</td><td>Steen Petersen, Danny Golan</td><td>8/3</td></tr>
+                                <tr><td></td><td>Morten Bonde Nielsen, Ole Mathiasen</td><td>Christian Hvarre, Kent Brejnholt</td><td>5/2</td></tr>
+                                <tr><td></td><td>Claus Frandsen, Brian Baun Madsen</td><td>Lars Christiansen, Peter Kristensen</td><td>3/1</td></tr>
+                                <tr><td></td><td>Henrik Fink Stidsen, Thomas Mikkelsen</td><td>Michael Suhr, Paul Sørensen</td><td>2/0</td></tr>
+                                <tr><td></td><td>Peter Worsøe, Brian Pedersen</td><td>Kenneth Stokkendahl, Kenneth Johnsen</td><td>11/5</td></tr>
+                                <tr><td></td><td>Henning Mathiasen, Hans Henrik Mathiasen</td><td>Mikael Hansen, Jørgen Basse</td><td>1/0</td></tr>
+                                <tr><td>1</td><td>Kenneth Stokkendahl, Kenneth Johnsen</td><td>Peter Larsen, Jørgen Hansen</td><td>UK</td></tr>
+                                <tr><td></td><td>Claus Frandsen, Brian Baun Madsen</td><td>Lars Kjeldsen, Peter Nutzhorn Jensen</td><td>9/3</td></tr>
+                                <tr><td></td><td>Jens Elkjær Jørgensen, Per Møller</td><td>Jørn Linde Andersen, Lars Therkelsen</td><td>9/3</td></tr>
+                                <tr><td></td><td>Christian Hvarre, Kent Brejnholt</td><td>John Christiansen, Lars Knudsen</td><td>8/3</td></tr>
+                                <tr><td></td><td>Morten Bonde Nielsen, Ole Mathiasen</td><td>Jesper Hansen, Jakob Preuss</td><td>8/2</td></tr>
+                                <tr><td></td><td>Morten Bech, Ejnar Smidt Hansen</td><td>Stig Brogård Andersen, Anker Jakobsen</td><td>6/1</td></tr>
+                                <tr><td></td><td>Peter Palmelund-Jahn, Hans Peter Munk-Andersen</td><td>Frede Søgaard, Søren Priess Gade</td><td>5/2</td></tr>
+                                <tr><td></td><td>Steen Petersen, Danny Golan</td><td>Kent Neupart Jacobsen, Jakob Just Bentsen</td><td>4/1</td></tr>
+                                <tr><td></td><td>Peter Worsøe, Brian Pedersen</td><td>Jesper Just, Claus-Henrik Hviid Jørgensen</td><td>4/1</td></tr>
+                                <tr><td></td><td>Lars Christiansen, Peter Kristensen</td><td>Jan Fredsted, Henrik Mikkelsen</td><td>4/1</td></tr>
+                                <tr><td></td><td>Henning Mathiasen, Hans Henrik Mathiasen</td><td>Alfred Korsgaard, Palle Jensen</td><td>3/1</td></tr>
+                                <tr><td></td><td>Torben Hviid, Stig Caspersen</td><td>Jens Jørgen Plagborg, Ole Skousen</td><td>3/1</td></tr>
+                                <tr><td></td><td>Michael Kaltoft, Keld Hindhede</td><td>Morten Bech, Ejnar Smidt Hansen</td><td>3/0</td></tr>
+                                <tr><td></td><td>Lars M. Hansen, Lars Madsen</td><td>Niels Lysgaard-Madsen, Svend Erik Skovhus</td><td>2/0</td></tr>
+                                <tr><td></td><td>Henrik Fink Stidsen, Thomas Mikkelsen</td><td>Max Jensen, Jan Carlsen</td><td>11/5</td></tr>
+                                <tr><td></td><td>Michael Suhr, Paul Sørensen</td><td>Brian Jensen, Claus Møller Christensen</td><td>1/0</td></tr>
+                                <tr><td></td><td>Mikael Hansen, Jørgen Basse</td><td>Erik Jørgensen, Troels Clemmensen</td><td>1/0</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__info">
+                <p class="site-footer__line">Mens Section,<br class="site-footer__break" /> Vejle Golf Club</p>
+                <p class="site-footer__line"><a class="site-footer__mail" href="mailto:kontakt@vgcms.dk">kontakt@vgcms.dk</a></p>
+            </div>
+            <a class="site-footer__facebook" href="https://www.facebook.com/vgcms" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg class="site-footer__facebook-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="24" rx="5" fill="#1877f2" />
+                    <path fill="#ffffff" d="M16.5 24v-9.2h3.1l.5-3.6h-3.6V9c0-1 .3-1.7 1.8-1.7h1.9V4.1c-.3 0-1.5-.1-2.8-.1-2.8 0-4.6 1.7-4.6 4.7v2.6H9.7v3.6h3.1V24z" />
+                </svg>
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteHeader = document.querySelector('.site-header');
+        const navLinks = document.querySelectorAll('.site-nav__link');
+
+        if (menuToggle && siteHeader) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteHeader.classList.toggle('nav-open');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    siteHeader.classList.remove('nav-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        const tabs = document.querySelectorAll('.result-tabs__tab');
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach((other) => {
+                    const isActive = other === tab;
+                    other.classList.toggle('result-tabs__tab--active', isActive);
+                    other.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                    other.tabIndex = isActive ? 0 : -1;
+                    document.getElementById(other.getAttribute('aria-controls')).hidden = !isActive;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

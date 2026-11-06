@@ -1,0 +1,27 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+
+# Build and temporary folders
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio folders
+.vs/
+
+# Test and coverage artifacts
+TestResults/
+*.coverage
+*.coveragexml
+
+# Logs and local artifacts
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
