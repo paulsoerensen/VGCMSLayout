@@ -441,11 +441,25 @@ a.sponsors__link:focus-visible {
 }
 
 .calendar-card {
-    padding: var(--space-3);
+    position: relative;
+    min-height: 112px;
+    padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--space-3) * 2 + 80px);
     border: 1px solid #cfdec9;
     border-radius: var(--radius-md);
     background: linear-gradient(145deg, #f7fbf4, #edf5e8);
     box-shadow: var(--shadow-soft);
+}
+
+.calendar-card__logo {
+    position: absolute;
+    top: 50%;
+    left: var(--space-3);
+    transform: translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .calendar-card__date {

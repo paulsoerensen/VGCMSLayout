@@ -22,8 +22,13 @@ VGCMS serves as a central platform where members can:
 - Test by opening `Index.html` in a browser
 - Verify styling at 768px breakpoint for mobile
 
+## Content and Structure
+- Source of truth for content and page structure is https://vgcms.dk — fetch the matching page there before creating or updating a page (e.g. `https://vgcms.dk/Kalender`, which redirects to `/kalender/match-kalender/`)
+- Mirror the live site's menu, sections, and text; only the visual design (layout, styling) is redesigned here
+
 ## Media
-Use content of the Media folder for images, videos, and other assets 
+- Use the local `media/` folder for images, videos, and other assets (e.g. `media/images`, `media/sponsors`, `media/system`)
+- Do not hotlink images from vgcms.dk; if an asset is missing locally, download it into the appropriate `media/` subfolder and reference the local copy
 
 ## Structure 
 ├── Information
