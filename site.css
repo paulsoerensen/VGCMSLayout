@@ -414,6 +414,67 @@ a.sponsors__link:focus-visible {
     color: #ffffff;
 }
 
+.calendar-months {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin: 0 0 var(--space-3);
+    padding: 0;
+    list-style: none;
+}
+
+.calendar-months__item {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #f6faf4;
+    color: var(--forest);
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+}
+
+.calendar-card {
+    padding: var(--space-3);
+    border: 1px solid #cfdec9;
+    border-radius: var(--radius-md);
+    background: linear-gradient(145deg, #f7fbf4, #edf5e8);
+    box-shadow: var(--shadow-soft);
+}
+
+.calendar-card__date {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--forest);
+}
+
+.calendar-card__title {
+    margin: 8px 0 6px;
+    font-size: 18px;
+    color: var(--vgc-orange);
+}
+
+.calendar-card__host {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.calendar-card__details {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #314034;
+}
+
 .person-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
@@ -828,6 +889,10 @@ a.sponsors__link:focus-visible {
         gap: var(--space-2);
     }
 
+    .calendar-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .result-summary {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: start;
@@ -967,6 +1032,10 @@ a.sponsors__link:focus-visible {
     }
 
     .tour-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-grid {
         grid-template-columns: 1fr;
     }
 }

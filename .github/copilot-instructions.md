@@ -32,10 +32,10 @@ Use content of the Media folder for images, videos, and other assets
 ├── Hulspil
 ├── Hall of Fame
 ├── Stamdata
-
-
+├── Udflugter
 
 ## Conventions
 - All dates use Danish format (dd. month YYYY)
 - Golf-themed colors: forest green (#1f4d2e), fairway green (#4e8b4a), sunshine gold (#f4c542)
 - Content sections use smooth scroll behavior and staggered animations
+- Udflugter content must be on a separate page, not embedded on the Kalender page.

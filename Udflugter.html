@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Udflugter | Mens Section | Vejle Golf Club</title>
+    <meta name="description" content="Udflugter for Mens Section i Vejle Golf Club med datoer og destinationer for 2026." />
+    <link rel="icon" type="image/png" href="media/system/VGCMSlogogul.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css?v=3" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="site-header__brand" href="Index.html">
+                <span class="site-header__logo"><img class="site-header__logo-image" src="media/system/VGCMSlogogul.png" alt="Vejle Golf Club Men's Section" /></span>
+                <div>
+                    <p class="site-header__kicker">Vejle Golf Club</p>
+                    <h1 class="site-header__title">Mens Section</h1>
+                </div>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+
+            <nav id="primary-nav" class="site-nav" aria-label="Hovedmenu">
+                <a class="site-nav__link" href="Information.html">Information</a>
+                <a class="site-nav__link" href="Kalender.html">Kalender</a>
+                <a class="site-nav__link" href="Resultater.html">Resultater</a>
+                <a class="site-nav__link" href="matchplay.html">Hulspil</a>
+                <a class="site-nav__link" href="Index.html#hall-of-fame">Hall of Fame</a>
+                <a class="site-nav__link" href="Index.html#stamdata">Stamdata</a>
+            </nav>
+        </header>
+
+        <main>
+            <nav class="info-nav" aria-label="Kalender navigation">
+                <a class="info-nav__link" href="Kalender.html">Match kalender</a>
+                <a class="info-nav__link info-nav__link--active" href="Udflugter.html" aria-current="page">Udflugter</a>
+            </nav>
+
+            <section class="section-block section-block--feature" aria-labelledby="udflugter-title">
+                <header class="section-block__header">
+                    <h2 id="udflugter-title" class="section-block__title">Udflugter 2026</h2>
+                </header>
+                <div class="tour-grid">
+                    <article class="tour-card">
+                        <img class="tour-card__image" src="media/images/ms-tyskland-2010-48-.jpg" alt="Golfspillere på tur" />
+                        <h3 class="tour-card__title">Lørdagsudflugt - 16. maj 2026</h3>
+                        <p class="tour-card__text">Holstebro Golf Club, Skovbanen.</p>
+                    </article>
+                    <article class="tour-card">
+                        <img class="tour-card__image" src="media/images/ms-tyskland-2010-46-_500x375.jpg" alt="Weekendtur med golfspillere" />
+                        <h3 class="tour-card__title">Weekendtur - 27. og 28. juni 2026</h3>
+                        <p class="tour-card__text">Timmendorfer Strand, North/Nordplatz.</p>
+                    </article>
+                    <article class="tour-card">
+                        <img class="tour-card__image" src="media/images/IMG_0544.JPG" alt="Trehøje golfbane" />
+                        <h3 class="tour-card__title">Søndagsudflugt - 30. august 2026</h3>
+                        <p class="tour-card__text">Trehøje Golfklub.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__info">
+                <p class="site-footer__line">Mens Section,<br class="site-footer__break" /> Vejle Golf Club</p>
+                <p class="site-footer__line"><a class="site-footer__mail" href="mailto:kontakt@vgcms.dk">kontakt@vgcms.dk</a></p>
+            </div>
+            <a class="site-footer__facebook" href="https://www.facebook.com/vgcms" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg class="site-footer__facebook-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="24" rx="5" fill="#1877f2" />
+                    <path fill="#ffffff" d="M16.5 24v-9.2h3.1l.5-3.6h-3.6V9c0-1 .3-1.7 1.8-1.7h1.9V4.1c-.3 0-1.5-.1-2.8-.1-2.8 0-4.6 1.7-4.6 4.7v2.6H9.7v3.6h3.1V24z" />
+                </svg>
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteHeader = document.querySelector('.site-header');
+        const navLinks = document.querySelectorAll('.site-nav__link');
+
+        if (menuToggle && siteHeader) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteHeader.classList.toggle('nav-open');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    siteHeader.classList.remove('nav-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
