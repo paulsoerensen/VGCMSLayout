@@ -4,8 +4,101 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Baneudvalget | Mens Section | Vejle Golf Club</title>
+    <meta name="description" content="Men's Section er repræsenteret i Baneudvalget i Vejle Golf Club. Kontakt Paul Sørensen med bemærkninger om banen." />
+    <link rel="icon" type="image/png" href="../media/system/VGCMSlogogul.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../site.css?v=10" />
 </head>
 <body>
-    <a href="https://vgcms.dk/information/baneudvalget/" target="_blank" rel="noopener">Kilde: vgcms.dk</a>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="site-header__brand" href="../Index.html">
+                <span class="site-header__logo"><img class="site-header__logo-image" src="../media/system/VGCMSlogogul.png" alt="Vejle Golf Club Men's Section" /></span>
+                <div>
+                    <p class="site-header__kicker">Vejle Golf Club</p>
+                    <h1 class="site-header__title">Mens Section</h1>
+                </div>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+
+            <nav id="primary-nav" class="site-nav" aria-label="Hovedmenu">
+                <a class="site-nav__link" href="../Information.html" aria-current="page">Information</a>
+                <a class="site-nav__link" href="../Kalender.html">Kalender</a>
+                <a class="site-nav__link" href="../Resultater.html">Resultater</a>
+                <a class="site-nav__link" href="../matchplay.html">Hulspil</a>
+                <a class="site-nav__link" href="../Index.html#hall-of-fame">Hall of Fame</a>
+                <a class="site-nav__link" href="../Index.html#stamdata">Stamdata</a>
+            </nav>
+        </header>
+
+        <main>
+            <nav class="info-nav" aria-label="Information">
+                <a class="info-nav__link" href="../Information.html">Præsidiet</a>
+                <a class="info-nav__link" href="velkommen.html">Velkommen - 2026</a>
+                <a class="info-nav__link" href="match-proportions.html">Match Proportioner - 2026</a>
+                <a class="info-nav__link" href="tournaments.html">Gennemgående turneringer 2026</a>
+                <a class="info-nav__link" href="oestjysk-mesterskab.html">Østjysk Mesterskab - 2026</a>
+                <a class="info-nav__link" href="fcc.html">FCC</a>
+                <a class="info-nav__link info-nav__link--active" href="baneudvalget.html" aria-current="page">Baneudvalget</a>
+                <a class="info-nav__link" href="sponsors.html">Sponsorer 2026</a>
+                <a class="info-nav__link" href="magazines.html">Mens Section blad arkiv</a>
+                <a class="info-nav__link" href="new-member.html">Nyt medlem</a>
+                <a class="info-nav__link" href="entlisting.html">Efter tilmelding</a>
+            </nav>
+
+            <article class="section-block article" aria-labelledby="baneudvalget-title">
+                <header class="section-block__header">
+                    <h2 id="baneudvalget-title" class="section-block__title">Men’s Section er repræsenteret i Baneudvalget</h2>
+                </header>
+
+                <div class="article__text">
+                    <h3 class="article__subtitle">Baneudvalget</h3>
+                    <p>MS har en plads i Baneudvalget - det vel nok vigtigste udvalg, når man tænker på hvorfor de fleste af os er medlemmer af en golfklub. Det er baneudvalget, der varetager bestyrelsens beslutninger og bl.a. kommer med input til den daglige drift af banen.</p>
+                    <p>Paul Sørensen er MS' repræsentant i udvalget og han opfordrer alle medlemmer af MS til at kontakte ham hvis I har bemærkninger omkring banen. Det gælder alt fra en bunkerrive der er i stykker, manglende skilte og banens tilstand generelt. Har man en god idé til banen eller træningsområderne, så bare kom med den også.</p>
+                    <p>Alle er interesserede i, at vi altid har den bedste bane at spille på, og da det helt sikkert er os i Men's Section der bruger banen mest, så bliver der lyttet til os. Banepersonalet gør til daglig en kæmpe indsats for at holde banen i god stand, men vi kan bidrage med et spillersynspunkt, da vi ser på banen med lidt andre øjne.</p>
+                </div>
+            </article>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__info">
+                <p class="site-footer__line">Mens Section,<br class="site-footer__break" /> Vejle Golf Club</p>
+                <p class="site-footer__line"><a class="site-footer__mail" href="mailto:kontakt@vgcms.dk">kontakt@vgcms.dk</a></p>
+            </div>
+            <a class="site-footer__facebook" href="https://www.facebook.com/vgcms" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg class="site-footer__facebook-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="24" rx="5" fill="#1877f2" />
+                    <path fill="#ffffff" d="M16.5 24v-9.2h3.1l.5-3.6h-3.6V9c0-1 .3-1.7 1.8-1.7h1.9V4.1c-.3 0-1.5-.1-2.8-.1-2.8 0-4.6 1.7-4.6 4.7v2.6H9.7v3.6h3.1V24z" />
+                </svg>
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteHeader = document.querySelector('.site-header');
+        const navLinks = document.querySelectorAll('.site-nav__link');
+
+        if (menuToggle && siteHeader) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteHeader.classList.toggle('nav-open');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    siteHeader.classList.remove('nav-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 </body>
 </html>
