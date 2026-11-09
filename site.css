@@ -612,6 +612,11 @@ a.sponsors__link:focus-visible {
     text-align: left;
 }
 
+.result-table--name-fourth th:nth-child(4),
+.result-table--name-fourth td:nth-child(4) {
+    text-align: left;
+}
+
 .result-table--name-third th:nth-child(2),
 .result-table--name-third td:nth-child(2) {
     text-align: center;
