@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=3" />
+    <link rel="stylesheet" href="site.css?v=14" />
 </head>
 <body>
     <div class="page-shell">
@@ -34,7 +34,7 @@
                 <a class="site-nav__link" href="Resultater.html" aria-current="page">Resultater</a>
                 <a class="site-nav__link" href="matchplay.html">Hulspil</a>
                 <a class="site-nav__link" href="Index.html#hall-of-fame">Hall of Fame</a>
-                <a class="site-nav__link" href="Index.html#stamdata">Stamdata</a>
+                <a class="site-nav__link" href="Stamdata.html">Stamdata</a>
             </nav>
         </header>
 
@@ -48,9 +48,23 @@
             <section id="ranglister" class="section-block" aria-labelledby="ranglister-title">
                 <header class="section-block__header">
                     <h2 id="ranglister-title" class="section-block__title">Ranglister</h2>
-                    <a class="result-all" href="https://vgcms.dk/resultater/ranglister/" target="_blank" rel="noopener">Kilde: vgcms.dk</a>
                 </header>
 
+                <div class="result-tabs" role="tablist" aria-label="Ranglister">
+                    <button class="result-tabs__tab result-tabs__tab--active" type="button" role="tab" id="tab-damstahl" aria-selected="true" aria-controls="panel-damstahl">Østjysk Mesterskab</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-brutto" aria-selected="false" aria-controls="panel-brutto" tabindex="-1">Brutto</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-netto" aria-selected="false" aria-controls="panel-netto" tabindex="-1">Netto</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-stableford" aria-selected="false" aria-controls="panel-stableford" tabindex="-1">Stbf.</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-hallington" aria-selected="false" aria-controls="panel-hallington" tabindex="-1">Hal.</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-puts" aria-selected="false" aria-controls="panel-puts" tabindex="-1">Puts</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-birdies" aria-selected="false" aria-controls="panel-birdies" tabindex="-1">Birdies</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-nearestpin" aria-selected="false" aria-controls="panel-nearestpin" tabindex="-1">Par3</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-overall" aria-selected="false" aria-controls="panel-overall" tabindex="-1">Overall</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-shootout" aria-selected="false" aria-controls="panel-shootout" tabindex="-1">ShootOut</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-simulator" aria-selected="false" aria-controls="panel-simulator" tabindex="-1">Vegas</button>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-damstahl" aria-labelledby="tab-damstahl">
                 <p class="result-date">Periode: <strong>31 Aug, 2026 - 31 Aug, 2027</strong></p>
 
                 <div class="result-table-wrap">
@@ -154,6 +168,823 @@
                         </tbody>
                     </table>
                 </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-brutto" aria-labelledby="tab-brutto" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Brutto</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>6075</td><td>Morten Bonde Nielsen</td><td>76.2</td><td>6</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>4125</td><td>Thomas Mikkelsen</td><td>76.3</td><td>3</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>2465</td><td>Paul Ruston</td><td>78.4</td><td>5</td></tr>
+                                <tr><td>4</td><td>505</td><td>Peter Worsøe</td><td>80.6</td><td>6</td></tr>
+                                <tr><td>5</td><td>1407</td><td>Henrik Fink Stidsen</td><td>81.8</td><td>4</td></tr>
+                                <tr><td>6</td><td>1701</td><td>Paul Sørensen</td><td>82.2</td><td>5</td></tr>
+                                <tr><td>7</td><td>418</td><td>Niels Lysgaard-Madsen</td><td>82.6</td><td>5</td></tr>
+                                <tr><td>8</td><td>720</td><td>Brian Pedersen</td><td>83.6</td><td>6</td></tr>
+                                <tr><td>9</td><td>444</td><td>Christian Taul</td><td>83.8</td><td>4</td></tr>
+                                <tr><td>10</td><td>630</td><td>Claus Frandsen</td><td>84.6</td><td>6</td></tr>
+                                <tr><td>11</td><td>1113</td><td>Jesper Hansen</td><td>84.8</td><td>6</td></tr>
+                                <tr><td>12</td><td>3132</td><td>Ole Mathiasen</td><td>86.0</td><td>6</td></tr>
+                                <tr><td>13</td><td>5236</td><td>Jakob Just Bentsen</td><td>86.4</td><td>6</td></tr>
+                                <tr><td>14</td><td>1869</td><td>Jan Fredsted</td><td>86.6</td><td>5</td></tr>
+                                <tr><td>15</td><td>3149</td><td>Peter Aarestrup</td><td>86.8</td><td>5</td></tr>
+                                <tr><td>16</td><td>3495</td><td>Henning Mathiasen</td><td>86.8</td><td>6</td></tr>
+                                <tr><td>17</td><td>284</td><td>Brian Danebod</td><td>87.0</td><td>4</td></tr>
+                                <tr><td>18</td><td>1939</td><td>Michael Kaltoft</td><td>87.5</td><td>4</td></tr>
+                                <tr><td>19</td><td>111</td><td>Palle Jensen</td><td>88.3</td><td>4</td></tr>
+                                <tr><td>20</td><td>1700</td><td>Keld Hindhede</td><td>88.8</td><td>6</td></tr>
+                                <tr><td>21</td><td>1532</td><td>Alfred Korsgaard</td><td>89.6</td><td>6</td></tr>
+                                <tr><td>22</td><td>1315</td><td>Kent Brejnholt</td><td>89.8</td><td>4</td></tr>
+                                <tr><td>23</td><td>2672</td><td>Søren Priess Gade</td><td>89.8</td><td>5</td></tr>
+                                <tr><td>24</td><td>770</td><td>Peter Nutzhorn Jensen</td><td>90.0</td><td>3</td></tr>
+                                <tr><td>25</td><td>2489</td><td>Frede Søgaard</td><td>90.0</td><td>4</td></tr>
+                                <tr><td>26</td><td>2464</td><td>Troels Clemmensen</td><td>90.3</td><td>3</td></tr>
+                                <tr><td>27</td><td>428</td><td>Jakob Preuss</td><td>90.8</td><td>6</td></tr>
+                                <tr><td>28</td><td>1437</td><td>Svend Erik Skovhus</td><td>91.0</td><td>3</td></tr>
+                                <tr><td>29</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>91.0</td><td>4</td></tr>
+                                <tr><td>30</td><td>1461</td><td>Brian Jensen</td><td>91.0</td><td>5</td></tr>
+                                <tr><td></td><td>1553</td><td>Kim Vinther</td><td>91.0</td><td>5</td></tr>
+                                <tr><td>32</td><td>764</td><td>Brian Baun Madsen</td><td>91.2</td><td>5</td></tr>
+                                <tr><td>33</td><td>4339</td><td>Kenneth Johnsen</td><td>91.3</td><td>3</td></tr>
+                                <tr><td>34</td><td>1795</td><td>Michael Suhr</td><td>91.6</td><td>5</td></tr>
+                                <tr><td>35</td><td>3465</td><td>Danny Golan</td><td>91.7</td><td>3</td></tr>
+                                <tr><td>36</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>91.8</td><td>4</td></tr>
+                                <tr><td>37</td><td>675</td><td>Lars Elving Pedersen</td><td>92.0</td><td>5</td></tr>
+                                <tr><td>38</td><td>3062</td><td>Per Møller</td><td>92.4</td><td>6</td></tr>
+                                <tr><td>39</td><td>3385</td><td>Steen Petersen</td><td>92.5</td><td>4</td></tr>
+                                <tr><td></td><td>1786</td><td>Torben Hviid</td><td>92.5</td><td>4</td></tr>
+                                <tr><td></td><td>278</td><td>Bjarne Grann</td><td>92.5</td><td>4</td></tr>
+                                <tr><td>42</td><td>1154</td><td>Christian Hvarre</td><td>92.6</td><td>6</td></tr>
+                                <tr><td>43</td><td>5806</td><td>Ole Skousen</td><td>93.0</td><td>6</td></tr>
+                                <tr><td>44</td><td>1348</td><td>Erik Skov Jørgensen</td><td>93.3</td><td>4</td></tr>
+                                <tr><td>45</td><td>1293</td><td>Lars Christiansen</td><td>94.0</td><td>3</td></tr>
+                                <tr><td></td><td>4745</td><td>Peter Palmelund-Jahn</td><td>94.0</td><td>3</td></tr>
+                                <tr><td>47</td><td>1330</td><td>Jørgen Hansen</td><td>94.0</td><td>5</td></tr>
+                                <tr><td>48</td><td>4407</td><td>Poul Erik Cæsius</td><td>94.2</td><td>5</td></tr>
+                                <tr><td>49</td><td>2903</td><td>Jan Carlsen</td><td>94.4</td><td>6</td></tr>
+                                <tr><td>50</td><td>3191</td><td>Flemming Mørk</td><td>96.0</td><td>3</td></tr>
+                                <tr><td>51</td><td>1724</td><td>Lars Madsen</td><td>96.0</td><td>5</td></tr>
+                                <tr><td>52</td><td>1530</td><td>Mikael Hansen</td><td>96.3</td><td>4</td></tr>
+                                <tr><td>53</td><td>1837</td><td>Lars Frandsen</td><td>96.6</td><td>5</td></tr>
+                                <tr><td></td><td>3026</td><td>Jens Elkjær Jørgensen</td><td>96.6</td><td>5</td></tr>
+                                <tr><td>55</td><td>4462</td><td>Uffe Mikkelsen</td><td>96.7</td><td>3</td></tr>
+                                <tr><td>56</td><td>3727</td><td>Julian Nielsen</td><td>97.3</td><td>4</td></tr>
+                                <tr><td>57</td><td>5343</td><td>Morten Vilhelm Skriver</td><td>97.8</td><td>6</td></tr>
+                                <tr><td>58</td><td>1235</td><td>Jørgen Basse</td><td>98.0</td><td>4</td></tr>
+                                <tr><td>59</td><td>1270</td><td>Lars Bo Cæsius</td><td>99.0</td><td>6</td></tr>
+                                <tr><td>60</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>99.8</td><td>4</td></tr>
+                                <tr><td>61</td><td>5619</td><td>Morten Bech</td><td>100.0</td><td>3</td></tr>
+                                <tr><td>62</td><td>4947</td><td>Jesper Just</td><td>100.0</td><td>5</td></tr>
+                                <tr><td>63</td><td>2993</td><td>Keld Clausen</td><td>100.5</td><td>4</td></tr>
+                                <tr><td>64</td><td>1151</td><td>Arne Josefsen</td><td>102.6</td><td>6</td></tr>
+                                <tr><td>65</td><td>2940</td><td>Lars Therkelsen</td><td>102.8</td><td>4</td></tr>
+                                <tr><td></td><td>6122</td><td>Claus Vilstrup</td><td>102.8</td><td>4</td></tr>
+                                <tr><td>67</td><td>230</td><td>Peter Leth Kjær</td><td>103.0</td><td>4</td></tr>
+                                <tr><td>68</td><td>3638</td><td>Lars Kjeldsen</td><td>104.4</td><td>5</td></tr>
+                                <tr><td>69</td><td>5106</td><td>Mikkel Larsen</td><td>107.3</td><td>3</td></tr>
+                                <tr><td>70</td><td>518</td><td>Anker Jakobsen</td><td>109.0</td><td>4</td></tr>
+                                <tr><td>71</td><td>4036</td><td>Jørn Bylling Andersen</td><td>110.8</td><td>4</td></tr>
+                                <tr><td>72</td><td>6377</td><td>Jacob Andersen</td><td>111.5</td><td>4</td></tr>
+                                <tr><td>73</td><td>1217</td><td>Stig Brogård Andersen</td><td>113.4</td><td>6</td></tr>
+                                <tr><td>74</td><td>1319</td><td>Hans Jørgen B. Nielsen</td><td>115.0</td><td>3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-netto" aria-labelledby="tab-netto" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Netto</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>4462</td><td>Uffe Mikkelsen</td><td>71.0</td><td>3</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>1235</td><td>Jørgen Basse</td><td>71.0</td><td>4</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>6075</td><td>Morten Bonde Nielsen</td><td>71.6</td><td>6</td></tr>
+                                <tr><td>4</td><td>278</td><td>Bjarne Grann</td><td>71.8</td><td>4</td></tr>
+                                <tr><td>5</td><td>3191</td><td>Flemming Mørk</td><td>72.0</td><td>3</td></tr>
+                                <tr><td>6</td><td>4125</td><td>Thomas Mikkelsen</td><td>72.3</td><td>3</td></tr>
+                                <tr><td>7</td><td>505</td><td>Peter Worsøe</td><td>72.8</td><td>6</td></tr>
+                                <tr><td>8</td><td>1869</td><td>Jan Fredsted</td><td>73.0</td><td>5</td></tr>
+                                <tr><td>9</td><td>1532</td><td>Alfred Korsgaard</td><td>73.2</td><td>6</td></tr>
+                                <tr><td></td><td>428</td><td>Jakob Preuss</td><td>73.2</td><td>6</td></tr>
+                                <tr><td>11</td><td>3495</td><td>Henning Mathiasen</td><td>73.4</td><td>6</td></tr>
+                                <tr><td>12</td><td>1437</td><td>Svend Erik Skovhus</td><td>73.7</td><td>3</td></tr>
+                                <tr><td>13</td><td>3132</td><td>Ole Mathiasen</td><td>73.8</td><td>6</td></tr>
+                                <tr><td>14</td><td>5236</td><td>Jakob Just Bentsen</td><td>74.0</td><td>6</td></tr>
+                                <tr><td></td><td>1113</td><td>Jesper Hansen</td><td>74.0</td><td>6</td></tr>
+                                <tr><td>16</td><td>5806</td><td>Ole Skousen</td><td>74.2</td><td>6</td></tr>
+                                <tr><td>17</td><td>5106</td><td>Mikkel Larsen</td><td>74.3</td><td>3</td></tr>
+                                <tr><td>18</td><td>630</td><td>Claus Frandsen</td><td>74.4</td><td>6</td></tr>
+                                <tr><td></td><td>1700</td><td>Keld Hindhede</td><td>74.4</td><td>6</td></tr>
+                                <tr><td>20</td><td>3465</td><td>Danny Golan</td><td>74.7</td><td>3</td></tr>
+                                <tr><td>21</td><td>1939</td><td>Michael Kaltoft</td><td>74.8</td><td>4</td></tr>
+                                <tr><td>22</td><td>2464</td><td>Troels Clemmensen</td><td>75.0</td><td>3</td></tr>
+                                <tr><td>23</td><td>111</td><td>Palle Jensen</td><td>75.0</td><td>4</td></tr>
+                                <tr><td>24</td><td>5343</td><td>Morten Vilhelm Skriver</td><td>75.0</td><td>6</td></tr>
+                                <tr><td>25</td><td>1701</td><td>Paul Sørensen</td><td>75.2</td><td>5</td></tr>
+                                <tr><td></td><td>1330</td><td>Jørgen Hansen</td><td>75.2</td><td>5</td></tr>
+                                <tr><td>27</td><td>1315</td><td>Kent Brejnholt</td><td>75.3</td><td>4</td></tr>
+                                <tr><td></td><td>4709</td><td>Jens Jørgen Plagborg</td><td>75.3</td><td>4</td></tr>
+                                <tr><td>29</td><td>1837</td><td>Lars Frandsen</td><td>75.4</td><td>5</td></tr>
+                                <tr><td>30</td><td>720</td><td>Brian Pedersen</td><td>75.4</td><td>6</td></tr>
+                                <tr><td>31</td><td>1348</td><td>Erik Skov Jørgensen</td><td>75.5</td><td>4</td></tr>
+                                <tr><td></td><td>1407</td><td>Henrik Fink Stidsen</td><td>75.5</td><td>4</td></tr>
+                                <tr><td>33</td><td>2465</td><td>Paul Ruston</td><td>76.0</td><td>5</td></tr>
+                                <tr><td>34</td><td>1151</td><td>Arne Josefsen</td><td>76.2</td><td>6</td></tr>
+                                <tr><td>35</td><td>2489</td><td>Frede Søgaard</td><td>76.5</td><td>4</td></tr>
+                                <tr><td></td><td>3385</td><td>Steen Petersen</td><td>76.5</td><td>4</td></tr>
+                                <tr><td>37</td><td>4339</td><td>Kenneth Johnsen</td><td>76.7</td><td>3</td></tr>
+                                <tr><td>38</td><td>3026</td><td>Jens Elkjær Jørgensen</td><td>76.8</td><td>5</td></tr>
+                                <tr><td>39</td><td>2993</td><td>Keld Clausen</td><td>77.0</td><td>4</td></tr>
+                                <tr><td></td><td>518</td><td>Anker Jakobsen</td><td>77.0</td><td>4</td></tr>
+                                <tr><td>41</td><td>3149</td><td>Peter Aarestrup</td><td>77.0</td><td>5</td></tr>
+                                <tr><td>42</td><td>1270</td><td>Lars Bo Cæsius</td><td>77.0</td><td>6</td></tr>
+                                <tr><td>43</td><td>1461</td><td>Brian Jensen</td><td>77.2</td><td>5</td></tr>
+                                <tr><td></td><td>1553</td><td>Kim Vinther</td><td>77.2</td><td>5</td></tr>
+                                <tr><td>45</td><td>1154</td><td>Christian Hvarre</td><td>77.2</td><td>6</td></tr>
+                                <tr><td></td><td>2903</td><td>Jan Carlsen</td><td>77.2</td><td>6</td></tr>
+                                <tr><td>47</td><td>284</td><td>Brian Danebod</td><td>77.3</td><td>4</td></tr>
+                                <tr><td></td><td>1786</td><td>Torben Hviid</td><td>77.3</td><td>4</td></tr>
+                                <tr><td>49</td><td>4745</td><td>Peter Palmelund-Jahn</td><td>77.3</td><td>3</td></tr>
+                                <tr><td>50</td><td>418</td><td>Niels Lysgaard-Madsen</td><td>77.4</td><td>5</td></tr>
+                                <tr><td>51</td><td>230</td><td>Peter Leth Kjær</td><td>77.8</td><td>4</td></tr>
+                                <tr><td>52</td><td>3727</td><td>Julian Nielsen</td><td>78.0</td><td>4</td></tr>
+                                <tr><td>53</td><td>764</td><td>Brian Baun Madsen</td><td>78.2</td><td>5</td></tr>
+                                <tr><td>54</td><td>2940</td><td>Lars Therkelsen</td><td>78.3</td><td>4</td></tr>
+                                <tr><td>55</td><td>770</td><td>Peter Nutzhorn Jensen</td><td>78.3</td><td>3</td></tr>
+                                <tr><td>56</td><td>444</td><td>Christian Taul</td><td>78.5</td><td>4</td></tr>
+                                <tr><td>57</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>78.8</td><td>4</td></tr>
+                                <tr><td>58</td><td>4407</td><td>Poul Erik Cæsius</td><td>78.8</td><td>5</td></tr>
+                                <tr><td>59</td><td>2672</td><td>Søren Priess Gade</td><td>79.6</td><td>5</td></tr>
+                                <tr><td></td><td>1795</td><td>Michael Suhr</td><td>79.6</td><td>5</td></tr>
+                                <tr><td></td><td>1724</td><td>Lars Madsen</td><td>79.6</td><td>5</td></tr>
+                                <tr><td></td><td>675</td><td>Lars Elving Pedersen</td><td>79.6</td><td>5</td></tr>
+                                <tr><td>63</td><td>3062</td><td>Per Møller</td><td>79.6</td><td>6</td></tr>
+                                <tr><td>64</td><td>1293</td><td>Lars Christiansen</td><td>80.0</td><td>3</td></tr>
+                                <tr><td>65</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>80.3</td><td>4</td></tr>
+                                <tr><td></td><td>6122</td><td>Claus Vilstrup</td><td>80.3</td><td>4</td></tr>
+                                <tr><td>67</td><td>1319</td><td>Hans Jørgen B. Nielsen</td><td>80.3</td><td>3</td></tr>
+                                <tr><td>68</td><td>3638</td><td>Lars Kjeldsen</td><td>81.8</td><td>5</td></tr>
+                                <tr><td>69</td><td>5619</td><td>Morten Bech</td><td>82.0</td><td>3</td></tr>
+                                <tr><td>70</td><td>4947</td><td>Jesper Just</td><td>82.4</td><td>5</td></tr>
+                                <tr><td>71</td><td>1217</td><td>Stig Brogård Andersen</td><td>82.6</td><td>6</td></tr>
+                                <tr><td>72</td><td>1530</td><td>Mikael Hansen</td><td>83.5</td><td>4</td></tr>
+                                <tr><td>73</td><td>6377</td><td>Jacob Andersen</td><td>83.8</td><td>4</td></tr>
+                                <tr><td>74</td><td>4036</td><td>Jørn Bylling Andersen</td><td>87.3</td><td>4</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="result-panel" role="tabpanel" id="panel-stableford" aria-labelledby="tab-stableford" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · total af Stableford point for alle matcher</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Points</th><th>Snit</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>1154</td><td>Christian Hvarre</td><td>990</td><td>30</td><td>32</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>1700</td><td>Keld Hindhede</td><td>980</td><td>33</td><td>29</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>5236</td><td>Jakob Just Bentsen</td><td>925</td><td>33</td><td>28</td></tr>
+                                <tr><td>4</td><td>1461</td><td>Brian Jensen</td><td>892</td><td>30</td><td>29</td></tr>
+                                <tr><td>5</td><td>1701</td><td>Paul Sørensen</td><td>880</td><td>32</td><td>27</td></tr>
+                                <tr><td>6</td><td>505</td><td>Peter Worsøe</td><td>876</td><td>33</td><td>26</td></tr>
+                                <tr><td>7</td><td>3132</td><td>Ole Mathiasen</td><td>870</td><td>33</td><td>26</td></tr>
+                                <tr><td>8</td><td>1113</td><td>Jesper Hansen</td><td>865</td><td>33</td><td>26</td></tr>
+                                <tr><td>9</td><td>3062</td><td>Per Møller</td><td>860</td><td>31</td><td>27</td></tr>
+                                <tr><td>10</td><td>418</td><td>Niels Lysgaard-Madsen</td><td>853</td><td>32</td><td>26</td></tr>
+                                <tr><td>11</td><td>1217</td><td>Stig Brogård Andersen</td><td>853</td><td>31</td><td>27</td></tr>
+                                <tr><td>12</td><td>3495</td><td>Henning Mathiasen</td><td>837</td><td>33</td><td>25</td></tr>
+                                <tr><td>13</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>837</td><td>32</td><td>26</td></tr>
+                                <tr><td>14</td><td>1270</td><td>Lars Bo Cæsius</td><td>834</td><td>30</td><td>27</td></tr>
+                                <tr><td>15</td><td>764</td><td>Brian Baun Madsen</td><td>823</td><td>31</td><td>26</td></tr>
+                                <tr><td>16</td><td>428</td><td>Jakob Preuss</td><td>818</td><td>32</td><td>25</td></tr>
+                                <tr><td>17</td><td>720</td><td>Brian Pedersen</td><td>818</td><td>31</td><td>26</td></tr>
+                                <tr><td>18</td><td>1532</td><td>Alfred Korsgaard</td><td>815</td><td>32</td><td>25</td></tr>
+                                <tr><td>19</td><td>3638</td><td>Lars Kjeldsen</td><td>794</td><td>28</td><td>28</td></tr>
+                                <tr><td>20</td><td>1795</td><td>Michael Suhr</td><td>767</td><td>30</td><td>25</td></tr>
+                                <tr><td>21</td><td>2672</td><td>Søren Priess Gade</td><td>761</td><td>30</td><td>25</td></tr>
+                                <tr><td>22</td><td>1151</td><td>Arne Josefsen</td><td>760</td><td>30</td><td>25</td></tr>
+                                <tr><td>23</td><td>1530</td><td>Mikael Hansen</td><td>756</td><td>29</td><td>26</td></tr>
+                                <tr><td>24</td><td>5806</td><td>Ole Skousen</td><td>750</td><td>32</td><td>23</td></tr>
+                                <tr><td>25</td><td>1869</td><td>Jan Fredsted</td><td>747</td><td>32</td><td>23</td></tr>
+                                <tr><td>26</td><td>1319</td><td>Hans Jørgen B. Nielsen</td><td>729</td><td>31</td><td>23</td></tr>
+                                <tr><td>27</td><td>111</td><td>Palle Jensen</td><td>723</td><td>32</td><td>22</td></tr>
+                                <tr><td>28</td><td>1724</td><td>Lars Madsen</td><td>717</td><td>31</td><td>23</td></tr>
+                                <tr><td>29</td><td>1235</td><td>Jørgen Basse</td><td>703</td><td>35</td><td>20</td></tr>
+                                <tr><td>30</td><td>4407</td><td>Poul Erik Cæsius</td><td>691</td><td>30</td><td>23</td></tr>
+                                <tr><td>31</td><td>2940</td><td>Lars Therkelsen</td><td>676</td><td>30</td><td>22</td></tr>
+                                <tr><td>32</td><td>1939</td><td>Michael Kaltoft</td><td>669</td><td>33</td><td>20</td></tr>
+                                <tr><td>33</td><td>3149</td><td>Peter Aarestrup</td><td>657</td><td>31</td><td>21</td></tr>
+                                <tr><td>34</td><td>4947</td><td>Jesper Just</td><td>655</td><td>31</td><td>21</td></tr>
+                                <tr><td>35</td><td>2903</td><td>Jan Carlsen</td><td>653</td><td>31</td><td>21</td></tr>
+                                <tr><td>36</td><td>4462</td><td>Uffe Mikkelsen</td><td>652</td><td>34</td><td>19</td></tr>
+                                <tr><td>37</td><td>6075</td><td>Morten Bonde Nielsen</td><td>649</td><td>34</td><td>19</td></tr>
+                                <tr><td>38</td><td>3191</td><td>Flemming Mørk</td><td>649</td><td>32</td><td>20</td></tr>
+                                <tr><td>39</td><td>2465</td><td>Paul Ruston</td><td>629</td><td>31</td><td>20</td></tr>
+                                <tr><td>40</td><td>4036</td><td>Jørn Bylling Andersen</td><td>629</td><td>29</td><td>21</td></tr>
+                                <tr><td>41</td><td>230</td><td>Peter Leth Kjær</td><td>617</td><td>32</td><td>19</td></tr>
+                                <tr><td>42</td><td>3026</td><td>Jens Elkjær Jørgensen</td><td>610</td><td>32</td><td>19</td></tr>
+                                <tr><td>43</td><td>1553</td><td>Kim Vinther</td><td>607</td><td>30</td><td>20</td></tr>
+                                <tr><td>44</td><td>2489</td><td>Frede Søgaard</td><td>605</td><td>30</td><td>20</td></tr>
+                                <tr><td>45</td><td>518</td><td>Anker Jakobsen</td><td>597</td><td>29</td><td>20</td></tr>
+                                <tr><td>46</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>594</td><td>29</td><td>20</td></tr>
+                                <tr><td>47</td><td>675</td><td>Lars Elving Pedersen</td><td>583</td><td>30</td><td>19</td></tr>
+                                <tr><td>48</td><td>278</td><td>Bjarne Grann</td><td>570</td><td>31</td><td>18</td></tr>
+                                <tr><td>49</td><td>1315</td><td>Kent Brejnholt</td><td>569</td><td>31</td><td>18</td></tr>
+                                <tr><td>50</td><td>5619</td><td>Morten Bech</td><td>562</td><td>31</td><td>18</td></tr>
+                                <tr><td>51</td><td>1293</td><td>Lars Christiansen</td><td>561</td><td>29</td><td>19</td></tr>
+                                <tr><td>52</td><td>630</td><td>Claus Frandsen</td><td>560</td><td>31</td><td>18</td></tr>
+                                <tr><td>53</td><td>444</td><td>Christian Taul</td><td>556</td><td>32</td><td>17</td></tr>
+                                <tr><td>54</td><td>1786</td><td>Torben Hviid</td><td>547</td><td>30</td><td>18</td></tr>
+                                <tr><td>55</td><td>1330</td><td>Jørgen Hansen</td><td>546</td><td>32</td><td>17</td></tr>
+                                <tr><td>56</td><td>3385</td><td>Steen Petersen</td><td>536</td><td>31</td><td>17</td></tr>
+                                <tr><td>57</td><td>2993</td><td>Keld Clausen</td><td>533</td><td>33</td><td>16</td></tr>
+                                <tr><td>58</td><td>1348</td><td>Erik Skov Jørgensen</td><td>533</td><td>31</td><td>17</td></tr>
+                                <tr><td>59</td><td>6377</td><td>Jacob Andersen</td><td>519</td><td>30</td><td>17</td></tr>
+                                <tr><td>60</td><td>2628</td><td>Henrik Nygaard Jensen</td><td>517</td><td>28</td><td>18</td></tr>
+                                <tr><td>61</td><td>422</td><td>John Christiansen</td><td>494</td><td>30</td><td>16</td></tr>
+                                <tr><td>62</td><td>4339</td><td>Kenneth Johnsen</td><td>488</td><td>30</td><td>16</td></tr>
+                                <tr><td>63</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>485</td><td>32</td><td>15</td></tr>
+                                <tr><td>64</td><td>1698</td><td>Lars M. Hansen</td><td>454</td><td>28</td><td>16</td></tr>
+                                <tr><td>65</td><td>1837</td><td>Lars Frandsen</td><td>447</td><td>29</td><td>15</td></tr>
+                                <tr><td>66</td><td>6031</td><td>Dan Ole Sørensen</td><td>443</td><td>29</td><td>15</td></tr>
+                                <tr><td>67</td><td>5343</td><td>Morten Vilhelm Skriver</td><td>441</td><td>29</td><td>15</td></tr>
+                                <tr><td>68</td><td>5307</td><td>Klaus Rahbek Jespersen</td><td>428</td><td>30</td><td>14</td></tr>
+                                <tr><td>69</td><td>5973</td><td>Flemming Breum</td><td>421</td><td>32</td><td>13</td></tr>
+                                <tr><td>70</td><td>1995</td><td>Mikkel Mikkelsen</td><td>408</td><td>29</td><td>14</td></tr>
+                                <tr><td>71</td><td>4745</td><td>Peter Palmelund-Jahn</td><td>399</td><td>30</td><td>13</td></tr>
+                                <tr><td>72</td><td>4125</td><td>Thomas Mikkelsen</td><td>397</td><td>33</td><td>12</td></tr>
+                                <tr><td>73</td><td>5106</td><td>Mikkel Larsen</td><td>391</td><td>30</td><td>13</td></tr>
+                                <tr><td>74</td><td>6122</td><td>Claus Vilstrup</td><td>388</td><td>29</td><td>13</td></tr>
+                                <tr><td>75</td><td>4829</td><td>Finn Thomsen</td><td>385</td><td>32</td><td>12</td></tr>
+                                <tr><td>76</td><td>6148</td><td>Gudmundur Gretarsson</td><td>383</td><td>29</td><td>13</td></tr>
+                                <tr><td>77</td><td>5520</td><td>Asp Diget</td><td>373</td><td>33</td><td>11</td></tr>
+                                <tr><td>78</td><td>5551</td><td>Ejnar Smidt Hansen</td><td>372</td><td>31</td><td>12</td></tr>
+                                <tr><td>79</td><td>1437</td><td>Svend Erik Skovhus</td><td>360</td><td>32</td><td>11</td></tr>
+                                <tr><td>80</td><td>3727</td><td>Julian Nielsen</td><td>360</td><td>30</td><td>12</td></tr>
+                                <tr><td>81</td><td>1307</td><td>Claus Møller Christensen</td><td>356</td><td>29</td><td>12</td></tr>
+                                <tr><td>82</td><td>3465</td><td>Danny Golan</td><td>352</td><td>32</td><td>11</td></tr>
+                                <tr><td>83</td><td>1407</td><td>Henrik Fink Stidsen</td><td>350</td><td>31</td><td>11</td></tr>
+                                <tr><td>84</td><td>770</td><td>Peter Nutzhorn Jensen</td><td>346</td><td>31</td><td>11</td></tr>
+                                <tr><td>85</td><td>4541</td><td>Hans Peter Munk-Andersen</td><td>345</td><td>28</td><td>12</td></tr>
+                                <tr><td>86</td><td>4316</td><td>Brian Hansen</td><td>344</td><td>31</td><td>11</td></tr>
+                                <tr><td></td><td>850</td><td>Lars Melson</td><td>344</td><td>31</td><td>11</td></tr>
+                                <tr><td>88</td><td>2464</td><td>Troels Clemmensen</td><td>342</td><td>31</td><td>11</td></tr>
+                                <tr><td>89</td><td>160</td><td>Jørn Linde Andersen</td><td>332</td><td>27</td><td>12</td></tr>
+                                <tr><td>90</td><td>2990</td><td>Tommy Hansen</td><td>331</td><td>27</td><td>12</td></tr>
+                                <tr><td>91</td><td>1503</td><td>Jesper Thinggaard</td><td>314</td><td>28</td><td>11</td></tr>
+                                <tr><td>92</td><td>1640</td><td>Henrik Mikkelsen</td><td>301</td><td>25</td><td>12</td></tr>
+                                <tr><td>93</td><td>5789</td><td>Karsten Aagaard Nielsen</td><td>287</td><td>31</td><td>9</td></tr>
+                                <tr><td>94</td><td>542</td><td>Bjarne Kastbjerg Petersen</td><td>282</td><td>28</td><td>10</td></tr>
+                                <tr><td>95</td><td>6559</td><td>Anders Dalgaard Christensen</td><td>280</td><td>25</td><td>11</td></tr>
+                                <tr><td>96</td><td>4561</td><td>Max Jensen</td><td>264</td><td>29</td><td>9</td></tr>
+                                <tr><td>97</td><td>284</td><td>Brian Danebod</td><td>260</td><td>28</td><td>9</td></tr>
+                                <tr><td>98</td><td>1930</td><td>Stig Caspersen</td><td>257</td><td>32</td><td>8</td></tr>
+                                <tr><td>99</td><td>4333</td><td>Michael Paugan</td><td>236</td><td>33</td><td>7</td></tr>
+                                <tr><td>100</td><td>4348</td><td>Michael Rand</td><td>234</td><td>29</td><td>8</td></tr>
+                                <tr><td>101</td><td>5839</td><td>Robert Veilis</td><td>229</td><td>32</td><td>7</td></tr>
+                                <tr><td>102</td><td>6066</td><td>Claus-Henrik Hviid Jørgensen</td><td>207</td><td>29</td><td>7</td></tr>
+                                <tr><td>103</td><td>3582</td><td>Jørgen Roed Poulsen</td><td>200</td><td>25</td><td>8</td></tr>
+                                <tr><td>104</td><td>5423</td><td>Jesper Buhl Mathiesen</td><td>169</td><td>28</td><td>6</td></tr>
+                                <tr><td>105</td><td>4676</td><td>Michael Thomsen</td><td>168</td><td>33</td><td>5</td></tr>
+                                <tr><td>106</td><td>2901</td><td>Kenneth Stokkendahl</td><td>136</td><td>34</td><td>4</td></tr>
+                                <tr><td>107</td><td>935</td><td>Jesper Maack</td><td>134</td><td>26</td><td>5</td></tr>
+                                <tr><td>108</td><td>4397</td><td>Niels Hansen</td><td>132</td><td>26</td><td>5</td></tr>
+                                <tr><td>109</td><td>1644</td><td>Nikolaj Mikkelsen</td><td>125</td><td>31</td><td>4</td></tr>
+                                <tr><td>110</td><td>6069</td><td>Miha Kavcic</td><td>111</td><td>27</td><td>4</td></tr>
+                                <tr><td></td><td>6244</td><td>Ulrik Kvist</td><td>111</td><td>27</td><td>4</td></tr>
+                                <tr><td>112</td><td>932</td><td>Cliff Hansen</td><td>106</td><td>35</td><td>3</td></tr>
+                                <tr><td>113</td><td>380</td><td>Jan Bertelsen</td><td>103</td><td>34</td><td>3</td></tr>
+                                <tr><td>114</td><td>3681</td><td>Poul Stokholm</td><td>92</td><td>30</td><td>3</td></tr>
+                                <tr><td>115</td><td>0</td><td>Rasmus Kinch</td><td>85</td><td>28</td><td>3</td></tr>
+                                <tr><td>116</td><td>828</td><td>Bent Rotbøl</td><td>84</td><td>28</td><td>3</td></tr>
+                                <tr><td>117</td><td>6025</td><td>Jørn Jalk</td><td>71</td><td>23</td><td>3</td></tr>
+                                <tr><td>118</td><td>1661</td><td>Peter Larsen</td><td>47</td><td>23</td><td>2</td></tr>
+                                <tr><td>119</td><td>1549</td><td>Thorkild Høj</td><td>37</td><td>37</td><td>1</td></tr>
+                                <tr><td>120</td><td>5628</td><td>Morten Preuthun</td><td>35</td><td>35</td><td>1</td></tr>
+                                <tr><td>121</td><td>12</td><td>Poul Erik Bligaard</td><td>33</td><td>33</td><td>1</td></tr>
+                                <tr><td>122</td><td>5564</td><td>Henrik Skaarenborg</td><td>27</td><td>27</td><td>1</td></tr>
+                                <tr><td>123</td><td>6308</td><td>Jeppe Uldall</td><td>25</td><td>25</td><td>1</td></tr>
+                                <tr><td>124</td><td>605</td><td>Ole Bisgaard</td><td>24</td><td>24</td><td>1</td></tr>
+                                <tr><td>125</td><td>6475</td><td>Michael Aarestrup</td><td>20</td><td>20</td><td>1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-hallington" aria-labelledby="tab-hallington" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Hallington</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>4462</td><td>Uffe Mikkelsen</td><td>75.0</td><td>3</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>1700</td><td>Keld Hindhede</td><td>73.2</td><td>6</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>1869</td><td>Jan Fredsted</td><td>72.6</td><td>5</td></tr>
+                                <tr><td>4</td><td>444</td><td>Christian Taul</td><td>72.0</td><td>6</td></tr>
+                                <tr><td>5</td><td>2993</td><td>Keld Clausen</td><td>71.7</td><td>3</td></tr>
+                                <tr><td>6</td><td>3495</td><td>Henning Mathiasen</td><td>70.8</td><td>5</td></tr>
+                                <tr><td>7</td><td>5236</td><td>Jakob Just Bentsen</td><td>70.5</td><td>6</td></tr>
+                                <tr><td>8</td><td>4829</td><td>Finn Thomsen</td><td>70.3</td><td>3</td></tr>
+                                <tr><td></td><td>1532</td><td>Alfred Korsgaard</td><td>70.3</td><td>4</td></tr>
+                                <tr><td>10</td><td>418</td><td>Niels Lysgaard-Madsen</td><td>70.2</td><td>5</td></tr>
+                                <tr><td>11</td><td>4036</td><td>Jørn Bylling Andersen</td><td>70.0</td><td>3</td></tr>
+                                <tr><td></td><td>5520</td><td>Asp Diget</td><td>70.0</td><td>4</td></tr>
+                                <tr><td>13</td><td>630</td><td>Claus Frandsen</td><td>69.8</td><td>4</td></tr>
+                                <tr><td></td><td>1319</td><td>Hans Jørgen B. Nielsen</td><td>69.8</td><td>4</td></tr>
+                                <tr><td></td><td>111</td><td>Palle Jensen</td><td>69.8</td><td>5</td></tr>
+                                <tr><td></td><td>1795</td><td>Michael Suhr</td><td>69.8</td><td>5</td></tr>
+                                <tr><td>17</td><td>4125</td><td>Thomas Mikkelsen</td><td>69.7</td><td>3</td></tr>
+                                <tr><td></td><td>1724</td><td>Lars Madsen</td><td>69.7</td><td>6</td></tr>
+                                <tr><td>19</td><td>5619</td><td>Morten Bech</td><td>69.5</td><td>4</td></tr>
+                                <tr><td></td><td>428</td><td>Jakob Preuss</td><td>69.5</td><td>6</td></tr>
+                                <tr><td>21</td><td>505</td><td>Peter Worsøe</td><td>69.3</td><td>6</td></tr>
+                                <tr><td></td><td>2672</td><td>Søren Priess Gade</td><td>69.3</td><td>6</td></tr>
+                                <tr><td>23</td><td>2465</td><td>Paul Ruston</td><td>69.2</td><td>5</td></tr>
+                                <tr><td>24</td><td>5789</td><td>Karsten Aagaard Nielsen</td><td>69.0</td><td>3</td></tr>
+                                <tr><td></td><td>230</td><td>Peter Leth Kjær</td><td>69.0</td><td>3</td></tr>
+                                <tr><td></td><td>1270</td><td>Lars Bo Cæsius</td><td>69.0</td><td>5</td></tr>
+                                <tr><td>27</td><td>1348</td><td>Erik Skov Jørgensen</td><td>68.7</td><td>3</td></tr>
+                                <tr><td></td><td>5106</td><td>Mikkel Larsen</td><td>68.7</td><td>3</td></tr>
+                                <tr><td>29</td><td>4541</td><td>Hans Peter Munk-Andersen</td><td>68.3</td><td>3</td></tr>
+                                <tr><td></td><td>5973</td><td>Flemming Breum</td><td>68.3</td><td>3</td></tr>
+                                <tr><td></td><td>5551</td><td>Ejnar Smidt Hansen</td><td>68.3</td><td>4</td></tr>
+                                <tr><td></td><td>5806</td><td>Ole Skousen</td><td>68.3</td><td>6</td></tr>
+                                <tr><td>33</td><td>1701</td><td>Paul Sørensen</td><td>68.2</td><td>5</td></tr>
+                                <tr><td></td><td>3149</td><td>Peter Aarestrup</td><td>68.2</td><td>5</td></tr>
+                                <tr><td></td><td>3062</td><td>Per Møller</td><td>68.2</td><td>6</td></tr>
+                                <tr><td></td><td>1154</td><td>Christian Hvarre</td><td>68.2</td><td>6</td></tr>
+                                <tr><td>37</td><td>1235</td><td>Jørgen Basse</td><td>68.0</td><td>3</td></tr>
+                                <tr><td></td><td>1113</td><td>Jesper Hansen</td><td>68.0</td><td>6</td></tr>
+                                <tr><td>39</td><td>6377</td><td>Jacob Andersen</td><td>67.8</td><td>4</td></tr>
+                                <tr><td>40</td><td>2903</td><td>Jan Carlsen</td><td>67.6</td><td>5</td></tr>
+                                <tr><td></td><td>1151</td><td>Arne Josefsen</td><td>67.6</td><td>5</td></tr>
+                                <tr><td>42</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>67.5</td><td>6</td></tr>
+                                <tr><td>43</td><td>6075</td><td>Morten Bonde Nielsen</td><td>67.3</td><td>3</td></tr>
+                                <tr><td>44</td><td>2489</td><td>Frede Søgaard</td><td>67.2</td><td>5</td></tr>
+                                <tr><td>45</td><td>1786</td><td>Torben Hviid</td><td>67.0</td><td>3</td></tr>
+                                <tr><td></td><td>3385</td><td>Steen Petersen</td><td>67.0</td><td>4</td></tr>
+                                <tr><td>47</td><td>1939</td><td>Michael Kaltoft</td><td>66.8</td><td>4</td></tr>
+                                <tr><td></td><td>720</td><td>Brian Pedersen</td><td>66.8</td><td>6</td></tr>
+                                <tr><td></td><td>1293</td><td>Lars Christiansen</td><td>66.8</td><td>6</td></tr>
+                                <tr><td></td><td>1217</td><td>Stig Brogård Andersen</td><td>66.8</td><td>6</td></tr>
+                                <tr><td>51</td><td>2940</td><td>Lars Therkelsen</td><td>66.7</td><td>3</td></tr>
+                                <tr><td>52</td><td>1315</td><td>Kent Brejnholt</td><td>66.4</td><td>5</td></tr>
+                                <tr><td>53</td><td>518</td><td>Anker Jakobsen</td><td>66.3</td><td>4</td></tr>
+                                <tr><td>54</td><td>4745</td><td>Peter Palmelund-Jahn</td><td>65.8</td><td>5</td></tr>
+                                <tr><td>55</td><td>1307</td><td>Claus Møller Christensen</td><td>65.7</td><td>3</td></tr>
+                                <tr><td>56</td><td>1553</td><td>Kim Vinther</td><td>65.5</td><td>4</td></tr>
+                                <tr><td></td><td>4947</td><td>Jesper Just</td><td>65.5</td><td>4</td></tr>
+                                <tr><td>58</td><td>675</td><td>Lars Elving Pedersen</td><td>65.4</td><td>5</td></tr>
+                                <tr><td>59</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>65.3</td><td>4</td></tr>
+                                <tr><td></td><td>2628</td><td>Henrik Nygaard Jensen</td><td>65.3</td><td>4</td></tr>
+                                <tr><td>61</td><td>764</td><td>Brian Baun Madsen</td><td>65.2</td><td>5</td></tr>
+                                <tr><td>62</td><td>422</td><td>John Christiansen</td><td>65.0</td><td>3</td></tr>
+                                <tr><td></td><td>1330</td><td>Jørgen Hansen</td><td>65.0</td><td>3</td></tr>
+                                <tr><td></td><td>5307</td><td>Klaus Rahbek Jespersen</td><td>65.0</td><td>3</td></tr>
+                                <tr><td></td><td>6031</td><td>Dan Ole Sørensen</td><td>65.0</td><td>4</td></tr>
+                                <tr><td></td><td>278</td><td>Bjarne Grann</td><td>65.0</td><td>5</td></tr>
+                                <tr><td>67</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>64.6</td><td>5</td></tr>
+                                <tr><td>68</td><td>3638</td><td>Lars Kjeldsen</td><td>64.2</td><td>5</td></tr>
+                                <tr><td>69</td><td>4407</td><td>Poul Erik Cæsius</td><td>63.8</td><td>5</td></tr>
+                                <tr><td>70</td><td>3582</td><td>Jørgen Roed Poulsen</td><td>63.7</td><td>3</td></tr>
+                                <tr><td></td><td>3727</td><td>Julian Nielsen</td><td>63.7</td><td>3</td></tr>
+                                <tr><td>72</td><td>1698</td><td>Lars M. Hansen</td><td>63.0</td><td>4</td></tr>
+                                <tr><td>73</td><td>5423</td><td>Jesper Buhl Mathiesen</td><td>62.7</td><td>3</td></tr>
+                                <tr><td>74</td><td>850</td><td>Lars Melson</td><td>62.0</td><td>3</td></tr>
+                                <tr><td>75</td><td>1530</td><td>Mikael Hansen</td><td>61.8</td><td>5</td></tr>
+                                <tr><td></td><td>1461</td><td>Brian Jensen</td><td>61.8</td><td>6</td></tr>
+                                <tr><td>77</td><td>6148</td><td>Gudmundur Gretarsson</td><td>61.3</td><td>4</td></tr>
+                                <tr><td>78</td><td>3191</td><td>Flemming Mørk</td><td>60.3</td><td>3</td></tr>
+                                <tr><td>79</td><td>6559</td><td>Anders Dalgaard Christensen</td><td>59.3</td><td>3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="result-panel" role="tabpanel" id="panel-puts" aria-labelledby="tab-puts" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Puts</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>505</td><td>Peter Worsøe</td><td>27.6</td><td>6</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>1869</td><td>Jan Fredsted</td><td>30.2</td><td>5</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>1700</td><td>Keld Hindhede</td><td>30.4</td><td>6</td></tr>
+                                <tr><td></td><td>6075</td><td>Morten Bonde Nielsen</td><td>30.4</td><td>6</td></tr>
+                                <tr><td>5</td><td>2465</td><td>Paul Ruston</td><td>30.6</td><td>5</td></tr>
+                                <tr><td></td><td>1532</td><td>Alfred Korsgaard</td><td>30.6</td><td>6</td></tr>
+                                <tr><td>7</td><td>278</td><td>Bjarne Grann</td><td>30.8</td><td>4</td></tr>
+                                <tr><td>8</td><td>428</td><td>Jakob Preuss</td><td>30.8</td><td>6</td></tr>
+                                <tr><td></td><td>3062</td><td>Per Møller</td><td>30.8</td><td>6</td></tr>
+                                <tr><td>10</td><td>1315</td><td>Kent Brejnholt</td><td>31.0</td><td>4</td></tr>
+                                <tr><td></td><td>1154</td><td>Christian Hvarre</td><td>31.0</td><td>6</td></tr>
+                                <tr><td></td><td>1113</td><td>Jesper Hansen</td><td>31.0</td><td>6</td></tr>
+                                <tr><td>13</td><td>418</td><td>Niels Lysgaard-Madsen</td><td>31.2</td><td>5</td></tr>
+                                <tr><td></td><td>3149</td><td>Peter Aarestrup</td><td>31.2</td><td>5</td></tr>
+                                <tr><td>15</td><td>111</td><td>Palle Jensen</td><td>31.3</td><td>4</td></tr>
+                                <tr><td></td><td>1407</td><td>Henrik Fink Stidsen</td><td>31.3</td><td>4</td></tr>
+                                <tr><td>17</td><td>1437</td><td>Svend Erik Skovhus</td><td>31.3</td><td>3</td></tr>
+                                <tr><td></td><td>770</td><td>Peter Nutzhorn Jensen</td><td>31.3</td><td>3</td></tr>
+                                <tr><td></td><td>4125</td><td>Thomas Mikkelsen</td><td>31.3</td><td>3</td></tr>
+                                <tr><td></td><td>5619</td><td>Morten Bech</td><td>31.3</td><td>3</td></tr>
+                                <tr><td>21</td><td>2903</td><td>Jan Carlsen</td><td>31.4</td><td>6</td></tr>
+                                <tr><td>22</td><td>1461</td><td>Brian Jensen</td><td>31.6</td><td>5</td></tr>
+                                <tr><td>23</td><td>1553</td><td>Kim Vinther</td><td>31.8</td><td>5</td></tr>
+                                <tr><td></td><td>1701</td><td>Paul Sørensen</td><td>31.8</td><td>5</td></tr>
+                                <tr><td></td><td>4407</td><td>Poul Erik Cæsius</td><td>31.8</td><td>5</td></tr>
+                                <tr><td></td><td>720</td><td>Brian Pedersen</td><td>31.8</td><td>6</td></tr>
+                                <tr><td>27</td><td>2489</td><td>Frede Søgaard</td><td>32.0</td><td>4</td></tr>
+                                <tr><td></td><td>1939</td><td>Michael Kaltoft</td><td>32.0</td><td>4</td></tr>
+                                <tr><td></td><td>3132</td><td>Ole Mathiasen</td><td>32.0</td><td>6</td></tr>
+                                <tr><td></td><td>3495</td><td>Henning Mathiasen</td><td>32.0</td><td>6</td></tr>
+                                <tr><td></td><td>5236</td><td>Jakob Just Bentsen</td><td>32.0</td><td>6</td></tr>
+                                <tr><td></td><td>630</td><td>Claus Frandsen</td><td>32.0</td><td>6</td></tr>
+                                <tr><td></td><td>1270</td><td>Lars Bo Cæsius</td><td>32.0</td><td>6</td></tr>
+                                <tr><td>34</td><td>764</td><td>Brian Baun Madsen</td><td>32.2</td><td>5</td></tr>
+                                <tr><td></td><td>5806</td><td>Ole Skousen</td><td>32.2</td><td>6</td></tr>
+                                <tr><td>36</td><td>1348</td><td>Erik Skov Jørgensen</td><td>32.5</td><td>4</td></tr>
+                                <tr><td></td><td>284</td><td>Brian Danebod</td><td>32.5</td><td>4</td></tr>
+                                <tr><td>38</td><td>1293</td><td>Lars Christiansen</td><td>32.7</td><td>3</td></tr>
+                                <tr><td></td><td>2464</td><td>Troels Clemmensen</td><td>32.7</td><td>3</td></tr>
+                                <tr><td>40</td><td>1786</td><td>Torben Hviid</td><td>32.8</td><td>4</td></tr>
+                                <tr><td>41</td><td>3638</td><td>Lars Kjeldsen</td><td>32.8</td><td>5</td></tr>
+                                <tr><td></td><td>1330</td><td>Jørgen Hansen</td><td>32.8</td><td>5</td></tr>
+                                <tr><td>43</td><td>444</td><td>Christian Taul</td><td>33.0</td><td>4</td></tr>
+                                <tr><td></td><td>2302</td><td>Hans Henrik Mathiasen</td><td>33.0</td><td>4</td></tr>
+                                <tr><td></td><td>2993</td><td>Keld Clausen</td><td>33.0</td><td>4</td></tr>
+                                <tr><td>46</td><td>675</td><td>Lars Elving Pedersen</td><td>33.2</td><td>5</td></tr>
+                                <tr><td></td><td>1151</td><td>Arne Josefsen</td><td>33.2</td><td>6</td></tr>
+                                <tr><td>48</td><td>3385</td><td>Steen Petersen</td><td>33.3</td><td>4</td></tr>
+                                <tr><td>49</td><td>4339</td><td>Kenneth Johnsen</td><td>33.3</td><td>3</td></tr>
+                                <tr><td></td><td>3191</td><td>Flemming Mørk</td><td>33.3</td><td>3</td></tr>
+                                <tr><td>51</td><td>2672</td><td>Søren Priess Gade</td><td>33.4</td><td>5</td></tr>
+                                <tr><td>52</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>33.5</td><td>4</td></tr>
+                                <tr><td></td><td>1235</td><td>Jørgen Basse</td><td>33.5</td><td>4</td></tr>
+                                <tr><td>54</td><td>4036</td><td>Jørn Bylling Andersen</td><td>33.8</td><td>4</td></tr>
+                                <tr><td>55</td><td>1795</td><td>Michael Suhr</td><td>33.8</td><td>5</td></tr>
+                                <tr><td></td><td>1217</td><td>Stig Brogård Andersen</td><td>33.8</td><td>6</td></tr>
+                                <tr><td>57</td><td>3465</td><td>Danny Golan</td><td>34.0</td><td>3</td></tr>
+                                <tr><td></td><td>3727</td><td>Julian Nielsen</td><td>34.0</td><td>4</td></tr>
+                                <tr><td>59</td><td>1530</td><td>Mikael Hansen</td><td>34.3</td><td>4</td></tr>
+                                <tr><td>60</td><td>1319</td><td>Hans Jørgen B. Nielsen</td><td>34.3</td><td>3</td></tr>
+                                <tr><td></td><td>4745</td><td>Peter Palmelund-Jahn</td><td>34.3</td><td>3</td></tr>
+                                <tr><td>62</td><td>518</td><td>Anker Jakobsen</td><td>34.5</td><td>4</td></tr>
+                                <tr><td></td><td>6122</td><td>Claus Vilstrup</td><td>34.5</td><td>4</td></tr>
+                                <tr><td>64</td><td>1724</td><td>Lars Madsen</td><td>34.6</td><td>5</td></tr>
+                                <tr><td></td><td>4947</td><td>Jesper Just</td><td>34.6</td><td>5</td></tr>
+                                <tr><td></td><td>1837</td><td>Lars Frandsen</td><td>34.6</td><td>5</td></tr>
+                                <tr><td>67</td><td>4462</td><td>Uffe Mikkelsen</td><td>34.7</td><td>3</td></tr>
+                                <tr><td>68</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>34.8</td><td>4</td></tr>
+                                <tr><td>69</td><td>5343</td><td>Morten Vilhelm Skriver</td><td>34.8</td><td>6</td></tr>
+                                <tr><td>70</td><td>230</td><td>Peter Leth Kjær</td><td>35.3</td><td>4</td></tr>
+                                <tr><td>71</td><td>2940</td><td>Lars Therkelsen</td><td>35.8</td><td>4</td></tr>
+                                <tr><td>72</td><td>3026</td><td>Jens Elkjær Jørgensen</td><td>36.2</td><td>5</td></tr>
+                                <tr><td>73</td><td>6377</td><td>Jacob Andersen</td><td>36.5</td><td>4</td></tr>
+                                <tr><td>74</td><td>5106</td><td>Mikkel Larsen</td><td>39.0</td><td>3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-birdies" aria-labelledby="tab-birdies" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Birdies</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>6075</td><td>Morten Bonde Nielsen</td><td>10</td><td>19</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>505</td><td>Peter Worsøe</td><td>7</td><td>26</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>2465</td><td>Paul Ruston</td><td>5</td><td>20</td></tr>
+                                <tr><td>4</td><td>1795</td><td>Michael Suhr</td><td>5</td><td>25</td></tr>
+                                <tr><td>5</td><td>418</td><td>Niels Lysgaard-Madsen</td><td>5</td><td>26</td></tr>
+                                <tr><td>6</td><td>1700</td><td>Keld Hindhede</td><td>5</td><td>29</td></tr>
+                                <tr><td></td><td>1461</td><td>Brian Jensen</td><td>5</td><td>29</td></tr>
+                                <tr><td>8</td><td>630</td><td>Claus Frandsen</td><td>4</td><td>18</td></tr>
+                                <tr><td>9</td><td>111</td><td>Palle Jensen</td><td>4</td><td>22</td></tr>
+                                <tr><td>10</td><td>3495</td><td>Henning Mathiasen</td><td>4</td><td>25</td></tr>
+                                <tr><td>11</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>4</td><td>26</td></tr>
+                                <tr><td>12</td><td>1701</td><td>Paul Sørensen</td><td>4</td><td>27</td></tr>
+                                <tr><td>13</td><td>5236</td><td>Jakob Just Bentsen</td><td>4</td><td>28</td></tr>
+                                <tr><td>14</td><td>4125</td><td>Thomas Mikkelsen</td><td>3</td><td>12</td></tr>
+                                <tr><td>15</td><td>1315</td><td>Kent Brejnholt</td><td>3</td><td>18</td></tr>
+                                <tr><td>16</td><td>675</td><td>Lars Elving Pedersen</td><td>3</td><td>19</td></tr>
+                                <tr><td>17</td><td>1939</td><td>Michael Kaltoft</td><td>3</td><td>20</td></tr>
+                                <tr><td>18</td><td>1869</td><td>Jan Fredsted</td><td>3</td><td>23</td></tr>
+                                <tr><td></td><td>5806</td><td>Ole Skousen</td><td>3</td><td>23</td></tr>
+                                <tr><td>20</td><td>2672</td><td>Søren Priess Gade</td><td>3</td><td>25</td></tr>
+                                <tr><td></td><td>428</td><td>Jakob Preuss</td><td>3</td><td>25</td></tr>
+                                <tr><td>22</td><td>720</td><td>Brian Pedersen</td><td>3</td><td>26</td></tr>
+                                <tr><td></td><td>764</td><td>Brian Baun Madsen</td><td>3</td><td>26</td></tr>
+                                <tr><td>24</td><td>2901</td><td>Kenneth Stokkendahl</td><td>2</td><td>4</td></tr>
+                                <tr><td>25</td><td>5789</td><td>Karsten Aagaard Nielsen</td><td>2</td><td>9</td></tr>
+                                <tr><td>26</td><td>6559</td><td>Anders Dalgaard Christensen</td><td>2</td><td>11</td></tr>
+                                <tr><td>27</td><td>2990</td><td>Tommy Hansen</td><td>2</td><td>12</td></tr>
+                                <tr><td></td><td>1307</td><td>Claus Møller Christensen</td><td>2</td><td>12</td></tr>
+                                <tr><td>29</td><td>4745</td><td>Peter Palmelund-Jahn</td><td>2</td><td>13</td></tr>
+                                <tr><td>30</td><td>2993</td><td>Keld Clausen</td><td>2</td><td>16</td></tr>
+                                <tr><td></td><td>1698</td><td>Lars M. Hansen</td><td>2</td><td>16</td></tr>
+                                <tr><td>32</td><td>1348</td><td>Erik Skov Jørgensen</td><td>2</td><td>17</td></tr>
+                                <tr><td>33</td><td>1786</td><td>Torben Hviid</td><td>2</td><td>18</td></tr>
+                                <tr><td>34</td><td>1293</td><td>Lars Christiansen</td><td>2</td><td>19</td></tr>
+                                <tr><td>35</td><td>1553</td><td>Kim Vinther</td><td>2</td><td>20</td></tr>
+                                <tr><td></td><td>3191</td><td>Flemming Mørk</td><td>2</td><td>20</td></tr>
+                                <tr><td>37</td><td>2903</td><td>Jan Carlsen</td><td>2</td><td>21</td></tr>
+                                <tr><td></td><td>4947</td><td>Jesper Just</td><td>2</td><td>21</td></tr>
+                                <tr><td>39</td><td>4407</td><td>Poul Erik Cæsius</td><td>2</td><td>23</td></tr>
+                                <tr><td>40</td><td>3132</td><td>Ole Mathiasen</td><td>2</td><td>26</td></tr>
+                                <tr><td>41</td><td>3062</td><td>Per Møller</td><td>2</td><td>27</td></tr>
+                                <tr><td>42</td><td>3638</td><td>Lars Kjeldsen</td><td>2</td><td>28</td></tr>
+                                <tr><td>43</td><td>1154</td><td>Christian Hvarre</td><td>2</td><td>32</td></tr>
+                                <tr><td>44</td><td>932</td><td>Cliff Hansen</td><td>1</td><td>3</td></tr>
+                                <tr><td></td><td>3681</td><td>Poul Stokholm</td><td>1</td><td>3</td></tr>
+                                <tr><td>46</td><td>4676</td><td>Michael Thomsen</td><td>1</td><td>5</td></tr>
+                                <tr><td>47</td><td>284</td><td>Brian Danebod</td><td>1</td><td>9</td></tr>
+                                <tr><td>48</td><td>542</td><td>Bjarne Kastbjerg Petersen</td><td>1</td><td>10</td></tr>
+                                <tr><td>49</td><td>770</td><td>Peter Nutzhorn Jensen</td><td>1</td><td>11</td></tr>
+                                <tr><td></td><td>850</td><td>Lars Melson</td><td>1</td><td>11</td></tr>
+                                <tr><td></td><td>1407</td><td>Henrik Fink Stidsen</td><td>1</td><td>11</td></tr>
+                                <tr><td></td><td>3465</td><td>Danny Golan</td><td>1</td><td>11</td></tr>
+                                <tr><td>53</td><td>6148</td><td>Gudmundur Gretarsson</td><td>1</td><td>13</td></tr>
+                                <tr><td>54</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>1</td><td>15</td></tr>
+                                <tr><td>55</td><td>422</td><td>John Christiansen</td><td>1</td><td>16</td></tr>
+                                <tr><td>56</td><td>3385</td><td>Steen Petersen</td><td>1</td><td>17</td></tr>
+                                <tr><td></td><td>6377</td><td>Jacob Andersen</td><td>1</td><td>17</td></tr>
+                                <tr><td>58</td><td>278</td><td>Bjarne Grann</td><td>1</td><td>18</td></tr>
+                                <tr><td>59</td><td>3026</td><td>Jens Elkjær Jørgensen</td><td>1</td><td>19</td></tr>
+                                <tr><td>60</td><td>1235</td><td>Jørgen Basse</td><td>1</td><td>20</td></tr>
+                                <tr><td>61</td><td>3149</td><td>Peter Aarestrup</td><td>1</td><td>21</td></tr>
+                                <tr><td>62</td><td>2940</td><td>Lars Therkelsen</td><td>1</td><td>22</td></tr>
+                                <tr><td>63</td><td>1151</td><td>Arne Josefsen</td><td>1</td><td>25</td></tr>
+                                <tr><td></td><td>1532</td><td>Alfred Korsgaard</td><td>1</td><td>25</td></tr>
+                                <tr><td>65</td><td>1113</td><td>Jesper Hansen</td><td>1</td><td>26</td></tr>
+                                <tr><td>66</td><td>1217</td><td>Stig Brogård Andersen</td><td>1</td><td>27</td></tr>
+                                <tr><td></td><td>1270</td><td>Lars Bo Cæsius</td><td>1</td><td>27</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-nearestpin" aria-labelledby="tab-nearestpin" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong></p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third result-table--course">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Bane</th><th>Hul</th><th>Afstand (cm)</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>3465</td><td>Danny Golan</td><td>4 Jun, Sletten/Parken</td><td>Sletten5</td><td>50</td></tr>
+                                <tr class="result-table__row--top"><td>2</td><td>1532</td><td>Alfred Korsgaard</td><td>28 May, Parken/Skoven</td><td>Parken8</td><td>54</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>2465</td><td>Paul Ruston</td><td>7 May, Skoven/Sletten</td><td>Sletten5</td><td>65</td></tr>
+                                <tr><td>4</td><td>1701</td><td>Paul Sørensen</td><td>28 May, Parken/Skoven</td><td>Skoven7</td><td>70</td></tr>
+                                <tr><td>5</td><td>4125</td><td>Thomas Mikkelsen</td><td>30 Apr, Parken/Skoven</td><td>Skoven4</td><td>74</td></tr>
+                                <tr><td>6</td><td>284</td><td>Brian Danebod</td><td>27 Aug, Sletten/Parken</td><td>Parken8</td><td>89</td></tr>
+                                <tr><td>7</td><td>4407</td><td>Poul Erik Cæsius</td><td>3 Sep, Skoven/Sletten</td><td>Skoven7</td><td>92</td></tr>
+                                <tr><td>8</td><td>764</td><td>Brian Baun Madsen</td><td>24 Sep, Sletten/Parken</td><td>Sletten5</td><td>95</td></tr>
+                                <tr><td>9</td><td>1939</td><td>Michael Kaltoft</td><td>25 Jun, Parken/Skoven</td><td>Parken3</td><td>99</td></tr>
+                                <tr><td>10</td><td>1700</td><td>Keld Hindhede</td><td>17 Sep, Sletten/Parken</td><td>Parken8</td><td>102</td></tr>
+                                <tr><td>11</td><td>1270</td><td>Lars Bo Cæsius</td><td>25 Jun, Parken/Skoven</td><td>Skoven7</td><td>115</td></tr>
+                                <tr><td>12</td><td>111</td><td>Palle Jensen</td><td>6 Aug, Sletten/Parken</td><td>Parken8</td><td>130</td></tr>
+                                <tr><td>13</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>20 Aug, Skoven/Sletten</td><td>Sletten6</td><td>137</td></tr>
+                                <tr><td>14</td><td>1293</td><td>Lars Christiansen</td><td>8 Oct, Sletten/Parken</td><td>Sletten6</td><td>152</td></tr>
+                                <tr><td>15</td><td>5806</td><td>Ole Skousen</td><td>1 Oct, Sletten/Parken</td><td>Sletten2</td><td>159</td></tr>
+                                <tr><td>16</td><td>1701</td><td>Paul Sørensen</td><td>8 Oct, Sletten/Parken</td><td>Parken8</td><td>169</td></tr>
+                                <tr><td>17</td><td>422</td><td>John Christiansen</td><td>13 Aug, Parken/Skoven</td><td>Parken3</td><td>170</td></tr>
+                                <tr><td>18</td><td>1701</td><td>Paul Sørensen</td><td>20 Aug, Skoven/Sletten</td><td>Skoven7</td><td>173</td></tr>
+                                <tr><td>19</td><td>1701</td><td>Paul Sørensen</td><td>2 Jul, Sletten/Parken</td><td>Parken8</td><td>193</td></tr>
+                                <tr><td></td><td>418</td><td>Niels Lysgaard-Madsen</td><td>21 May, Sletten/Parken</td><td>Sletten6</td><td>193</td></tr>
+                                <tr><td>21</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>23 Jul, Sletten/Parken</td><td>Sletten2</td><td>198</td></tr>
+                                <tr><td>22</td><td>1307</td><td>Claus Møller Christensen</td><td>30 Apr, Parken/Skoven</td><td>Parken3</td><td>200</td></tr>
+                                <tr><td>23</td><td>1532</td><td>Alfred Korsgaard</td><td>26 Mar, Sletten/Parken</td><td>Sletten5</td><td>212</td></tr>
+                                <tr><td>24</td><td>720</td><td>Brian Pedersen</td><td>23 Jul, Sletten/Parken</td><td>Parken8</td><td>214</td></tr>
+                                <tr><td>25</td><td>4947</td><td>Jesper Just</td><td>27 Aug, Sletten/Parken</td><td>Sletten2</td><td>221</td></tr>
+                                <tr><td>26</td><td>3062</td><td>Per Møller</td><td>28 May, Parken/Skoven</td><td>Skoven4</td><td>238</td></tr>
+                                <tr><td>27</td><td>12</td><td>Poul Erik Bligaard</td><td>7 May, Skoven/Sletten</td><td>Skoven7</td><td>240</td></tr>
+                                <tr><td>28</td><td>2465</td><td>Paul Ruston</td><td>2 Jul, Sletten/Parken</td><td>Sletten6</td><td>242</td></tr>
+                                <tr><td>29</td><td>1315</td><td>Kent Brejnholt</td><td>16 Jul, Parken/Skoven</td><td>Skoven4</td><td>247</td></tr>
+                                <tr><td>30</td><td>5236</td><td>Jakob Just Bentsen</td><td>16 Jul, Parken/Skoven</td><td>Parken3</td><td>252</td></tr>
+                                <tr><td>31</td><td>675</td><td>Lars Elving Pedersen</td><td>1 Oct, Sletten/Parken</td><td>Parken3</td><td>254</td></tr>
+                                <tr><td>32</td><td>4125</td><td>Thomas Mikkelsen</td><td>6 Aug, Sletten/Parken</td><td>Sletten5</td><td>256</td></tr>
+                                <tr><td></td><td>1151</td><td>Arne Josefsen</td><td>23 Apr, Sletten/Parken</td><td>Parken8</td><td>256</td></tr>
+                                <tr><td>34</td><td>2465</td><td>Paul Ruston</td><td>13 Aug, Parken/Skoven</td><td>Skoven7</td><td>270</td></tr>
+                                <tr><td>35</td><td>1553</td><td>Kim Vinther</td><td>16 Apr, Sletten/Parken</td><td>Sletten6</td><td>280</td></tr>
+                                <tr><td>36</td><td>4745</td><td>Peter Palmelund-Jahn</td><td>21 May, Sletten/Parken</td><td>Parken8</td><td>287</td></tr>
+                                <tr><td>37</td><td>675</td><td>Lars Elving Pedersen</td><td>18 Jun, Skoven/Sletten</td><td>Sletten2</td><td>387</td></tr>
+                                <tr><td>38</td><td>380</td><td>Jan Bertelsen</td><td>18 Jun, Skoven/Sletten</td><td>Skoven4</td><td>418</td></tr>
+                                <tr><td>39</td><td>2465</td><td>Paul Ruston</td><td>26 Mar, Sletten/Parken</td><td>Parken8</td><td>465</td></tr>
+                                <tr><td>40</td><td>1939</td><td>Michael Kaltoft</td><td>4 Jun, Sletten/Parken</td><td>Parken3</td><td>474</td></tr>
+                                <tr><td>41</td><td>3062</td><td>Per Møller</td><td>3 Sep, Skoven/Sletten</td><td>Sletten5</td><td>508</td></tr>
+                                <tr><td>42</td><td>5236</td><td>Jakob Just Bentsen</td><td>17 Sep, Sletten/Parken</td><td>Sletten6</td><td>511</td></tr>
+                                <tr><td>43</td><td>2940</td><td>Lars Therkelsen</td><td>23 Apr, Sletten/Parken</td><td>Sletten5</td><td>874</td></tr>
+                                <tr><td>44</td><td>2464</td><td>Troels Clemmensen</td><td>16 Apr, Sletten/Parken</td><td>Parken8</td><td>1079</td></tr>
+                                <tr><td>45</td><td>6559</td><td>Anders Dalgaard Christensen</td><td>30 Jul, Sletten/Parken</td><td>Sletten6</td><td>1712</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="result-panel" role="tabpanel" id="panel-overall" aria-labelledby="tab-overall" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong></p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third result-table--course">
+                            <thead>
+                                <tr><th>Dato</th><th>Vgc nr.</th><th>Navn</th><th>Bane</th><th>Points</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>torsdag 8 okt</td><td>1939</td><td>Michael Kaltoft</td><td>Vejle, Sletten/Parken</td><td>39</td></tr>
+                                <tr><td>torsdag 1 okt</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>torsdag 24 sep</td><td>1786</td><td>Torben Hviid</td><td>Vejle, Sletten/Parken</td><td>40</td></tr>
+                                <tr><td>torsdag 17 sep</td><td>1869</td><td>Jan Fredsted</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>torsdag 10 sep</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>Vejle, Parken/Skoven</td><td>43</td></tr>
+                                <tr><td>torsdag 3 sep</td><td>1235</td><td>Jørgen Basse</td><td>Vejle, Skoven/Sletten</td><td>39</td></tr>
+                                <tr><td>søndag 30 aug</td><td>5973</td><td>Flemming Breum</td><td>Trehøje, 55</td><td>44</td></tr>
+                                <tr><td>torsdag 27 aug</td><td>278</td><td>Bjarne Grann</td><td>Vejle, Sletten/Parken</td><td>44</td></tr>
+                                <tr><td>torsdag 20 aug</td><td>1700</td><td>Keld Hindhede</td><td>Vejle, Skoven/Sletten</td><td>42</td></tr>
+                                <tr><td>torsdag 13 aug</td><td>6122</td><td>Claus Vilstrup</td><td>Vejle, Parken/Skoven</td><td>40</td></tr>
+                                <tr><td>torsdag 6 aug</td><td>2464</td><td>Troels Clemmensen</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>torsdag 30 jul</td><td>1939</td><td>Michael Kaltoft</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>torsdag 23 jul</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>Vejle, Sletten/Parken</td><td>46</td></tr>
+                                <tr><td>torsdag 16 jul</td><td>518</td><td>Anker Jakobsen</td><td>Vejle, Parken/Skoven</td><td>46</td></tr>
+                                <tr><td>torsdag 2 jul</td><td>5551</td><td>Ejnar Smidt Hansen</td><td>Vejle, Sletten/Parken</td><td>45</td></tr>
+                                <tr><td>søndag 28 jun</td><td>2302</td><td>Hans Henrik Mathiasen</td><td>Timmendorfer Strand, North, Nordplatz</td><td>41</td></tr>
+                                <tr><td>lørdag 27 jun</td><td>3191</td><td>Flemming Mørk</td><td>Timmendorfer Strand, North, Nordplatz</td><td>41</td></tr>
+                                <tr><td>torsdag 25 jun</td><td>2903</td><td>Jan Carlsen</td><td>Vejle, Parken/Skoven</td><td>39</td></tr>
+                                <tr><td>torsdag 18 jun</td><td>1786</td><td>Torben Hviid</td><td>Vejle, Skoven/Sletten</td><td>41</td></tr>
+                                <tr><td>tirsdag 16 jun</td><td>1113</td><td>Jesper Hansen</td><td>Vejle, Parken/Skoven</td><td>37</td></tr>
+                                <tr><td>torsdag 11 jun</td><td>111</td><td>Palle Jensen</td><td>Hedensted, Hedensted</td><td>38</td></tr>
+                                <tr><td>torsdag 4 jun</td><td>6075</td><td>Morten Bonde Nielsen</td><td>Vejle, Sletten/Parken</td><td>40</td></tr>
+                                <tr><td>torsdag 28 maj</td><td>1235</td><td>Jørgen Basse</td><td>Vejle, Parken/Skoven</td><td>42</td></tr>
+                                <tr><td>torsdag 21 maj</td><td>6148</td><td>Gudmundur Gretarsson</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>lørdag 16 maj</td><td>1701</td><td>Paul Sørensen</td><td>Holstebro Golf Club, Skovbanen</td><td>37</td></tr>
+                                <tr><td>torsdag 7 maj</td><td>932</td><td>Cliff Hansen</td><td>Vejle, Skoven/Sletten</td><td>44</td></tr>
+                                <tr><td>torsdag 30 apr</td><td>5520</td><td>Asp Diget</td><td>Vejle, Parken/Skoven</td><td>35</td></tr>
+                                <tr><td>torsdag 23 apr</td><td>1532</td><td>Alfred Korsgaard</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>torsdag 16 apr</td><td>1939</td><td>Michael Kaltoft</td><td>Vejle, Sletten/Parken</td><td>42</td></tr>
+                                <tr><td>torsdag 9 apr</td><td>1217</td><td>Stig Brogård Andersen</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                                <tr><td>torsdag 26 mar</td><td>1939</td><td>Michael Kaltoft</td><td>Vejle, Sletten/Parken</td><td>40</td></tr>
+                                <tr><td>lørdag 21 mar</td><td>1217</td><td>Stig Brogård Andersen</td><td>Vejle, Sletten/Parken</td><td>41</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-shootout" aria-labelledby="tab-shootout" hidden>
+                    <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong></p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Points</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>1</td><td>1330</td><td>Jørgen Hansen</td><td>19</td><td>8</td></tr>
+                                <tr class="result-table__row--top"><td></td><td>2302</td><td>Hans Henrik Mathiasen</td><td>19</td><td>8</td></tr>
+                                <tr class="result-table__row--top"><td>3</td><td>3495</td><td>Henning Mathiasen</td><td>19</td><td>10</td></tr>
+                                <tr><td></td><td>720</td><td>Brian Pedersen</td><td>19</td><td>10</td></tr>
+                                <tr><td></td><td>6075</td><td>Morten Bonde Nielsen</td><td>19</td><td>10</td></tr>
+                                <tr><td>6</td><td>1235</td><td>Jørgen Basse</td><td>18</td><td>7</td></tr>
+                                <tr><td>7</td><td>2903</td><td>Jan Carlsen</td><td>18</td><td>8</td></tr>
+                                <tr><td>8</td><td>3132</td><td>Ole Mathiasen</td><td>18</td><td>9</td></tr>
+                                <tr><td>9</td><td>1154</td><td>Christian Hvarre</td><td>18</td><td>10</td></tr>
+                                <tr><td></td><td>5236</td><td>Jakob Just Bentsen</td><td>18</td><td>10</td></tr>
+                                <tr><td>11</td><td>3191</td><td>Flemming Mørk</td><td>17</td><td>7</td></tr>
+                                <tr><td>12</td><td>5806</td><td>Ole Skousen</td><td>17</td><td>9</td></tr>
+                                <tr><td>13</td><td>1700</td><td>Keld Hindhede</td><td>17</td><td>10</td></tr>
+                                <tr><td></td><td>1113</td><td>Jesper Hansen</td><td>17</td><td>10</td></tr>
+                                <tr><td>15</td><td>3385</td><td>Steen Petersen</td><td>16</td><td>7</td></tr>
+                                <tr><td>16</td><td>630</td><td>Claus Frandsen</td><td>16</td><td>8</td></tr>
+                                <tr><td></td><td>4036</td><td>Jørn Bylling Andersen</td><td>16</td><td>8</td></tr>
+                                <tr><td>18</td><td>1461</td><td>Brian Jensen</td><td>16</td><td>9</td></tr>
+                                <tr><td>19</td><td>2993</td><td>Keld Clausen</td><td>15</td><td>7</td></tr>
+                                <tr><td>20</td><td>3026</td><td>Jens Elkjær Jørgensen</td><td>15</td><td>8</td></tr>
+                                <tr><td></td><td>2465</td><td>Paul Ruston</td><td>15</td><td>8</td></tr>
+                                <tr><td>22</td><td>3062</td><td>Per Møller</td><td>15</td><td>9</td></tr>
+                                <tr><td></td><td>1701</td><td>Paul Sørensen</td><td>15</td><td>9</td></tr>
+                                <tr><td></td><td>418</td><td>Niels Lysgaard-Madsen</td><td>15</td><td>9</td></tr>
+                                <tr><td>25</td><td>505</td><td>Peter Worsøe</td><td>15</td><td>10</td></tr>
+                                <tr><td>26</td><td>764</td><td>Brian Baun Madsen</td><td>14</td><td>8</td></tr>
+                                <tr><td>27</td><td>111</td><td>Palle Jensen</td><td>13</td><td>6</td></tr>
+                                <tr><td></td><td>1786</td><td>Torben Hviid</td><td>13</td><td>6</td></tr>
+                                <tr><td></td><td>2489</td><td>Frede Søgaard</td><td>13</td><td>6</td></tr>
+                                <tr><td>30</td><td>4462</td><td>Uffe Mikkelsen</td><td>13</td><td>7</td></tr>
+                                <tr><td>31</td><td>1939</td><td>Michael Kaltoft</td><td>13</td><td>8</td></tr>
+                                <tr><td></td><td>675</td><td>Lars Elving Pedersen</td><td>13</td><td>8</td></tr>
+                                <tr><td>33</td><td>1270</td><td>Lars Bo Cæsius</td><td>13</td><td>10</td></tr>
+                                <tr><td>34</td><td>422</td><td>John Christiansen</td><td>12</td><td>5</td></tr>
+                                <tr><td>35</td><td>5619</td><td>Morten Bech</td><td>12</td><td>6</td></tr>
+                                <tr><td>36</td><td>4947</td><td>Jesper Just</td><td>12</td><td>7</td></tr>
+                                <tr><td></td><td>2940</td><td>Lars Therkelsen</td><td>12</td><td>7</td></tr>
+                                <tr><td>38</td><td>1553</td><td>Kim Vinther</td><td>12</td><td>8</td></tr>
+                                <tr><td>39</td><td>1795</td><td>Michael Suhr</td><td>12</td><td>9</td></tr>
+                                <tr><td></td><td>1151</td><td>Arne Josefsen</td><td>12</td><td>9</td></tr>
+                                <tr><td></td><td>1217</td><td>Stig Brogård Andersen</td><td>12</td><td>9</td></tr>
+                                <tr><td>42</td><td>1698</td><td>Lars M. Hansen</td><td>11</td><td>5</td></tr>
+                                <tr><td>43</td><td>2628</td><td>Henrik Nygaard Jensen</td><td>11</td><td>6</td></tr>
+                                <tr><td></td><td>1315</td><td>Kent Brejnholt</td><td>11</td><td>6</td></tr>
+                                <tr><td>45</td><td>278</td><td>Bjarne Grann</td><td>11</td><td>7</td></tr>
+                                <tr><td></td><td>3149</td><td>Peter Aarestrup</td><td>11</td><td>7</td></tr>
+                                <tr><td></td><td>1837</td><td>Lars Frandsen</td><td>11</td><td>7</td></tr>
+                                <tr><td></td><td>1869</td><td>Jan Fredsted</td><td>11</td><td>7</td></tr>
+                                <tr><td>49</td><td>428</td><td>Jakob Preuss</td><td>11</td><td>9</td></tr>
+                                <tr><td></td><td>4407</td><td>Poul Erik Cæsius</td><td>11</td><td>9</td></tr>
+                                <tr><td></td><td>3638</td><td>Lars Kjeldsen</td><td>11</td><td>9</td></tr>
+                                <tr><td>52</td><td>3465</td><td>Danny Golan</td><td>10</td><td>4</td></tr>
+                                <tr><td>53</td><td>6031</td><td>Dan Ole Sørensen</td><td>10</td><td>5</td></tr>
+                                <tr><td>54</td><td>518</td><td>Anker Jakobsen</td><td>10</td><td>6</td></tr>
+                                <tr><td>55</td><td>5343</td><td>Morten Vilhelm Skriver</td><td>10</td><td>7</td></tr>
+                                <tr><td>56</td><td>6377</td><td>Jacob Andersen</td><td>10</td><td>8</td></tr>
+                                <tr><td></td><td>2672</td><td>Søren Priess Gade</td><td>10</td><td>8</td></tr>
+                                <tr><td>58</td><td>230</td><td>Peter Leth Kjær</td><td>9</td><td>5</td></tr>
+                                <tr><td>59</td><td>4709</td><td>Jens Jørgen Plagborg</td><td>9</td><td>6</td></tr>
+                                <tr><td>60</td><td>4520</td><td>Kent Neupart Jacobsen</td><td>9</td><td>8</td></tr>
+                                <tr><td></td><td>1724</td><td>Lars Madsen</td><td>9</td><td>8</td></tr>
+                                <tr><td>62</td><td>1532</td><td>Alfred Korsgaard</td><td>9</td><td>9</td></tr>
+                                <tr><td>63</td><td>1995</td><td>Mikkel Mikkelsen</td><td>8</td><td>4</td></tr>
+                                <tr><td></td><td>2464</td><td>Troels Clemmensen</td><td>8</td><td>4</td></tr>
+                                <tr><td></td><td>5307</td><td>Klaus Rahbek Jespersen</td><td>8</td><td>4</td></tr>
+                                <tr><td>66</td><td>4125</td><td>Thomas Mikkelsen</td><td>8</td><td>5</td></tr>
+                                <tr><td></td><td>284</td><td>Brian Danebod</td><td>8</td><td>5</td></tr>
+                                <tr><td></td><td>160</td><td>Jørn Linde Andersen</td><td>8</td><td>5</td></tr>
+                                <tr><td></td><td>1407</td><td>Henrik Fink Stidsen</td><td>8</td><td>5</td></tr>
+                                <tr><td>70</td><td>444</td><td>Christian Taul</td><td>8</td><td>6</td></tr>
+                                <tr><td>71</td><td>1348</td><td>Erik Skov Jørgensen</td><td>8</td><td>7</td></tr>
+                                <tr><td>72</td><td>5789</td><td>Karsten Aagaard Nielsen</td><td>7</td><td>4</td></tr>
+                                <tr><td>73</td><td>4745</td><td>Peter Palmelund-Jahn</td><td>7</td><td>5</td></tr>
+                                <tr><td>74</td><td>3727</td><td>Julian Nielsen</td><td>7</td><td>6</td></tr>
+                                <tr><td></td><td>4339</td><td>Kenneth Johnsen</td><td>7</td><td>6</td></tr>
+                                <tr><td>76</td><td>5423</td><td>Jesper Buhl Mathiesen</td><td>6</td><td>3</td></tr>
+                                <tr><td></td><td>1503</td><td>Jesper Thinggaard</td><td>6</td><td>3</td></tr>
+                                <tr><td></td><td>1644</td><td>Nikolaj Mikkelsen</td><td>6</td><td>3</td></tr>
+                                <tr><td>79</td><td>4829</td><td>Finn Thomsen</td><td>6</td><td>4</td></tr>
+                                <tr><td>80</td><td>1437</td><td>Svend Erik Skovhus</td><td>6</td><td>5</td></tr>
+                                <tr><td>81</td><td>1319</td><td>Hans Jørgen B. Nielsen</td><td>6</td><td>6</td></tr>
+                                <tr><td>82</td><td>4348</td><td>Michael Rand</td><td>5</td><td>2</td></tr>
+                                <tr><td></td><td>4316</td><td>Brian Hansen</td><td>5</td><td>2</td></tr>
+                                <tr><td></td><td>6025</td><td>Jørn Jalk</td><td>5</td><td>2</td></tr>
+                                <tr><td>85</td><td>4333</td><td>Michael Paugan</td><td>5</td><td>3</td></tr>
+                                <tr><td></td><td>1930</td><td>Stig Caspersen</td><td>5</td><td>3</td></tr>
+                                <tr><td>87</td><td>770</td><td>Peter Nutzhorn Jensen</td><td>5</td><td>4</td></tr>
+                                <tr><td></td><td>4541</td><td>Hans Peter Munk-Andersen</td><td>5</td><td>4</td></tr>
+                                <tr><td></td><td>5106</td><td>Mikkel Larsen</td><td>5</td><td>4</td></tr>
+                                <tr><td></td><td>6559</td><td>Anders Dalgaard Christensen</td><td>5</td><td>4</td></tr>
+                                <tr><td>91</td><td>1293</td><td>Lars Christiansen</td><td>5</td><td>6</td></tr>
+                                <tr><td>92</td><td>1530</td><td>Mikael Hansen</td><td>5</td><td>8</td></tr>
+                                <tr><td>93</td><td>1307</td><td>Claus Møller Christensen</td><td>4</td><td>2</td></tr>
+                                <tr><td></td><td>6148</td><td>Gudmundur Gretarsson</td><td>4</td><td>2</td></tr>
+                                <tr><td></td><td>4676</td><td>Michael Thomsen</td><td>4</td><td>2</td></tr>
+                                <tr><td></td><td>5551</td><td>Ejnar Smidt Hansen</td><td>4</td><td>2</td></tr>
+                                <tr><td>97</td><td>850</td><td>Lars Melson</td><td>4</td><td>3</td></tr>
+                                <tr><td>98</td><td>1640</td><td>Henrik Mikkelsen</td><td>4</td><td>5</td></tr>
+                                <tr><td>99</td><td>2901</td><td>Kenneth Stokkendahl</td><td>3</td><td>1</td></tr>
+                                <tr><td>100</td><td>5973</td><td>Flemming Breum</td><td>3</td><td>3</td></tr>
+                                <tr><td>101</td><td>6122</td><td>Claus Vilstrup</td><td>3</td><td>6</td></tr>
+                                <tr><td>102</td><td>3681</td><td>Poul Stokholm</td><td>2</td><td>1</td></tr>
+                                <tr><td></td><td>3582</td><td>Jørgen Roed Poulsen</td><td>2</td><td>1</td></tr>
+                                <tr><td></td><td>932</td><td>Cliff Hansen</td><td>2</td><td>1</td></tr>
+                                <tr><td>105</td><td>935</td><td>Jesper Maack</td><td>2</td><td>2</td></tr>
+                                <tr><td></td><td>5839</td><td>Robert Veilis</td><td>2</td><td>2</td></tr>
+                                <tr><td>107</td><td>6066</td><td>Claus-Henrik Hviid Jørgensen</td><td>1</td><td>1</td></tr>
+                                <tr><td></td><td>4561</td><td>Max Jensen</td><td>1</td><td>1</td></tr>
+                                <tr><td></td><td>380</td><td>Jan Bertelsen</td><td>1</td><td>1</td></tr>
+                                <tr><td></td><td>12</td><td>Poul Erik Bligaard</td><td>1</td><td>1</td></tr>
+                                <tr><td>111</td><td>542</td><td>Bjarne Kastbjerg Petersen</td><td>1</td><td>2</td></tr>
+                                <tr><td></td><td>2990</td><td>Tommy Hansen</td><td>1</td><td>2</td></tr>
+                                <tr><td></td><td>6069</td><td>Miha Kavcic</td><td>1</td><td>2</td></tr>
+                                <tr><td>114</td><td>4397</td><td>Niels Hansen</td><td>0</td><td>1</td></tr>
+                                <tr><td></td><td>6308</td><td>Jeppe Uldall</td><td>0</td><td>1</td></tr>
+                                <tr><td></td><td>6475</td><td>Michael Aarestrup</td><td>0</td><td>1</td></tr>
+                                <tr><td></td><td>0</td><td>Rasmus Kinch</td><td>0</td><td>1</td></tr>
+                                <tr><td>118</td><td>5520</td><td>Asp Diget</td><td>0</td><td>3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-simulator" aria-labelledby="tab-simulator" hidden>
+                    <p class="result-date">Periode: <strong>01 Nov, 2023 - 01 Apr, 2024</strong> · total af Stableford point for de 5 bedste matcher</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table result-table--name-third">
+                            <thead>
+                                <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Points</th><th>Snit</th><th># runder</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td colspan="6">Ingen resultater</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -189,6 +1020,19 @@
                 });
             });
         }
+
+        const resultTabs = document.querySelectorAll('.result-tabs__tab');
+        resultTabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                resultTabs.forEach((other) => {
+                    const isActive = other === tab;
+                    other.classList.toggle('result-tabs__tab--active', isActive);
+                    other.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                    other.tabIndex = isActive ? 0 : -1;
+                    document.getElementById(other.getAttribute('aria-controls')).hidden = !isActive;
+                });
+            });
+        });
     </script>
 </body>
 </html>

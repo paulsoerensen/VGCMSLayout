@@ -438,11 +438,12 @@ a.sponsors__link:focus-visible {
     --calendar-columns: 3;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-2);
 }
 
 .calendar-grid > .calendar-card {
-    flex: 1 1 calc((100% - (var(--calendar-columns) - 1) * var(--space-2)) / var(--calendar-columns));
+    flex: 0 0 calc((100% - (var(--calendar-columns) - 1) * var(--space-2)) / var(--calendar-columns));
     min-width: 0;
 }
 
@@ -527,6 +528,47 @@ a.sponsors__link:focus-visible {
     border-radius: var(--radius-md);
 }
 
+.article__image--half {
+    width: 50%;
+    max-height: none;
+    aspect-ratio: 4 / 3;
+    margin: 4px 0 var(--space-3);
+}
+
+.article__image--left {
+    float: left;
+    margin-right: var(--space-4);
+}
+
+.article__image--right {
+    float: right;
+    margin-left: var(--space-4);
+}
+
+.article__image--top {
+    object-position: center 15%;
+}
+
+.article__image--natural {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.article__text::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .article__image--half {
+        float: none;
+        width: 100%;
+        margin: var(--space-3) 0;
+    }
+}
+
 .article__image--small {
     width: auto;
     max-width: 100%;
@@ -558,6 +600,28 @@ a.sponsors__link:focus-visible {
 .result-table--centered th:nth-child(2),
 .result-table--centered td:nth-child(2) {
     text-align: center;
+}
+
+.result-table--matches th:nth-child(3),
+.result-table--matches td:nth-child(3) {
+    text-align: left;
+}
+
+.result-table--courses th:first-child,
+.result-table--courses td:first-child {
+    text-align: left;
+}
+
+.result-table--name-third th:nth-child(2),
+.result-table--name-third td:nth-child(2) {
+    text-align: center;
+}
+
+.result-table--name-third th:nth-child(3),
+.result-table--name-third td:nth-child(3),
+.result-table--course th:nth-child(4),
+.result-table--course td:nth-child(4) {
+    text-align: left;
 }
 
 .article__list li {
