@@ -633,6 +633,16 @@ a.sponsors__link:focus-visible {
         display: none;
     }
 
+    #ranglister .result-table--points-min th,
+    #ranglister .result-table--points-min td {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    #ranglister .result-table--points-min .result-table__sponsor td {
+        padding: var(--space-2);
+    }
+
     .result-table__suffix,
     .result-table__short {
         display: inline;
