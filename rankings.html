@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=37" />
+    <link rel="stylesheet" href="site.css?v=39" />
 </head>
 <body>
     <div class="page-shell">
@@ -49,6 +49,22 @@
                 <header class="section-block__header">
                     <h2 id="ranglister-title" class="section-block__title">Ranglister</h2>
                 </header>
+
+                <label class="result-select">
+                    <span class="result-select__label">Vælg rangliste</span>
+                    <select class="result-select__input" id="ranking-select">
+                        <option value="tab-damstahl" selected>Østjysk Mesterskab</option>
+                        <option value="tab-brutto">Brutto</option>
+                        <option value="tab-netto">Netto</option>
+                        <option value="tab-stableford">Stableford</option>
+                        <option value="tab-hallington">Hallington</option>
+                        <option value="tab-puts">Puts</option>
+                        <option value="tab-birdies">Birdies</option>
+                        <option value="tab-nearestpin">Par3</option>
+                        <option value="tab-overall">Overall</option>
+                        <option value="tab-shootout">ShootOut</option>
+                    </select>
+                </label>
 
                 <div class="result-tabs" role="tablist" aria-label="Ranglister">
                     <button class="result-tabs__tab result-tabs__tab--active" type="button" role="tab" id="tab-damstahl" aria-selected="true" aria-controls="panel-damstahl">Østjysk Mesterskab</button>
@@ -1125,17 +1141,20 @@
         });
 
         const resultTabs = document.querySelectorAll('.result-tabs__tab');
-        resultTabs.forEach((tab) => {
-            tab.addEventListener('click', () => {
-                resultTabs.forEach((other) => {
-                    const isActive = other === tab;
-                    other.classList.toggle('result-tabs__tab--active', isActive);
-                    other.setAttribute('aria-selected', isActive ? 'true' : 'false');
-                    other.tabIndex = isActive ? 0 : -1;
-                    document.getElementById(other.getAttribute('aria-controls')).hidden = !isActive;
-                });
+        const rankingSelect = document.getElementById('ranking-select');
+        const showRanking = (tab) => {
+            resultTabs.forEach((other) => {
+                const isActive = other === tab;
+                other.classList.toggle('result-tabs__tab--active', isActive);
+                other.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                other.tabIndex = isActive ? 0 : -1;
+                document.getElementById(other.getAttribute('aria-controls')).hidden = !isActive;
             });
-        });
+            rankingSelect.value = tab.id;
+        };
+
+        resultTabs.forEach((tab) => tab.addEventListener('click', () => showRanking(tab)));
+        rankingSelect.addEventListener('change', () => showRanking(document.getElementById(rankingSelect.value)));
     </script>
 </body>
 </html>
