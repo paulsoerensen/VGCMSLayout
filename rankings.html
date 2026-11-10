@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=27" />
+    <link rel="stylesheet" href="site.css?v=29" />
 </head>
 <body>
     <div class="page-shell">
@@ -84,6 +84,7 @@
                             <tr><td>10</td><td>1235</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=1235" target="_blank" rel="noopener">Jørgen Basse</a></td><td>13</td><td>0</td></tr>
                             <tr><td>11</td><td>505</td><td>A</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=505" target="_blank" rel="noopener">Peter Worsøe</a></td><td>12</td><td>0</td></tr>
                             <tr><td>12</td><td>1869</td><td>A</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=1869" target="_blank" rel="noopener">Jan Fredsted</a></td><td>12</td><td>0</td></tr>
+                            <tr class="result-table__sponsor"><td colspan="6"><img class="result-table__sponsor-logo" src="media/sponsors/jytlander-bank.png" alt="Jutlander Bank" loading="lazy" /></td></tr>
                             <tr><td>13</td><td>4520</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=4520" target="_blank" rel="noopener">Kent Neupart Jacobsen</a></td><td>12</td><td>0</td></tr>
                             <tr><td>14</td><td>4462</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=4462" target="_blank" rel="noopener">Uffe Mikkelsen</a></td><td>12</td><td>0</td></tr>
                             <tr><td>15</td><td>1151</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=1151" target="_blank" rel="noopener">Arne Josefsen</a></td><td>12</td><td>0</td></tr>
@@ -798,7 +799,7 @@
                 <div class="result-panel" role="tabpanel" id="panel-overall" aria-labelledby="tab-overall" hidden>
                     <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong></p>
                     <div class="result-table-wrap">
-                        <table class="result-table result-table--name-third result-table--course">
+                        <table class="result-table result-table--name-third result-table--course result-table--overall">
                             <thead>
                                 <tr><th>Dato</th><th>Vgc nr.</th><th>Navn</th><th>Bane</th><th>Points</th></tr>
                             </thead>
@@ -1005,6 +1006,59 @@
                 });
             });
         }
+
+        const mobileView = window.matchMedia('(max-width: 768px)');
+
+        document.querySelectorAll('.result-table--overall').forEach((table, tableIndex) => {
+            Array.from(table.tBodies[0].rows).forEach((row, rowIndex) => {
+                const [dateCell, , nameCell, courseCell] = row.cells;
+
+                const [, weekday, shortDate] = dateCell.textContent.trim().match(/^(\S+)\s+(.+)$/);
+                const weekdayText = document.createElement('span');
+                weekdayText.className = 'result-table__weekday';
+                weekdayText.textContent = `${weekday} `;
+                dateCell.replaceChildren(weekdayText, shortDate);
+
+                const name = nameCell.textContent;
+                const nameText = document.createElement('span');
+                nameText.className = 'result-table__name';
+                nameText.textContent = name;
+
+                const toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'result-table__toggle';
+                toggle.textContent = name;
+                toggle.setAttribute('aria-expanded', 'false');
+
+                const details = document.createElement('tr');
+                details.className = 'result-table__details';
+                details.id = `overall-details-${tableIndex}-${rowIndex}`;
+                details.hidden = true;
+                toggle.setAttribute('aria-controls', details.id);
+
+                const detailCell = details.insertCell();
+                detailCell.colSpan = 3;
+                const facts = document.createElement('dl');
+                facts.className = 'result-table__facts';
+                const fact = document.createElement('div');
+                const label = document.createElement('dt');
+                const value = document.createElement('dd');
+                label.textContent = 'Bane';
+                value.textContent = courseCell.textContent.trim();
+                fact.append(label, value);
+                facts.append(fact);
+                detailCell.append(facts);
+
+                nameCell.replaceChildren(nameText, toggle);
+                row.after(details);
+
+                row.addEventListener('click', () => {
+                    if (!mobileView.matches) return;
+                    details.hidden = !details.hidden;
+                    toggle.setAttribute('aria-expanded', String(!details.hidden));
+                });
+            });
+        });
 
         document.querySelectorAll('.result-table--rounds').forEach((table) => {
             const addSuffix = (cell, text) => {
