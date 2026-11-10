@@ -612,12 +612,23 @@ a.sponsors__link:focus-visible {
     text-align: left;
 }
 
+.result-table__suffix {
+    display: none;
+}
+
 @media (max-width: 768px) {
-    .result-table--no-vgc th:nth-child(2),
-    .result-table--no-vgc td:nth-child(2),
-    .result-table--name-fourth th:nth-child(2),
-    .result-table--name-fourth td:nth-child(2) {
+    #ranglister .result-table th:nth-child(2),
+    #ranglister .result-table td:nth-child(2) {
         display: none;
+    }
+
+    #ranglister .result-table--rounds th:nth-child(n + 5),
+    #ranglister .result-table--rounds td:nth-child(n + 5) {
+        display: none;
+    }
+
+    .result-table__suffix {
+        display: inline;
     }
 }
 

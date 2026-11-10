@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=23" />
+    <link rel="stylesheet" href="site.css?v=26" />
 </head>
 <body>
     <div class="page-shell">
@@ -173,7 +173,7 @@
                 <div class="result-panel" role="tabpanel" id="panel-brutto" aria-labelledby="tab-brutto" hidden>
                     <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
                     <div class="result-table-wrap">
-                                        <table class="result-table result-table--name-third result-table--no-vgc">
+                                        <table class="result-table result-table--name-third">
                             <thead>
                                 <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Brutto</th><th># runder</th></tr>
                             </thead>
@@ -346,7 +346,7 @@
                 <div class="result-panel" role="tabpanel" id="panel-stableford" aria-labelledby="tab-stableford" hidden>
                     <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · total af Stableford point for alle matcher</p>
                     <div class="result-table-wrap">
-                        <table class="result-table result-table--name-third">
+                                        <table class="result-table result-table--name-third result-table--rounds">
                             <thead>
                                 <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Points</th><th>Snit</th><th># runder</th></tr>
                             </thead>
@@ -484,7 +484,7 @@
                 <div class="result-panel" role="tabpanel" id="panel-hallington" aria-labelledby="tab-hallington" hidden>
                     <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong> · spillere med mindst 3 runder</p>
                     <div class="result-table-wrap">
-                        <table class="result-table result-table--name-third">
+                                        <table class="result-table result-table--name-third result-table--rounds">
                             <thead>
                                 <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Hallington</th><th># runder</th></tr>
                             </thead>
@@ -1020,6 +1020,20 @@
                 });
             });
         }
+
+        document.querySelectorAll('.result-table--rounds').forEach((table) => {
+            const addSuffix = (cell, text) => {
+                const suffix = document.createElement('span');
+                suffix.className = 'result-table__suffix';
+                suffix.textContent = text;
+                cell.append(suffix);
+            };
+
+            addSuffix(table.tHead.rows[0].cells[3], ' (# runder)');
+            Array.from(table.tBodies[0].rows).forEach((row) => {
+                addSuffix(row.cells[3], ` (${row.cells[row.cells.length - 1].textContent.trim()})`);
+            });
+        });
 
         const resultTabs = document.querySelectorAll('.result-tabs__tab');
         resultTabs.forEach((tab) => {
