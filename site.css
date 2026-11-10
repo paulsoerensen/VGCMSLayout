@@ -628,6 +628,11 @@ a.sponsors__link:focus-visible {
         display: none;
     }
 
+    #ranglister .result-table--points-min th:nth-child(6),
+    #ranglister .result-table--points-min td:nth-child(6) {
+        display: none;
+    }
+
     .result-table__suffix,
     .result-table__short {
         display: inline;
@@ -1258,6 +1263,10 @@ a.sponsors__link:focus-visible {
     }
 
     .sponsors__item:nth-child(n + 4) {
+        display: none;
+    }
+
+    .result-table__sponsor-logos img:nth-child(n + 2) {
         display: none;
     }
 

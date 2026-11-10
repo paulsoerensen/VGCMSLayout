@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=35" />
+    <link rel="stylesheet" href="site.css?v=36" />
 </head>
 <body>
     <div class="page-shell">
@@ -67,7 +67,7 @@
                 <p class="result-date">Periode: <strong>31 Aug, 2026 - 31 Aug, 2027</strong></p>
 
                 <div class="result-table-wrap">
-                    <table class="result-table result-table--name-fourth">
+                    <table class="result-table result-table--name-fourth result-table--points-min">
                         <thead>
                             <tr><th>Nr</th><th>Vgc nr.</th><th>Række</th><th>Navn</th><th>Points</th><th>Min.</th></tr>
                         </thead>
@@ -1106,6 +1106,21 @@
             addSuffix(table.tHead.rows[0].cells[3], ' (#rnd)');
             Array.from(table.tBodies[0].rows).forEach((row) => {
                 addSuffix(row.cells[3], ` (${row.cells[row.cells.length - 1].textContent.trim()})`);
+            });
+        });
+
+        document.querySelectorAll('.result-table--points-min').forEach((table) => {
+            const addSuffix = (cell, text) => {
+                const suffix = document.createElement('span');
+                suffix.className = 'result-table__suffix';
+                suffix.textContent = text;
+                cell.append(suffix);
+            };
+
+            addSuffix(table.tHead.rows[0].cells[4], ' (min.)');
+            Array.from(table.tBodies[0].rows).forEach((row) => {
+                if (row.cells.length < 6) return;
+                addSuffix(row.cells[4], ` (${row.cells[5].textContent.trim()})`);
             });
         });
 
