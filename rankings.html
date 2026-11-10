@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=29" />
+    <link rel="stylesheet" href="site.css?v=31" />
 </head>
 <body>
     <div class="page-shell">
@@ -84,7 +84,7 @@
                             <tr><td>10</td><td>1235</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=1235" target="_blank" rel="noopener">Jørgen Basse</a></td><td>13</td><td>0</td></tr>
                             <tr><td>11</td><td>505</td><td>A</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=505" target="_blank" rel="noopener">Peter Worsøe</a></td><td>12</td><td>0</td></tr>
                             <tr><td>12</td><td>1869</td><td>A</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=1869" target="_blank" rel="noopener">Jan Fredsted</a></td><td>12</td><td>0</td></tr>
-                            <tr class="result-table__sponsor"><td colspan="6"><img class="result-table__sponsor-logo" src="media/sponsors/jytlander-bank.png" alt="Jutlander Bank" loading="lazy" /></td></tr>
+                            <tr class="result-table__sponsor"><td colspan="6"><div class="result-table__sponsor-logos"><img src="media/sponsors/jytlander-bank.png" alt="Jutlander Bank" loading="lazy" /><img src="media/sponsors/tojeksperten.png" alt="Tøjeksperten" loading="lazy" /><img src="media/sponsors/spar-nord_logo_rgb.png" alt="Spar Nord" loading="lazy" /></div></td></tr>
                             <tr><td>13</td><td>4520</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=4520" target="_blank" rel="noopener">Kent Neupart Jacobsen</a></td><td>12</td><td>0</td></tr>
                             <tr><td>14</td><td>4462</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=4462" target="_blank" rel="noopener">Uffe Mikkelsen</a></td><td>12</td><td>0</td></tr>
                             <tr><td>15</td><td>1151</td><td>B</td><td><a href="https://vgcms.dk/resultater/spiller-resultater?id=1151" target="_blank" rel="noopener">Arne Josefsen</a></td><td>12</td><td>0</td></tr>
@@ -1036,18 +1036,14 @@
                 details.hidden = true;
                 toggle.setAttribute('aria-controls', details.id);
 
+                details.insertCell();
+                details.insertCell();
                 const detailCell = details.insertCell();
                 detailCell.colSpan = 3;
-                const facts = document.createElement('dl');
-                facts.className = 'result-table__facts';
-                const fact = document.createElement('div');
-                const label = document.createElement('dt');
-                const value = document.createElement('dd');
-                label.textContent = 'Bane';
-                value.textContent = courseCell.textContent.trim();
-                fact.append(label, value);
-                facts.append(fact);
-                detailCell.append(facts);
+                detailCell.className = 'result-table__bane';
+                const label = document.createElement('strong');
+                label.textContent = 'Bane: ';
+                detailCell.append(label, courseCell.textContent.trim());
 
                 nameCell.replaceChildren(nameText, toggle);
                 row.after(details);
