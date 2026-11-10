@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=31" />
+    <link rel="stylesheet" href="site.css?v=35" />
 </head>
 <body>
     <div class="page-shell">
@@ -742,7 +742,7 @@
                 <div class="result-panel" role="tabpanel" id="panel-nearestpin" aria-labelledby="tab-nearestpin" hidden>
                     <p class="result-date">Periode: <strong>01 Jan, 2026 - 31 Dec, 2026</strong></p>
                     <div class="result-table-wrap">
-                        <table class="result-table result-table--name-third result-table--course">
+                        <table class="result-table result-table--name-third result-table--course result-table--pin">
                             <thead>
                                 <tr><th>Nr</th><th>Vgc nr.</th><th>Navn</th><th>Bane</th><th>Hul</th><th>Afstand (cm)</th></tr>
                             </thead>
@@ -1044,6 +1044,45 @@
                 const label = document.createElement('strong');
                 label.textContent = 'Bane: ';
                 detailCell.append(label, courseCell.textContent.trim());
+
+                nameCell.replaceChildren(nameText, toggle);
+                row.after(details);
+
+                row.addEventListener('click', () => {
+                    if (!mobileView.matches) return;
+                    details.hidden = !details.hidden;
+                    toggle.setAttribute('aria-expanded', String(!details.hidden));
+                });
+            });
+        });
+
+        document.querySelectorAll('.result-table--pin').forEach((table, tableIndex) => {
+            const distanceHeader = table.tHead.rows[0].cells[5];
+            distanceHeader.innerHTML = '<span class="result-table__long">Afstand (cm)</span><span class="result-table__short">cm</span>';
+            Array.from(table.tBodies[0].rows).forEach((row, rowIndex) => {
+                const [, , nameCell, courseCell, holeCell] = row.cells;
+                const [date, ...course] = courseCell.textContent.trim().split(', ');
+
+                const name = nameCell.textContent;
+                const nameText = document.createElement('span');
+                nameText.className = 'result-table__name';
+                nameText.textContent = name;
+
+                const toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'result-table__toggle';
+                toggle.textContent = name;
+                toggle.setAttribute('aria-expanded', 'false');
+
+                const details = document.createElement('tr');
+                details.className = 'result-table__details';
+                details.id = `pin-details-${tableIndex}-${rowIndex}`;
+                details.hidden = true;
+                toggle.setAttribute('aria-controls', details.id);
+
+                [date, '', course.join(', '), holeCell.textContent.trim()].forEach((text) => {
+                    details.insertCell().textContent = text;
+                });
 
                 nameCell.replaceChildren(nameText, toggle);
                 row.after(details);

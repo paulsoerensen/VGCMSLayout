@@ -612,7 +612,8 @@ a.sponsors__link:focus-visible {
     text-align: left;
 }
 
-.result-table__suffix {
+.result-table__suffix,
+.result-table__short {
     display: none;
 }
 
@@ -627,8 +628,13 @@ a.sponsors__link:focus-visible {
         display: none;
     }
 
-    .result-table__suffix {
+    .result-table__suffix,
+    .result-table__short {
         display: inline;
+    }
+
+    .result-table__long {
+        display: none;
     }
 }
 
@@ -1190,18 +1196,23 @@ a.sponsors__link:focus-visible {
     }
 
     .result-table--expandable tbody tr:not(.result-table__details),
-    .result-table--overall tbody tr:not(.result-table__details) {
+    .result-table--overall tbody tr:not(.result-table__details),
+    .result-table--pin tbody tr:not(.result-table__details) {
         cursor: pointer;
     }
 
     .result-table--overall th:nth-child(4),
     .result-table--overall td:nth-child(4),
     .result-table--overall .result-table__name,
-    .result-table--overall .result-table__weekday {
+    .result-table--overall .result-table__weekday,
+    .result-table--pin th:nth-child(n + 4):not(:last-child),
+    .result-table--pin tbody tr:not(.result-table__details) td:nth-child(n + 4):not(:last-child),
+    .result-table--pin .result-table__name {
         display: none;
     }
 
-    .result-table--overall td {
+    .result-table--overall td,
+    .result-table--pin td {
         white-space: normal;
         overflow-wrap: anywhere;
     }
@@ -1209,6 +1220,16 @@ a.sponsors__link:focus-visible {
     .result-table--overall .result-table__bane {
         text-align: left;
         color: var(--forest);
+    }
+
+    .result-table--pin .result-table__details td {
+        color: var(--forest);
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .result-table--pin .result-table__details td:nth-child(3) {
+        white-space: normal;
     }
 
     .result-table__toggle {
