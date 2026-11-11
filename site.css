@@ -665,6 +665,27 @@ a.sponsors__link:focus-visible {
         color: var(--forest);
     }
 
+    .result-table--player,
+    .result-table--courses {
+        table-layout: fixed;
+    }
+
+    .result-table--player th:first-child {
+        width: 64px;
+    }
+
+    .result-table--player th:nth-child(4) {
+        width: 56px;
+    }
+
+    .result-table--courses th:first-child {
+        width: 50%;
+    }
+
+    .result-table-wrap:has(.result-table--player, .result-table--courses) {
+        overflow-x: visible;
+    }
+
     .result-table__suffix,
     .result-table__short {
         display: inline;
