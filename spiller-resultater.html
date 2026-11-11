@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=38" />
+    <link rel="stylesheet" href="site.css?v=42" />
 </head>
 <body>
     <div class="page-shell">
@@ -261,6 +261,48 @@
                 });
             });
         }
+
+        const mobileView = window.matchMedia('(max-width: 768px)');
+
+        document.querySelectorAll('.result-table--player').forEach((table, tableIndex) => {
+            const headers = Array.from(table.tHead.rows[0].cells).map((cell) => cell.textContent.trim());
+
+            Array.from(table.tBodies[0].rows).forEach((row, rowIndex) => {
+                const courseCell = row.cells[1];
+                const course = courseCell.textContent;
+                const courseText = document.createElement('span');
+                courseText.className = 'result-table__name';
+                courseText.textContent = course;
+
+                const toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'result-table__toggle';
+                toggle.textContent = course;
+                toggle.setAttribute('aria-expanded', 'false');
+
+                const details = document.createElement('tr');
+                details.className = 'result-table__details';
+                details.id = `player-details-${tableIndex}-${rowIndex}`;
+                details.hidden = true;
+                toggle.setAttribute('aria-controls', details.id);
+
+                const rest = [2, 4, 5, 6, 7, 8]
+                    .filter((i) => row.cells[i].textContent.trim() !== '')
+                    .map((i) => `${headers[i]}: ${row.cells[i].textContent.trim()}`);
+                const detailCell = details.insertCell();
+                detailCell.colSpan = 3;
+                detailCell.textContent = rest.join(', ') || '-';
+
+                courseCell.replaceChildren(courseText, toggle);
+                row.after(details);
+
+                row.addEventListener('click', (event) => {
+                    if (!mobileView.matches || event.target.closest('a')) return;
+                    details.hidden = !details.hidden;
+                    toggle.setAttribute('aria-expanded', String(!details.hidden));
+                });
+            });
+        });
     </script>
 </body>
 </html>

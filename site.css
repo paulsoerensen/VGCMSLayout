@@ -648,6 +648,23 @@ a.sponsors__link:focus-visible {
         overflow-wrap: anywhere;
     }
 
+    .result-table--player th:nth-child(3),
+    .result-table--player th:nth-child(n + 5),
+    .result-table--player tbody tr:not(.result-table__details) td:nth-child(3),
+    .result-table--player tbody tr:not(.result-table__details) td:nth-child(n + 5),
+    .result-table--player .result-table__name {
+        display: none;
+    }
+
+    .result-table--player tbody tr:not(.result-table__details) {
+        cursor: pointer;
+    }
+
+    .result-table--player .result-table__details td {
+        text-align: left;
+        color: var(--forest);
+    }
+
     .result-table__suffix,
     .result-table__short {
         display: inline;
