@@ -435,22 +435,16 @@ a.sponsors__link:focus-visible {
 }
 
 .calendar-grid {
-    --calendar-columns: 3;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: var(--space-2);
 }
 
 .calendar-grid > .calendar-card {
-    flex: 0 0 calc((100% - (var(--calendar-columns) - 1) * var(--space-2)) / var(--calendar-columns));
+    flex: 0 0 360px;
+    max-width: 100%;
     min-width: 0;
-}
-
-@media (max-width: 1024px) {
-    .calendar-grid {
-        --calendar-columns: 2;
-    }
 }
 
 .calendar-card {
@@ -1393,9 +1387,5 @@ a.sponsors__link:focus-visible {
 
     .tour-grid {
         grid-template-columns: 1fr;
-    }
-
-    .calendar-grid {
-        --calendar-columns: 1;
     }
 }

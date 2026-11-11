@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hall of Fame | Mens Section | Vejle Golf Club</title>
+    <meta name="description" content="Hall of Fame i Mens Section i Vejle Golf Club med vindere gennem tiderne." />
+    <link rel="icon" type="image/png" href="media/system/VGCMSlogogul.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css?v=40" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="site-header__brand" href="Index.html">
+                <span class="site-header__logo"><img class="site-header__logo-image" src="media/system/VGCMSlogogul.png" alt="Vejle Golf Club Men's Section" /></span>
+                <div>
+                    <p class="site-header__kicker">Vejle Golf Club</p>
+                    <h1 class="site-header__title">Mens Section</h1>
+                </div>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+
+            <nav id="primary-nav" class="site-nav" aria-label="Hovedmenu">
+                <a class="site-nav__link" href="Information.html">Information</a>
+                <a class="site-nav__link" href="Kalender.html">Kalender</a>
+                <a class="site-nav__link" href="Resultater.html">Resultater</a>
+                <a class="site-nav__link" href="matchplay.html">Hulspil</a>
+                <a class="site-nav__link" href="HallOfFame.html" aria-current="page">Hall of Fame</a>
+                <a class="site-nav__link" href="Stamdata.html">Stamdata</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hall-of-fame" class="section-block" aria-labelledby="hall-of-fame-title">
+                <header class="section-block__header">
+                    <h2 id="hall-of-fame-title" class="section-block__title">Hall of Fame</h2>
+                </header>
+
+                <label class="result-select">
+                    <span class="result-select__label">Vælg kategori</span>
+                    <select class="result-select__input" id="hof-select">
+                        <option value="tab-captains" selected>Captains</option>
+                        <option value="tab-brutto">Brutto</option>
+                        <option value="tab-netto">Netto</option>
+                        <option value="tab-hallington">Hallington</option>
+                        <option value="tab-puts">Puts</option>
+                        <option value="tab-hulspil-single">Hulspil, single</option>
+                        <option value="tab-hulspil-par">Hulspil, par</option>
+                        <option value="tab-aarets-match">Årets match</option>
+                        <option value="tab-shootout">Sidani shoot out</option>
+                        <option value="tab-stableford">Stableford</option>
+                        <option value="tab-eclectic">Eclectic</option>
+                        <option value="tab-aeresmedlemmer">Æresmedlemmer</option>
+                    </select>
+                </label>
+
+                <div class="result-tabs" role="tablist" aria-label="Hall of Fame">
+                    <button class="result-tabs__tab result-tabs__tab--active" type="button" role="tab" id="tab-captains" aria-selected="true" aria-controls="panel-captains">Captains</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-brutto" aria-selected="false" aria-controls="panel-brutto" tabindex="-1">Brutto</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-netto" aria-selected="false" aria-controls="panel-netto" tabindex="-1">Netto</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-hallington" aria-selected="false" aria-controls="panel-hallington" tabindex="-1">Hallington</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-puts" aria-selected="false" aria-controls="panel-puts" tabindex="-1">Puts</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-hulspil-single" aria-selected="false" aria-controls="panel-hulspil-single" tabindex="-1">Hulspil, single</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-hulspil-par" aria-selected="false" aria-controls="panel-hulspil-par" tabindex="-1">Hulspil, par</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-aarets-match" aria-selected="false" aria-controls="panel-aarets-match" tabindex="-1">Årets match</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-shootout" aria-selected="false" aria-controls="panel-shootout" tabindex="-1">Sidani shoot out</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-stableford" aria-selected="false" aria-controls="panel-stableford" tabindex="-1">Stableford</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-eclectic" aria-selected="false" aria-controls="panel-eclectic" tabindex="-1">Eclectic</button>
+                    <button class="result-tabs__tab" type="button" role="tab" id="tab-aeresmedlemmer" aria-selected="false" aria-controls="panel-aeresmedlemmer" tabindex="-1">Æresmedlemmer</button>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-captains" aria-labelledby="tab-captains">
+                    <h3 class="result-panel__title">Captains gennem tiderne</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Lars Kjeldsen</td></tr>
+                                <tr><td>2025</td><td>Jan Fredsted</td></tr>
+                                <tr><td>2024</td><td>Lars Pihl</td></tr>
+                                <tr><td>2023</td><td>Henrik Mikkelsen</td></tr>
+                                <tr><td>2022</td><td>Lars Bo Cæsius</td></tr>
+                                <tr><td>2021</td><td>Frede Søgaard</td></tr>
+                                <tr><td>2020</td><td>Brian Baun Madsen</td></tr>
+                                <tr><td>2019</td><td>Søren Priess Gade</td></tr>
+                                <tr><td>2018</td><td>Peter Leth Kjær</td></tr>
+                                <tr><td>2017</td><td>Mikael Andersen</td></tr>
+                                <tr><td>2016</td><td>Torben Hviid</td></tr>
+                                <tr><td>2015</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2014</td><td>Hans Jørgen B. Nielsen</td></tr>
+                                <tr><td>2013</td><td>Frank L. Andersen</td></tr>
+                                <tr><td>2012</td><td>Kent Brejnholt</td></tr>
+                                <tr><td>2011</td><td>Christian Taul</td></tr>
+                                <tr><td>2010</td><td>Niels Lysgaard-Madsen</td></tr>
+                                <tr><td>2009</td><td>Jakob Preuss</td></tr>
+                                <tr><td>2008</td><td>Jesper Hansen</td></tr>
+                                <tr><td>2007</td><td>Anker Jakobsen</td></tr>
+                                <tr><td>2006</td><td>Stig Brogård Andersen</td></tr>
+                                <tr><td>2005</td><td>Jørgen Ejlskov</td></tr>
+                                <tr><td>2004</td><td>Ole Pagh</td></tr>
+                                <tr><td>2003</td><td>Thorkild Høj</td></tr>
+                                <tr><td>2002</td><td>Søren Sejersen</td></tr>
+                                <tr><td>2001</td><td>Palle Pagh</td></tr>
+                                <tr><td>2000</td><td>Ole Kloster</td></tr>
+                                <tr><td>1999</td><td>Torben Nielsen</td></tr>
+                                <tr><td>1998</td><td>Anders Mogensen</td></tr>
+                                <tr><td>1997</td><td>Jørgen Hansen</td></tr>
+                                <tr><td>1996</td><td>Tommy Andersen</td></tr>
+                                <tr><td>1995</td><td>Bent Rotbøl</td></tr>
+                                <tr><td>1994</td><td>Peter Spitz</td></tr>
+                                <tr><td>1993</td><td>Carl Chr. Ohrt</td></tr>
+                                <tr><td>1992</td><td>Lars Christiansen</td></tr>
+                                <tr><td>1991</td><td>Lars Melson</td></tr>
+                                <tr><td>1990</td><td>Ole Brems</td></tr>
+                                <tr><td>1989</td><td>Erling Hallen</td></tr>
+                                <tr><td>1988</td><td>Christian Brændegård Hansen</td></tr>
+                                <tr><td>1987</td><td>Sigurd Søgaard-Andersen</td></tr>
+                                <tr><td>1986</td><td>Bent Søgaard Sørensen</td></tr>
+                                <tr><td>1985</td><td>Jens Linde</td></tr>
+                                <tr><td>1984</td><td>Jens Linde</td></tr>
+                                <tr><td>1983</td><td>Ejnar Smidt-Hansen</td></tr>
+                                <tr><td>1982</td><td>Hans Jørgen Hjort</td></tr>
+                                <tr><td>1981</td><td>Tim Bruhns</td></tr>
+                                <tr><td>1980</td><td>Jørgen Jacobsen</td></tr>
+                                <tr><td>1979</td><td>Erik Bligård</td></tr>
+                                <tr><td>1978</td><td>Flemming Tobiesen</td></tr>
+                                <tr><td>1977</td><td>Kaj Ole Olesen</td></tr>
+                                <tr><td>1976</td><td>Jan Skannerup</td></tr>
+                                <tr><td>1975</td><td>Erik Halling</td></tr>
+                                <tr><td>1974</td><td>Knud Frederiksen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-brutto" aria-labelledby="tab-brutto" hidden>
+                    <h3 class="result-panel__title">Brutto</h3>
+                    <p class="result-date">Ud fra gennemsnittet for de 5 bedste brutto resultater findes årets vinder.</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Morten Bonde Nielsen</td></tr>
+                                <tr><td>2025</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2024</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2023</td><td>Paul Ruston</td></tr>
+                                <tr><td>2022</td><td>Niels Lysgaard-Madsen</td></tr>
+                                <tr><td>2021</td><td>Paul Ruston</td></tr>
+                                <tr><td>2020</td><td>Paul Ruston</td></tr>
+                                <tr><td>2019</td><td>Paul Ruston</td></tr>
+                                <tr><td>2018</td><td>Jen Bertelsen</td></tr>
+                                <tr><td>2017</td><td>Paul Ruston</td></tr>
+                                <tr><td>2016</td><td>Paul Ruston</td></tr>
+                                <tr><td>2015</td><td>Paul Ruston</td></tr>
+                                <tr><td>2014</td><td>Paul Sørensen</td></tr>
+                                <tr><td>2013</td><td>Jan Bertelsen</td></tr>
+                                <tr><td>2012</td><td>Finn Andersen</td></tr>
+                                <tr><td>2011</td><td>Finn Andersen</td></tr>
+                                <tr><td>2010</td><td>Finn Andersen</td></tr>
+                                <tr><td>2009</td><td>Finn Andersen</td></tr>
+                                <tr><td>2008</td><td>Finn Andersen</td></tr>
+                                <tr><td>2007</td><td>Finn Andersen</td></tr>
+                                <tr><td>2006</td><td>Finn Andersen</td></tr>
+                                <tr><td>2005</td><td>Finn Andersen</td></tr>
+                                <tr><td>2004</td><td>Finn Andersen</td></tr>
+                                <tr><td>2003</td><td>Finn Andersen</td></tr>
+                                <tr><td>2002</td><td>Finn Andersen</td></tr>
+                                <tr><td>2001</td><td>Finn Andersen</td></tr>
+                                <tr><td>2000</td><td>Finn Andersen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-netto" aria-labelledby="tab-netto" hidden>
+                    <h3 class="result-panel__title">Netto</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Morten Bonde Nielsen</td></tr>
+                                <tr><td>2025</td><td>Ole Skousen</td></tr>
+                                <tr><td>2024</td><td>Jan Fredsted</td></tr>
+                                <tr><td>2023</td><td>John Christiansen</td></tr>
+                                <tr><td>2022</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2021</td><td>Jesper Hansen</td></tr>
+                                <tr><td>2020</td><td>Erik Jørgensen</td></tr>
+                                <tr><td>2019</td><td>Thomas Mikkelsen</td></tr>
+                                <tr><td>2018</td><td>Palle Mini Jensen</td></tr>
+                                <tr><td>2017</td><td>Bent Rotbøl</td></tr>
+                                <tr><td>2016</td><td>Paul Ruston</td></tr>
+                                <tr><td>2015</td><td>Bent Hansen</td></tr>
+                                <tr><td>2014</td><td>Bjarne Grann/Kent Brejnholt</td></tr>
+                                <tr><td>2013</td><td>Peter Leth Kjær</td></tr>
+                                <tr><td>2012</td><td>Jan Bertelsen</td></tr>
+                                <tr><td>2011</td><td>Anders Kammersgård</td></tr>
+                                <tr><td>2010</td><td>Finn Andersen</td></tr>
+                                <tr><td>2009</td><td>Michael Kaltoft</td></tr>
+                                <tr><td>2008</td><td>Brian Pedersen</td></tr>
+                                <tr><td>2007</td><td>Kent Brejnholt</td></tr>
+                                <tr><td>2006</td><td>Knud Jørgen Grum Svendsen</td></tr>
+                                <tr><td>2005</td><td>Finn Andersen</td></tr>
+                                <tr><td>2004</td><td>Finn Andersen</td></tr>
+                                <tr><td>2003</td><td>Finn Andersen</td></tr>
+                                <tr><td>2002</td><td>Finn Andersen</td></tr>
+                                <tr><td>2001</td><td>Finn Andersen</td></tr>
+                                <tr><td>2000</td><td>Carlos Winther</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-hallington" aria-labelledby="tab-hallington" hidden>
+                    <h3 class="result-panel__title">Hallington</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Uffe Mikkelsen</td></tr>
+                                <tr><td>2025</td><td>Poul Erik Cæsius</td></tr>
+                                <tr><td>2024</td><td>Robert Veilis</td></tr>
+                                <tr><td>2023</td><td>Jørgen Basse</td></tr>
+                                <tr><td>2022</td><td>Henrik Mikkelsen</td></tr>
+                                <tr><td>2021</td><td>Steen Petersen</td></tr>
+                                <tr><td>2020</td><td>Niels Lysgaard-Madsen</td></tr>
+                                <tr><td>2019</td><td>John Poulsen</td></tr>
+                                <tr><td>2018</td><td>Christian Taul</td></tr>
+                                <tr><td>2017</td><td>Brian Pedersen</td></tr>
+                                <tr><td>2016</td><td>Peter Worsøe</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-puts" aria-labelledby="tab-puts" hidden>
+                    <h3 class="result-panel__title">Færrest puts</h3>
+                    <p class="result-date">Ud fra gennemsnittet for de 5 bedste netto resultater findes årets vinder. Der tælles kun puts i slagspilsmatcher.</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2025</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2024</td><td>Jan Fredsted</td></tr>
+                                <tr><td>2023</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2022</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2021</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2020</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2019</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2018</td><td>Aage Johansen</td></tr>
+                                <tr><td>2017</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2016</td><td>Paul Ruston</td></tr>
+                                <tr><td>2015</td><td>Christian Taul</td></tr>
+                                <tr><td>2014</td><td>Lars Klerke</td></tr>
+                                <tr><td>2013</td><td>Christian Taul</td></tr>
+                                <tr><td>2012</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2011</td><td>Finn Andersen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-hulspil-single" aria-labelledby="tab-hulspil-single" hidden>
+                    <h3 class="result-panel__title">Hulspil, single</h3>
+                    <p class="result-date">Der spilles både i en A række med max hcp. 13 og en B række for spillere med højere hcp.</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>A: Jesper Hansen - B: Erik Skov Jørgensen</td></tr>
+                                <tr><td>2025</td><td>A: Henrik Fink - B: Alfred Korsgaard</td></tr>
+                                <tr><td>2024</td><td>A: Thomas Mikkelsen, B: Hans Henrik Mathiesen</td></tr>
+                                <tr><td>2023</td><td>A: Henrik Fink Stidsen, B:John Christiansen</td></tr>
+                                <tr><td>2022</td><td>A: Jesper Hansen B: Tommy Hansen</td></tr>
+                                <tr><td>2021</td><td>A: Niels Lysgaard-Madsen B: Poul Erik Brix Cæsius</td></tr>
+                                <tr><td>2020</td><td>A: Paul Ruston / B: Erik Jørgensen</td></tr>
+                                <tr><td>2019</td><td>A: Henning Mathiasen, B: John Poulsen</td></tr>
+                                <tr><td>2018</td><td>A: Jan Bertelsen - B: Ole Mathiasen</td></tr>
+                                <tr><td>2017</td><td>A: Jesper Hansen, B: Peter Leth Kjær</td></tr>
+                                <tr><td>2016</td><td>A: René Kildsgaard, B: Søren priess Gade</td></tr>
+                                <tr><td>2015</td><td>A: Jan Bertelsen, B: Jens M. Jørgensen</td></tr>
+                                <tr><td>2014</td><td>A: René Kildsgaard, B: Bent Hansen</td></tr>
+                                <tr><td>2013</td><td>A: Palle Jensen, B: John Poulsen</td></tr>
+                                <tr><td>2012</td><td>A: Kent Brejnholt, B: Jacob Preuss</td></tr>
+                                <tr><td>2011</td><td>A: Palle Jensen, B: Erik Jørgensen</td></tr>
+                                <tr><td>2010</td><td>A: Finn Andersen, B: Jens Michael Jørgensen</td></tr>
+                                <tr><td>2009</td><td>A: Christian Taul, B: Anker Jacobsen</td></tr>
+                                <tr><td>2008</td><td>Paul Sørensen</td></tr>
+                                <tr><td>2007</td><td>Thorkild Høj</td></tr>
+                                <tr><td>2006</td><td>Kresten Hoppe</td></tr>
+                                <tr><td>2005</td><td>Anker Jakobsen</td></tr>
+                                <tr><td>2004</td><td>Søren Sejersen</td></tr>
+                                <tr><td>2003</td><td>Michael Suhr</td></tr>
+                                <tr><td>2002</td><td>Stig Caspersen</td></tr>
+                                <tr><td>2001</td><td>Michael Suhr</td></tr>
+                                <tr><td>2000</td><td>Jørgen Basse</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-hulspil-par" aria-labelledby="tab-hulspil-par" hidden>
+                    <h3 class="result-panel__title">Hulspil, par</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Morten Bonde Nielsen/Ole Mathiasen</td></tr>
+                                <tr><td>2025</td><td>Brian Pedersen / Peter Worsøe</td></tr>
+                                <tr><td>2024</td><td>Paul Sørensen / Michael Suhr</td></tr>
+                                <tr><td>2023</td><td>Henrik Fink Stidsen, Thomas Mikkelsen</td></tr>
+                                <tr><td>2022</td><td>Brian Danebod og Christian Taul.</td></tr>
+                                <tr><td>2021</td><td>Niels Lysgaard-Madsen/Svend Erik Skovhus</td></tr>
+                                <tr><td>2020</td><td>Svend Erik Skovhus / Niels Lysgaard-Madsen</td></tr>
+                                <tr><td>2019</td><td>Jan Bertelsen / Brian Pedersen</td></tr>
+                                <tr><td>2018</td><td>Christian Taul / Peter Worsøe</td></tr>
+                                <tr><td>2017</td><td>Jan Bertelsen, Brian Pedersen</td></tr>
+                                <tr><td>2016</td><td>Keld Hindhede / Michael Kaltoft</td></tr>
+                                <tr><td>2015</td><td>Christian Taul / Peter Worsøe</td></tr>
+                                <tr><td>2014</td><td>Lars Christiansen / Lars Klerke</td></tr>
+                                <tr><td>2013</td><td>Keld Hindhede og Michael Kaltoft</td></tr>
+                                <tr><td>2012</td><td>Jacob Preuss / Jesper Hansen</td></tr>
+                                <tr><td>2011</td><td>Brian Madsen / Claus Frandsen</td></tr>
+                                <tr><td>2010</td><td>Stig Caspersen / Torben Hviid</td></tr>
+                                <tr><td>2009</td><td>Jan Bertelsen / Brian Pedersen</td></tr>
+                                <tr><td>2008</td><td>Anker Jakobsen / Stig Brogaard Andersen</td></tr>
+                                <tr><td>2007</td><td>Palle Jensen / Søren Knudsen</td></tr>
+                                <tr><td>2006</td><td>Søren Klerke / John Christiansen</td></tr>
+                                <tr><td>2005</td><td>Finn Andersen / Palle Jensen</td></tr>
+                                <tr><td>2004</td><td>Søren Sejersen / Palle Pagh</td></tr>
+                                <tr><td>2003</td><td>Jørgen Basse / Mikael Hansen</td></tr>
+                                <tr><td>2002</td><td>Søren Sejersen / Palle Pagh</td></tr>
+                                <tr><td>2001</td><td>Anders Kammersgård / KJ Grum Svendsen</td></tr>
+                                <tr><td>2000</td><td>Arne Jensen / Peter Bøegh</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-aarets-match" aria-labelledby="tab-aarets-match" hidden>
+                    <h3 class="result-panel__title">Årets match</h3>
+                    <p class="result-date">Årets match spilles på den sidste torsdag i sæsonen mellem overall vinderne fra årets matcher.</p>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Michael Kaltoft</td></tr>
+                                <tr><td>2025</td><td>Julian Nielsen</td></tr>
+                                <tr><td>2024</td><td>Michael Rand</td></tr>
+                                <tr><td>2023</td><td>Michael Kaltoft</td></tr>
+                                <tr><td>2022</td><td>Michael Suhr</td></tr>
+                                <tr><td>2021</td><td>Claus Frandsen</td></tr>
+                                <tr><td>2020</td><td>Paul Ruston</td></tr>
+                                <tr><td>2020</td><td>Paul Ruston</td></tr>
+                                <tr><td>2019</td><td>Jakob Preuss</td></tr>
+                                <tr><td>2018</td><td>Michael Kaltoft</td></tr>
+                                <tr><td>2017</td><td>Lars M. Hansen</td></tr>
+                                <tr><td>2016</td><td>René Kildsgaard</td></tr>
+                                <tr><td>2015</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2014</td><td>Brian Pedersen</td></tr>
+                                <tr><td>2013</td><td>Peter Leth Kjær</td></tr>
+                                <tr><td>2012</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2011</td><td>Anker Jacobsen</td></tr>
+                                <tr><td>2010</td><td>Finn Andersen</td></tr>
+                                <tr><td>2009</td><td>Jesper Hansen</td></tr>
+                                <tr><td>2008</td><td>Jacob Preuss</td></tr>
+                                <tr><td>2007</td><td>Jesper Hansen</td></tr>
+                                <tr><td>2006</td><td>Jacob Preuss</td></tr>
+                                <tr><td>2005</td><td>John Poulsen</td></tr>
+                                <tr><td>2004</td><td>Erik O. Smidt</td></tr>
+                                <tr><td>2003</td><td>Ikke Spillet</td></tr>
+                                <tr><td>2002</td><td>Søren Sejersen</td></tr>
+                                <tr><td>2001</td><td>Erik Busk Hansen</td></tr>
+                                <tr><td>2000</td><td>Cliff G. Hansen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-shootout" aria-labelledby="tab-shootout" hidden>
+                    <h3 class="result-panel__title">Sidani shoot out</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Ole Mathiasen</td></tr>
+                                <tr><td>2025</td><td>Keld Hinhede</td></tr>
+                                <tr><td>2024</td><td>Michael Suhr</td></tr>
+                                <tr><td>2023</td><td>Jakob Preuss</td></tr>
+                                <tr><td>2022</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2021</td><td>Per Møller</td></tr>
+                                <tr><td>2020</td><td>Kim Vinther</td></tr>
+                                <tr><td>2019</td><td>Anker Jakobsen</td></tr>
+                                <tr><td>2018</td><td>Brian Pedersen</td></tr>
+                                <tr><td>2017</td><td>Christian Hvarre</td></tr>
+                                <tr><td>2016</td><td>Jan Groth Clausen</td></tr>
+                                <tr><td>2015</td><td>Frank L. Andersen</td></tr>
+                                <tr><td>2014</td><td>Lars Pihl</td></tr>
+                                <tr><td>2013</td><td>Christian Taul</td></tr>
+                                <tr><td>2012</td><td>Finn Andersen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-stableford" aria-labelledby="tab-stableford" hidden>
+                    <h3 class="result-panel__title">Stableford</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Christian Hvarre</td></tr>
+                                <tr><td>2025</td><td>Keld Hinhede</td></tr>
+                                <tr><td>2024</td><td>Christian Hvarre</td></tr>
+                                <tr><td>2023</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2022</td><td>Lars Bo Cæsius</td></tr>
+                                <tr><td>2021</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2020</td><td>Peter Worsøe</td></tr>
+                                <tr><td>2019</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2018</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2017</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2016</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2015</td><td>Christian Taul</td></tr>
+                                <tr><td>2014</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2013</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2012</td><td>Kent Brejnholt</td></tr>
+                                <tr><td>2011</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2010</td><td>Henning Madsen</td></tr>
+                                <tr><td>2009</td><td>Henning Madsen</td></tr>
+                                <tr><td>2008</td><td>Jacob Preuss</td></tr>
+                                <tr><td>2007</td><td>Finn Andersen</td></tr>
+                                <tr><td>2006</td><td>Finn Andersen</td></tr>
+                                <tr><td>2005</td><td>Finn Andersen</td></tr>
+                                <tr><td>2004</td><td>Finn Andersen</td></tr>
+                                <tr><td>2003</td><td>Finn Andersen</td></tr>
+                                <tr><td>2002</td><td>Finn Andersen</td></tr>
+                                <tr><td>2001</td><td>Finn Andersen</td></tr>
+                                <tr><td>2000</td><td>Ole Kloster</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-eclectic" aria-labelledby="tab-eclectic" hidden>
+                    <h3 class="result-panel__title">Eclectic</h3>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2017</td><td>Matchen spilles ikke længere</td></tr>
+                                <tr><td>2016</td><td>Ikke spillet</td></tr>
+                                <tr><td>2015</td><td>Ikke spillet</td></tr>
+                                <tr><td>2014</td><td>Ikke spillet</td></tr>
+                                <tr><td>2013</td><td>Ikke spillet</td></tr>
+                                <tr><td>2012</td><td>ikke spillet</td></tr>
+                                <tr><td>2011</td><td>Michael Bertelsen</td></tr>
+                                <tr><td>2010</td><td>Ikke spillet</td></tr>
+                                <tr><td>2009</td><td>Anker Jakobsen</td></tr>
+                                <tr><td>2008</td><td>Jesper Hansen</td></tr>
+                                <tr><td>2007</td><td>Keld Hindhede</td></tr>
+                                <tr><td>2006</td><td>Palle Jensen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="result-panel" role="tabpanel" id="panel-aeresmedlemmer" aria-labelledby="tab-aeresmedlemmer" hidden>
+                    <h3 class="result-panel__title">Beskrivelse</h3>
+                    <p class="result-date">For at et medlem af MS kan udnævnes til æresmedlem af VGCMS skal han leve op til mindst to af disse tre kriterier (evt. alle tre kriterier).</p>
+                    <ol class="result-date">
+                        <li>Medlem af VGCMS i mindst 25 år.</li>
+                        <li>Arbejdet frivilligt til glæde for medlemmer af VGCMS i mindst 5 år.</li>
+                        <li>Foretaget handlinger, der vurderes som særligt positivt for foreningen VGCMS.</li>
+                    </ol>
+                    <p class="result-date">Regler for indstilling og udnævnelse af æresmedlemmer:</p>
+                    <ul class="result-date">
+                        <li>Der kan max. udnævnes et æresmedlem pr. år.</li>
+                        <li>Medlemmer af VGCMS kan indstille personer til præsidiet, som vurderer og beslutter, om indstillingen skal føre til en udnævnelse. Er der flere end en indstillet person, der opfylder kriterierne, beslutter præsidiet, hvem der skal udnævnes. Præsidiet kan ligeledes af egen drift udnævne et æresmedlem.</li>
+                        <li>Æresmedlemmer udnævnes på afslutningsaftenen. Med udnævnelsen følger en gave fra præsidiet, ligesom æresmedlemmer får deres navn på væggen i VGCs klubhus.</li>
+                        <li>Æresmedlemmer betaler i det første år efter udnævnelsen til æresmedlem ikke kontingent for medlemskabet af VGCMS. Herefter betales kontingent som alle andre medlemmer.</li>
+                    </ul>
+                    <div class="result-table-wrap">
+                        <table class="result-table">
+                            <thead><tr><th>Årstal</th><th>Navn</th></tr></thead>
+                            <tbody>
+                                <tr class="result-table__row--top"><td>2026</td><td>Niels Lysgaard-Madsen</td></tr>
+                                <tr><td>2023</td><td>Jørgen Hansen</td></tr>
+                                <tr><td>2022</td><td>Bent Rotbøl</td></tr>
+                                <tr><td>2021</td><td>Lars Melson</td></tr>
+                                <tr><td>2020</td><td>Henning Madsen</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__info">
+                <p class="site-footer__line">Mens Section,<br class="site-footer__break" /> Vejle Golf Club</p>
+                <p class="site-footer__line"><a class="site-footer__mail" href="mailto:kontakt@vgcms.dk">kontakt@vgcms.dk</a></p>
+            </div>
+            <a class="site-footer__facebook" href="https://www.facebook.com/vgcms" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg class="site-footer__facebook-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="24" rx="5" fill="#1877f2" />
+                    <path fill="#ffffff" d="M16.5 24v-9.2h3.1l.5-3.6h-3.6V9c0-1 .3-1.7 1.8-1.7h1.9V4.1c-.3 0-1.5-.1-2.8-.1-2.8 0-4.6 1.7-4.6 4.7v2.6H9.7v3.6h3.1V24z" />
+                </svg>
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteHeader = document.querySelector('.site-header');
+        const navLinks = document.querySelectorAll('.site-nav__link');
+
+        if (menuToggle && siteHeader) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteHeader.classList.toggle('nav-open');
+                menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    siteHeader.classList.remove('nav-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        const resultTabs = document.querySelectorAll('.result-tabs__tab');
+        const hofSelect = document.getElementById('hof-select');
+        const showCategory = (tab) => {
+            resultTabs.forEach((other) => {
+                const isActive = other === tab;
+                other.classList.toggle('result-tabs__tab--active', isActive);
+                other.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                other.tabIndex = isActive ? 0 : -1;
+                document.getElementById(other.getAttribute('aria-controls')).hidden = !isActive;
+            });
+            hofSelect.value = tab.id;
+        };
+
+        resultTabs.forEach((tab) => tab.addEventListener('click', () => showCategory(tab)));
+        hofSelect.addEventListener('change', () => showCategory(document.getElementById(hofSelect.value)));
+    </script>
+</body>
+</html>
