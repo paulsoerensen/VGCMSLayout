@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="site.css?v=19" />
+    <link rel="stylesheet" href="site.css?v=41" />
 </head>
 <body>
     <div class="page-shell">
@@ -203,6 +203,44 @@
                 });
             });
         }
+
+        const mobileView = window.matchMedia('(max-width: 768px)');
+
+        document.querySelectorAll('.result-table--courses').forEach((table, tableIndex) => {
+            const headers = Array.from(table.tHead.rows[0].cells).map((cell) => cell.textContent.trim());
+
+            Array.from(table.tBodies[0].rows).forEach((row, rowIndex) => {
+                const club = row.cells[0].textContent;
+                const clubText = document.createElement('span');
+                clubText.className = 'result-table__name';
+                clubText.textContent = club;
+
+                const toggle = document.createElement('button');
+                toggle.type = 'button';
+                toggle.className = 'result-table__toggle';
+                toggle.textContent = club;
+                toggle.setAttribute('aria-expanded', 'false');
+
+                const details = document.createElement('tr');
+                details.className = 'result-table__details';
+                details.id = `course-details-${tableIndex}-${rowIndex}`;
+                details.hidden = true;
+                toggle.setAttribute('aria-controls', details.id);
+
+                const detailCell = details.insertCell();
+                detailCell.colSpan = 2;
+                detailCell.textContent = Array.from(row.cells).slice(2).map((cell, i) => `${headers[i + 2]}: ${cell.textContent.trim()}`).join(', ');
+
+                row.cells[0].replaceChildren(clubText, toggle);
+                row.after(details);
+
+                row.addEventListener('click', () => {
+                    if (!mobileView.matches) return;
+                    details.hidden = !details.hidden;
+                    toggle.setAttribute('aria-expanded', String(!details.hidden));
+                });
+            });
+        });
     </script>
 </body>
 </html>

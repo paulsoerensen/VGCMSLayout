@@ -1289,6 +1289,27 @@ a.sponsors__link:focus-visible {
         white-space: normal;
     }
 
+    .result-table--courses th:nth-child(n + 3),
+    .result-table--courses .result-table__name,
+    .result-table--courses tbody tr:not(.result-table__details) td:nth-child(n + 3) {
+        display: none;
+    }
+
+    .result-table--courses tbody tr:not(.result-table__details) {
+        cursor: pointer;
+    }
+
+    .result-table--courses td {
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .result-table--courses .result-table__details td {
+        text-align: left;
+        color: var(--forest);
+        font-size: 13px;
+    }
+
     .result-table__toggle {
         display: flex;
         align-items: center;
