@@ -1379,7 +1379,11 @@ a.sponsors__link:focus-visible {
 
     .result-table__details:not([hidden]) {
         display: table-row;
-        background: var(--mist);
+    }
+
+    .result-table tbody tr:has(+ .result-table__details:not([hidden])),
+    .result-table tbody tr.result-table__details:not([hidden]) {
+        background: #fdeeb8;
     }
 
     .sponsors__item:nth-child(n + 4) {
